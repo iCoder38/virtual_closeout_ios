@@ -2,6 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Virtual closeout would like to access your location for Product filter near your location.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Virtual closeout would like to access your photo gallery for multiple purposes like Upload profile , Upload product items</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -21,5 +30,9 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Virtual closeout would like to access your location for Product filter near your location.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Virtual closeout would like to access your location for Product filter near your location.</string>
 </dict>
 </plist>

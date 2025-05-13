@@ -1,0 +1,6 @@
+framework module Pods_Virtual_CloseoutTests {
+  umbrella header "Pods-Virtual CloseoutTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

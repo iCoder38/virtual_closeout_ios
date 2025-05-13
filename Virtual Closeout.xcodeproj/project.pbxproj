@@ -3,10 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180ADDDE2864371E00B15F82 /* filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180ADDDD2864371E00B15F82 /* filter.swift */; };
+		181A75312851BA3800FB6C84 /* offered_price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A75302851BA3800FB6C84 /* offered_price.swift */; };
+		181A75372851BDF000FB6C84 /* change_password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A75362851BDF000FB6C84 /* change_password.swift */; };
+		181A753A2851C2AF00FB6C84 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A75392851C2AF00FB6C84 /* Help.swift */; };
+		181A753D2851C46100FB6C84 /* payment_screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A753C2851C46100FB6C84 /* payment_screen.swift */; };
+		181A75402851D86400FB6C84 /* business_information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A753F2851D86300FB6C84 /* business_information.swift */; };
+		181A75432851DE3E00FB6C84 /* bank_information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A75422851DE3E00FB6C84 /* bank_information.swift */; };
+		181A75462851E28800FB6C84 /* dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A75452851E28800FB6C84 /* dashboard.swift */; };
+		181A75492851E97C00FB6C84 /* manage_products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A75482851E97C00FB6C84 /* manage_products.swift */; };
+		1823D2A62858AFEC00C7DD87 /* buy_now.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823D2A52858AFEC00C7DD87 /* buy_now.swift */; };
+		182B5A992853143400253DF7 /* add_new_product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B5A982853143400253DF7 /* add_new_product.swift */; };
+		182B5A9C2853232900253DF7 /* earnings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B5A9B2853232900253DF7 /* earnings.swift */; };
+		182B5A9F28532A6500253DF7 /* CashOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B5A9E28532A6500253DF7 /* CashOutVC.swift */; };
+		182B5AA228532A7400253DF7 /* cashout_list.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B5AA128532A7400253DF7 /* cashout_list.swift */; };
+		182B5AA5285331FB00253DF7 /* review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B5AA4285331FB00253DF7 /* review.swift */; };
+		1852C49D2850B07E00C3768C /* address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1852C49C2850B07E00C3768C /* address.swift */; };
+		1852C4A02850C0D900C3768C /* order_history.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1852C49F2850C0D900C3768C /* order_history.swift */; };
+		1852C4A32850C31100C3768C /* order_history_details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1852C4A22850C31100C3768C /* order_history_details.swift */; };
+		185FD9C4286ACE1F00098D58 /* seller_profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185FD9C3286ACE1F00098D58 /* seller_profile.swift */; };
+		1865538128534F4700E7B1C2 /* MenuControllerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865537C28534F4600E7B1C2 /* MenuControllerVC.swift */; };
+		1865538228534F4700E7B1C2 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865537F28534F4700E7B1C2 /* SWRevealViewController.m */; };
+		1865538328534F4700E7B1C2 /* MenuControllerVCTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865538028534F4700E7B1C2 /* MenuControllerVCTableCell.swift */; };
+		186D1DFC28633DD300837BD7 /* earnings_new.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D1DFA28633DD300837BD7 /* earnings_new.swift */; };
+		186D1DFD28633DD300837BD7 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D1DFB28633DD300837BD7 /* Custom.swift */; };
+		186D1E0028633DFD00837BD7 /* RPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D1DFF28633DFD00837BD7 /* RPicker.swift */; };
+		1872ADE2284F6112001F1934 /* browse_product_images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872ADE1284F6112001F1934 /* browse_product_images.swift */; };
+		1872ADE5284F63BC001F1934 /* product_full_details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872ADE4284F63BC001F1934 /* product_full_details.swift */; };
+		1886A36D28585E9D00286241 /* chat_room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1886A36C28585E9D00286241 /* chat_room.swift */; };
+		1886A36F285860D900286241 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1886A36E285860D900286241 /* GoogleService-Info.plist */; };
 		188826F8284F1C9900D19356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188826F7284F1C9900D19356 /* AppDelegate.swift */; };
 		188826FA284F1C9900D19356 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188826F9284F1C9900D19356 /* SceneDelegate.swift */; };
 		188826FC284F1C9900D19356 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188826FB284F1C9900D19356 /* ViewController.swift */; };
@@ -16,6 +45,40 @@
 		1888270F284F1C9C00D19356 /* Virtual_CloseoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888270E284F1C9C00D19356 /* Virtual_CloseoutTests.swift */; };
 		18882719284F1C9C00D19356 /* Virtual_CloseoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18882718284F1C9C00D19356 /* Virtual_CloseoutUITests.swift */; };
 		1888271B284F1C9C00D19356 /* Virtual_CloseoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888271A284F1C9C00D19356 /* Virtual_CloseoutUITestsLaunchTests.swift */; };
+		1888272D284F1EE500D19356 /* ERProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888272C284F1EE500D19356 /* ERProgressHud.swift */; };
+		18882738284F1F0100D19356 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18882730284F1F0000D19356 /* Color.swift */; };
+		18882739284F1F0100D19356 /* NewYorkAlertViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18882731284F1F0100D19356 /* NewYorkAlertViewType.swift */; };
+		1888273A284F1F0100D19356 /* NewYorkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18882732284F1F0100D19356 /* NewYorkButton.swift */; };
+		1888273B284F1F0100D19356 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18882733284F1F0100D19356 /* AlertView.swift */; };
+		1888273C284F1F0100D19356 /* LeftPaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18882734284F1F0100D19356 /* LeftPaddingTextField.swift */; };
+		1888273D284F1F0100D19356 /* ActionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18882735284F1F0100D19356 /* ActionSheetView.swift */; };
+		1888273E284F1F0100D19356 /* NewYorkAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18882736284F1F0100D19356 /* NewYorkAlertController.swift */; };
+		1888273F284F1F0100D19356 /* UIStackView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18882737284F1F0100D19356 /* UIStackView+Utility.swift */; };
+		18882743284F1F1100D19356 /* success3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 18882740284F1F1100D19356 /* success3.gif */; };
+		18882744284F1F1100D19356 /* gif_alert.gif in Resources */ = {isa = PBXBuildFile; fileRef = 18882741284F1F1100D19356 /* gif_alert.gif */; };
+		18882745284F1F1100D19356 /* gif_bin.gif in Resources */ = {isa = PBXBuildFile; fileRef = 18882742284F1F1100D19356 /* gif_bin.gif */; };
+		18882749284F1F8700D19356 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18882748284F1F8700D19356 /* Parameter.swift */; };
+		1888274B284F1F8D00D19356 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888274A284F1F8D00D19356 /* Utils.swift */; };
+		188AED9928571C87005354FF /* category_sub_category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AED9828571C87005354FF /* category_sub_category.swift */; };
+		188AED9C285729D0005354FF /* only_sub_category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AED9B285729D0005354FF /* only_sub_category.swift */; };
+		1890EB96285063C800FA9334 /* cart_list.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890EB95285063C800FA9334 /* cart_list.swift */; };
+		18952F2F2859FD2800D27460 /* success_payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18952F2E2859FD2800D27460 /* success_payment.swift */; };
+		18952F32285A02DD00D27460 /* all_card_list.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18952F31285A02DD00D27460 /* all_card_list.swift */; };
+		1897694928697D4F008FACFA /* edit_profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897694828697D4F008FACFA /* edit_profile.swift */; };
+		1897694C28699A7B008FACFA /* my_orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897694B28699A7B008FACFA /* my_orders.swift */; };
+		189AA95B285B3CB900B3615F /* COrderHistoryProductDetailsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189AA959285B3CB900B3615F /* COrderHistoryProductDetailsTableCell.swift */; };
+		189AA95C285B3CB900B3615F /* COrderHistoryProductDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189AA95A285B3CB900B3615F /* COrderHistoryProductDetails.swift */; };
+		189AA95F285B3EA600B3615F /* edit_address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189AA95E285B3EA500B3615F /* edit_address.swift */; };
+		189E04AD284F2D440076D755 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E04AC284F2D430076D755 /* login.swift */; };
+		189E04B0284F31480076D755 /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E04AF284F31480076D755 /* profile.swift */; };
+		189E04B3284F35B30076D755 /* select_profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E04B2284F35B30076D755 /* select_profile.swift */; };
+		189E04B6284F3F170076D755 /* registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E04B5284F3F170076D755 /* registration.swift */; };
+		189E04B9284F42E90076D755 /* browse_product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E04B8284F42E90076D755 /* browse_product.swift */; };
+		189E04BC284F47480076D755 /* browse_product_category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E04BB284F47480076D755 /* browse_product_category.swift */; };
+		18AFB8DC28618CD700895D8F /* edit_manage_product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFB8DB28618CD700895D8F /* edit_manage_product.swift */; };
+		302CBD083B11850EED47E3FA /* Pods_Virtual_Closeout_Virtual_CloseoutUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A507AE1E02A1B7341B820B /* Pods_Virtual_Closeout_Virtual_CloseoutUITests.framework */; };
+		AF144204922FC42B7619DC58 /* Pods_Virtual_Closeout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A3207DE04346B34454448C /* Pods_Virtual_Closeout.framework */; };
+		FB31EB417B2F18090FE7AF43 /* Pods_Virtual_CloseoutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E5901F6CC8CE9BE6D6164E /* Pods_Virtual_CloseoutTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +99,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0204F174BCF182A3BED6E3B7 /* Pods-Virtual Closeout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual Closeout.debug.xcconfig"; path = "Target Support Files/Pods-Virtual Closeout/Pods-Virtual Closeout.debug.xcconfig"; sourceTree = "<group>"; };
+		180ADDDD2864371E00B15F82 /* filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filter.swift; sourceTree = "<group>"; };
+		181A75302851BA3800FB6C84 /* offered_price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = offered_price.swift; sourceTree = "<group>"; };
+		181A75362851BDF000FB6C84 /* change_password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = change_password.swift; sourceTree = "<group>"; };
+		181A75392851C2AF00FB6C84 /* Help.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
+		181A753C2851C46100FB6C84 /* payment_screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = payment_screen.swift; sourceTree = "<group>"; };
+		181A753F2851D86300FB6C84 /* business_information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = business_information.swift; sourceTree = "<group>"; };
+		181A75422851DE3E00FB6C84 /* bank_information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bank_information.swift; sourceTree = "<group>"; };
+		181A75452851E28800FB6C84 /* dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboard.swift; sourceTree = "<group>"; };
+		181A75482851E97C00FB6C84 /* manage_products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = manage_products.swift; sourceTree = "<group>"; };
+		1823D2A52858AFEC00C7DD87 /* buy_now.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buy_now.swift; sourceTree = "<group>"; };
+		182B5A982853143400253DF7 /* add_new_product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = add_new_product.swift; sourceTree = "<group>"; };
+		182B5A9B2853232900253DF7 /* earnings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = earnings.swift; sourceTree = "<group>"; };
+		182B5A9E28532A6500253DF7 /* CashOutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashOutVC.swift; sourceTree = "<group>"; };
+		182B5AA128532A7400253DF7 /* cashout_list.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cashout_list.swift; sourceTree = "<group>"; };
+		182B5AA4285331FB00253DF7 /* review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = review.swift; sourceTree = "<group>"; };
+		1852C49C2850B07E00C3768C /* address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = address.swift; sourceTree = "<group>"; };
+		1852C49F2850C0D900C3768C /* order_history.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = order_history.swift; sourceTree = "<group>"; };
+		1852C4A22850C31100C3768C /* order_history_details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = order_history_details.swift; sourceTree = "<group>"; };
+		185FD9C3286ACE1F00098D58 /* seller_profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seller_profile.swift; sourceTree = "<group>"; };
+		1865537B28534F4600E7B1C2 /* Virtual Closeout-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Virtual Closeout-Bridging-Header.h"; sourceTree = "<group>"; };
+		1865537C28534F4600E7B1C2 /* MenuControllerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuControllerVC.swift; sourceTree = "<group>"; };
+		1865537D28534F4600E7B1C2 /* SidebarMenu-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SidebarMenu-Bridging-Header.h"; sourceTree = "<group>"; };
+		1865537E28534F4600E7B1C2 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		1865537F28534F4700E7B1C2 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		1865538028534F4700E7B1C2 /* MenuControllerVCTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuControllerVCTableCell.swift; sourceTree = "<group>"; };
+		186D1DFA28633DD300837BD7 /* earnings_new.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = earnings_new.swift; sourceTree = "<group>"; };
+		186D1DFB28633DD300837BD7 /* Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
+		186D1DFF28633DFD00837BD7 /* RPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPicker.swift; sourceTree = "<group>"; };
+		1872ADE1284F6112001F1934 /* browse_product_images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = browse_product_images.swift; sourceTree = "<group>"; };
+		1872ADE4284F63BC001F1934 /* product_full_details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = product_full_details.swift; sourceTree = "<group>"; };
+		1886A36C28585E9D00286241 /* chat_room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chat_room.swift; sourceTree = "<group>"; };
+		1886A36E285860D900286241 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		188826F4284F1C9900D19356 /* Virtual Closeout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Virtual Closeout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		188826F7284F1C9900D19356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		188826F9284F1C9900D19356 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,13 +145,57 @@
 		18882714284F1C9C00D19356 /* Virtual CloseoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Virtual CloseoutUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18882718284F1C9C00D19356 /* Virtual_CloseoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Virtual_CloseoutUITests.swift; sourceTree = "<group>"; };
 		1888271A284F1C9C00D19356 /* Virtual_CloseoutUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Virtual_CloseoutUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1888272C284F1EE500D19356 /* ERProgressHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ERProgressHud.swift; sourceTree = "<group>"; };
+		18882730284F1F0000D19356 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		18882731284F1F0100D19356 /* NewYorkAlertViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewYorkAlertViewType.swift; sourceTree = "<group>"; };
+		18882732284F1F0100D19356 /* NewYorkButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewYorkButton.swift; sourceTree = "<group>"; };
+		18882733284F1F0100D19356 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		18882734284F1F0100D19356 /* LeftPaddingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftPaddingTextField.swift; sourceTree = "<group>"; };
+		18882735284F1F0100D19356 /* ActionSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetView.swift; sourceTree = "<group>"; };
+		18882736284F1F0100D19356 /* NewYorkAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewYorkAlertController.swift; sourceTree = "<group>"; };
+		18882737284F1F0100D19356 /* UIStackView+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Utility.swift"; sourceTree = "<group>"; };
+		18882740284F1F1100D19356 /* success3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = success3.gif; sourceTree = "<group>"; };
+		18882741284F1F1100D19356 /* gif_alert.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif_alert.gif; sourceTree = "<group>"; };
+		18882742284F1F1100D19356 /* gif_bin.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif_bin.gif; sourceTree = "<group>"; };
+		18882748284F1F8700D19356 /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
+		1888274A284F1F8D00D19356 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		188AED9828571C87005354FF /* category_sub_category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = category_sub_category.swift; sourceTree = "<group>"; };
+		188AED9B285729D0005354FF /* only_sub_category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = only_sub_category.swift; sourceTree = "<group>"; };
+		1890EB95285063C800FA9334 /* cart_list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cart_list.swift; sourceTree = "<group>"; };
+		18952F2E2859FD2800D27460 /* success_payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = success_payment.swift; sourceTree = "<group>"; };
+		18952F31285A02DD00D27460 /* all_card_list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = all_card_list.swift; sourceTree = "<group>"; };
+		1897694828697D4F008FACFA /* edit_profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = edit_profile.swift; sourceTree = "<group>"; };
+		1897694B28699A7B008FACFA /* my_orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = my_orders.swift; sourceTree = "<group>"; };
+		189AA959285B3CB900B3615F /* COrderHistoryProductDetailsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = COrderHistoryProductDetailsTableCell.swift; sourceTree = "<group>"; };
+		189AA95A285B3CB900B3615F /* COrderHistoryProductDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = COrderHistoryProductDetails.swift; sourceTree = "<group>"; };
+		189AA95E285B3EA500B3615F /* edit_address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = edit_address.swift; sourceTree = "<group>"; };
+		189E04AC284F2D430076D755 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
+		189E04AF284F31480076D755 /* profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
+		189E04B2284F35B30076D755 /* select_profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = select_profile.swift; sourceTree = "<group>"; };
+		189E04B5284F3F170076D755 /* registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registration.swift; sourceTree = "<group>"; };
+		189E04B8284F42E90076D755 /* browse_product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = browse_product.swift; sourceTree = "<group>"; };
+		189E04BB284F47480076D755 /* browse_product_category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = browse_product_category.swift; sourceTree = "<group>"; };
+		18AFB8DB28618CD700895D8F /* edit_manage_product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = edit_manage_product.swift; sourceTree = "<group>"; };
+		48BDBC513611A31B616CDD05 /* Pods-Virtual Closeout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual Closeout.release.xcconfig"; path = "Target Support Files/Pods-Virtual Closeout/Pods-Virtual Closeout.release.xcconfig"; sourceTree = "<group>"; };
+		5E4A0BE12F7FC372E6CC5FCB /* Pods-Virtual CloseoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual CloseoutTests.release.xcconfig"; path = "Target Support Files/Pods-Virtual CloseoutTests/Pods-Virtual CloseoutTests.release.xcconfig"; sourceTree = "<group>"; };
+		70A507AE1E02A1B7341B820B /* Pods_Virtual_Closeout_Virtual_CloseoutUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Virtual_Closeout_Virtual_CloseoutUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82B37A361662631AB198362A /* Pods-Virtual Closeout-Virtual CloseoutUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual Closeout-Virtual CloseoutUITests.debug.xcconfig"; path = "Target Support Files/Pods-Virtual Closeout-Virtual CloseoutUITests/Pods-Virtual Closeout-Virtual CloseoutUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		90E5901F6CC8CE9BE6D6164E /* Pods_Virtual_CloseoutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Virtual_CloseoutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2A3207DE04346B34454448C /* Pods_Virtual_Closeout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Virtual_Closeout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B293D6AB50042D204C5833C7 /* Pods-Virtual CloseoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual CloseoutTests.debug.xcconfig"; path = "Target Support Files/Pods-Virtual CloseoutTests/Pods-Virtual CloseoutTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F79B2F3077FED95D42E9868D /* Pods-Virtual Closeout-Virtual CloseoutUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual Closeout-Virtual CloseoutUITests.release.xcconfig"; path = "Target Support Files/Pods-Virtual Closeout-Virtual CloseoutUITests/Pods-Virtual Closeout-Virtual CloseoutUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B9BDB1142DD36AEC00F16EF2 /* Service */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Service; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		188826F1284F1C9900D19356 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF144204922FC42B7619DC58 /* Pods_Virtual_Closeout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +203,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB31EB417B2F18090FE7AF43 /* Pods_Virtual_CloseoutTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +211,268 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				302CBD083B11850EED47E3FA /* Pods_Virtual_Closeout_Virtual_CloseoutUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180ADDDC2864371000B15F82 /* filter */ = {
+			isa = PBXGroup;
+			children = (
+				180ADDDD2864371E00B15F82 /* filter.swift */,
+			);
+			path = filter;
+			sourceTree = "<group>";
+		};
+		181A75322851BDA000FB6C84 /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				180ADDDC2864371000B15F82 /* filter */,
+				189E04B7284F42B90076D755 /* browse_product */,
+				189E04BA284F472E0076D755 /* browse_product_category */,
+				1872ADE0284F60F0001F1934 /* browse_prodict_images */,
+				1872ADE3284F63A3001F1934 /* product_full_details */,
+				1890EB94285063BA00FA9334 /* cart */,
+				1823D2A42858AFDA00C7DD87 /* buy_now */,
+				1852C49B2850AFFD00C3768C /* address */,
+				1852C49E2850C0BF00C3768C /* order_history */,
+				1852C4A42850C4AA00C3768C /* offered_price */,
+			);
+			path = Customer;
+			sourceTree = "<group>";
+		};
+		181A75332851BDC300FB6C84 /* Seller */ = {
+			isa = PBXGroup;
+			children = (
+				185FD9C2286ACE1200098D58 /* seller_profile */,
+				1897694A28699A6C008FACFA /* my_orders */,
+				182B5A9D28532A2500253DF7 /* cashout */,
+				181A753E2851D85400FB6C84 /* business_information */,
+				181A75412851DE3000FB6C84 /* bank_information */,
+				181A75442851E27C00FB6C84 /* dashboard */,
+				181A75472851E96C00FB6C84 /* manage_products */,
+				18AFB8DA28618CB400895D8F /* edit_product */,
+				182B5A972853141E00253DF7 /* add_new_product */,
+				182B5A9A2853231F00253DF7 /* earnings */,
+				182B5AA3285331F000253DF7 /* review */,
+			);
+			path = Seller;
+			sourceTree = "<group>";
+		};
+		181A75342851BDD400FB6C84 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1897694728697D3E008FACFA /* edit */,
+				189E04B1284F35920076D755 /* get_started_now */,
+				18952F30285A02C500D27460 /* all_card_list */,
+				189E04AE284F31340076D755 /* profile */,
+				189E04AB284F2D370076D755 /* login */,
+				189E04B4284F3F0B0076D755 /* registration */,
+				181A753B2851C44E00FB6C84 /* payment */,
+				181A75352851BDE200FB6C84 /* change_password */,
+				181A75382851C2A200FB6C84 /* help */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		181A75352851BDE200FB6C84 /* change_password */ = {
+			isa = PBXGroup;
+			children = (
+				181A75362851BDF000FB6C84 /* change_password.swift */,
+			);
+			path = change_password;
+			sourceTree = "<group>";
+		};
+		181A75382851C2A200FB6C84 /* help */ = {
+			isa = PBXGroup;
+			children = (
+				181A75392851C2AF00FB6C84 /* Help.swift */,
+			);
+			path = help;
+			sourceTree = "<group>";
+		};
+		181A753B2851C44E00FB6C84 /* payment */ = {
+			isa = PBXGroup;
+			children = (
+				181A753C2851C46100FB6C84 /* payment_screen.swift */,
+			);
+			path = payment;
+			sourceTree = "<group>";
+		};
+		181A753E2851D85400FB6C84 /* business_information */ = {
+			isa = PBXGroup;
+			children = (
+				181A753F2851D86300FB6C84 /* business_information.swift */,
+			);
+			path = business_information;
+			sourceTree = "<group>";
+		};
+		181A75412851DE3000FB6C84 /* bank_information */ = {
+			isa = PBXGroup;
+			children = (
+				181A75422851DE3E00FB6C84 /* bank_information.swift */,
+			);
+			path = bank_information;
+			sourceTree = "<group>";
+		};
+		181A75442851E27C00FB6C84 /* dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				181A75452851E28800FB6C84 /* dashboard.swift */,
+			);
+			path = dashboard;
+			sourceTree = "<group>";
+		};
+		181A75472851E96C00FB6C84 /* manage_products */ = {
+			isa = PBXGroup;
+			children = (
+				181A75482851E97C00FB6C84 /* manage_products.swift */,
+			);
+			path = manage_products;
+			sourceTree = "<group>";
+		};
+		1823D2A42858AFDA00C7DD87 /* buy_now */ = {
+			isa = PBXGroup;
+			children = (
+				1823D2A52858AFEC00C7DD87 /* buy_now.swift */,
+			);
+			path = buy_now;
+			sourceTree = "<group>";
+		};
+		182B5A972853141E00253DF7 /* add_new_product */ = {
+			isa = PBXGroup;
+			children = (
+				182B5A982853143400253DF7 /* add_new_product.swift */,
+				188AED9728571C74005354FF /* category_subcategory */,
+			);
+			path = add_new_product;
+			sourceTree = "<group>";
+		};
+		182B5A9A2853231F00253DF7 /* earnings */ = {
+			isa = PBXGroup;
+			children = (
+				186D1DFB28633DD300837BD7 /* Custom.swift */,
+				186D1DFA28633DD300837BD7 /* earnings_new.swift */,
+				182B5A9B2853232900253DF7 /* earnings.swift */,
+			);
+			path = earnings;
+			sourceTree = "<group>";
+		};
+		182B5A9D28532A2500253DF7 /* cashout */ = {
+			isa = PBXGroup;
+			children = (
+				182B5AA028532A6B00253DF7 /* cashout_list */,
+				182B5A9E28532A6500253DF7 /* CashOutVC.swift */,
+			);
+			path = cashout;
+			sourceTree = "<group>";
+		};
+		182B5AA028532A6B00253DF7 /* cashout_list */ = {
+			isa = PBXGroup;
+			children = (
+				182B5AA128532A7400253DF7 /* cashout_list.swift */,
+			);
+			path = cashout_list;
+			sourceTree = "<group>";
+		};
+		182B5AA3285331F000253DF7 /* review */ = {
+			isa = PBXGroup;
+			children = (
+				182B5AA4285331FB00253DF7 /* review.swift */,
+			);
+			path = review;
+			sourceTree = "<group>";
+		};
+		1852C49B2850AFFD00C3768C /* address */ = {
+			isa = PBXGroup;
+			children = (
+				1852C49C2850B07E00C3768C /* address.swift */,
+				189AA95D285B3E9300B3615F /* edit_address */,
+			);
+			path = address;
+			sourceTree = "<group>";
+		};
+		1852C49E2850C0BF00C3768C /* order_history */ = {
+			isa = PBXGroup;
+			children = (
+				1852C49F2850C0D900C3768C /* order_history.swift */,
+				189AA958285B3CAA00B3615F /* history_product_details */,
+				1852C4A12850C2FF00C3768C /* order_history_details */,
+			);
+			path = order_history;
+			sourceTree = "<group>";
+		};
+		1852C4A12850C2FF00C3768C /* order_history_details */ = {
+			isa = PBXGroup;
+			children = (
+				1852C4A22850C31100C3768C /* order_history_details.swift */,
+			);
+			path = order_history_details;
+			sourceTree = "<group>";
+		};
+		1852C4A42850C4AA00C3768C /* offered_price */ = {
+			isa = PBXGroup;
+			children = (
+				181A75302851BA3800FB6C84 /* offered_price.swift */,
+			);
+			path = offered_price;
+			sourceTree = "<group>";
+		};
+		185FD9C2286ACE1200098D58 /* seller_profile */ = {
+			isa = PBXGroup;
+			children = (
+				185FD9C3286ACE1F00098D58 /* seller_profile.swift */,
+			);
+			path = seller_profile;
+			sourceTree = "<group>";
+		};
+		1865537A28534F3800E7B1C2 /* side_bar_menu */ = {
+			isa = PBXGroup;
+			children = (
+				1865537C28534F4600E7B1C2 /* MenuControllerVC.swift */,
+				1865538028534F4700E7B1C2 /* MenuControllerVCTableCell.swift */,
+				1865537D28534F4600E7B1C2 /* SidebarMenu-Bridging-Header.h */,
+				1865537E28534F4600E7B1C2 /* SWRevealViewController.h */,
+				1865537F28534F4700E7B1C2 /* SWRevealViewController.m */,
+				1865537B28534F4600E7B1C2 /* Virtual Closeout-Bridging-Header.h */,
+			);
+			path = side_bar_menu;
+			sourceTree = "<group>";
+		};
+		186D1DFE28633DF100837BD7 /* r-picker */ = {
+			isa = PBXGroup;
+			children = (
+				186D1DFF28633DFD00837BD7 /* RPicker.swift */,
+			);
+			path = "r-picker";
+			sourceTree = "<group>";
+		};
+		1872ADE0284F60F0001F1934 /* browse_prodict_images */ = {
+			isa = PBXGroup;
+			children = (
+				1872ADE1284F6112001F1934 /* browse_product_images.swift */,
+			);
+			path = browse_prodict_images;
+			sourceTree = "<group>";
+		};
+		1872ADE3284F63A3001F1934 /* product_full_details */ = {
+			isa = PBXGroup;
+			children = (
+				1872ADE4284F63BC001F1934 /* product_full_details.swift */,
+			);
+			path = product_full_details;
+			sourceTree = "<group>";
+		};
+		1886A36B28585E5E00286241 /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				1886A36C28585E9D00286241 /* chat_room.swift */,
+			);
+			path = chat;
+			sourceTree = "<group>";
+		};
 		188826EB284F1C9900D19356 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +480,8 @@
 				1888270D284F1C9C00D19356 /* Virtual CloseoutTests */,
 				18882717284F1C9C00D19356 /* Virtual CloseoutUITests */,
 				188826F5284F1C9900D19356 /* Products */,
+				A77989216D286022AA6ADCE7 /* Pods */,
+				C0EA81D327DE733BDF2C2869 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +498,7 @@
 		188826F6284F1C9900D19356 /* Virtual Closeout */ = {
 			isa = PBXGroup;
 			children = (
+				18882727284F1E9900D19356 /* Controllers */,
 				188826F7284F1C9900D19356 /* AppDelegate.swift */,
 				188826F9284F1C9900D19356 /* SceneDelegate.swift */,
 				188826FB284F1C9900D19356 /* ViewController.swift */,
@@ -106,6 +506,7 @@
 				18882700284F1C9C00D19356 /* Assets.xcassets */,
 				18882702284F1C9C00D19356 /* LaunchScreen.storyboard */,
 				18882705284F1C9C00D19356 /* Info.plist */,
+				1886A36E285860D900286241 /* GoogleService-Info.plist */,
 			);
 			path = "Virtual Closeout";
 			sourceTree = "<group>";
@@ -127,6 +528,252 @@
 			path = "Virtual CloseoutUITests";
 			sourceTree = "<group>";
 		};
+		18882727284F1E9900D19356 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18882729284F1EB200D19356 /* Header */,
+				1888272A284F1EB800D19356 /* Thirdparty */,
+				18882728284F1EAA00D19356 /* Classes */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18882728284F1EAA00D19356 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B9BDB1142DD36AEC00F16EF2 /* Service */,
+				18952F2D2859FD1800D27460 /* success_payment */,
+				1886A36B28585E5E00286241 /* chat */,
+				181A75342851BDD400FB6C84 /* Common */,
+				181A75322851BDA000FB6C84 /* Customer */,
+				181A75332851BDC300FB6C84 /* Seller */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		18882729284F1EB200D19356 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				18882746284F1F7600D19356 /* utils */,
+				18882747284F1F7C00D19356 /* parameter */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		1888272A284F1EB800D19356 /* Thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+				186D1DFE28633DF100837BD7 /* r-picker */,
+				1865537A28534F3800E7B1C2 /* side_bar_menu */,
+				1888272F284F1EF200D19356 /* gif */,
+				1888272E284F1EEB00D19356 /* alert */,
+				1888272B284F1ED800D19356 /* indicator */,
+			);
+			path = Thirdparty;
+			sourceTree = "<group>";
+		};
+		1888272B284F1ED800D19356 /* indicator */ = {
+			isa = PBXGroup;
+			children = (
+				1888272C284F1EE500D19356 /* ERProgressHud.swift */,
+			);
+			path = indicator;
+			sourceTree = "<group>";
+		};
+		1888272E284F1EEB00D19356 /* alert */ = {
+			isa = PBXGroup;
+			children = (
+				18882735284F1F0100D19356 /* ActionSheetView.swift */,
+				18882733284F1F0100D19356 /* AlertView.swift */,
+				18882730284F1F0000D19356 /* Color.swift */,
+				18882734284F1F0100D19356 /* LeftPaddingTextField.swift */,
+				18882736284F1F0100D19356 /* NewYorkAlertController.swift */,
+				18882731284F1F0100D19356 /* NewYorkAlertViewType.swift */,
+				18882732284F1F0100D19356 /* NewYorkButton.swift */,
+				18882737284F1F0100D19356 /* UIStackView+Utility.swift */,
+			);
+			path = alert;
+			sourceTree = "<group>";
+		};
+		1888272F284F1EF200D19356 /* gif */ = {
+			isa = PBXGroup;
+			children = (
+				18882741284F1F1100D19356 /* gif_alert.gif */,
+				18882742284F1F1100D19356 /* gif_bin.gif */,
+				18882740284F1F1100D19356 /* success3.gif */,
+			);
+			path = gif;
+			sourceTree = "<group>";
+		};
+		18882746284F1F7600D19356 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				1888274A284F1F8D00D19356 /* Utils.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		18882747284F1F7C00D19356 /* parameter */ = {
+			isa = PBXGroup;
+			children = (
+				18882748284F1F8700D19356 /* Parameter.swift */,
+			);
+			path = parameter;
+			sourceTree = "<group>";
+		};
+		188AED9728571C74005354FF /* category_subcategory */ = {
+			isa = PBXGroup;
+			children = (
+				188AED9828571C87005354FF /* category_sub_category.swift */,
+				188AED9A285729BF005354FF /* only_sub_category */,
+			);
+			path = category_subcategory;
+			sourceTree = "<group>";
+		};
+		188AED9A285729BF005354FF /* only_sub_category */ = {
+			isa = PBXGroup;
+			children = (
+				188AED9B285729D0005354FF /* only_sub_category.swift */,
+			);
+			path = only_sub_category;
+			sourceTree = "<group>";
+		};
+		1890EB94285063BA00FA9334 /* cart */ = {
+			isa = PBXGroup;
+			children = (
+				1890EB95285063C800FA9334 /* cart_list.swift */,
+			);
+			path = cart;
+			sourceTree = "<group>";
+		};
+		18952F2D2859FD1800D27460 /* success_payment */ = {
+			isa = PBXGroup;
+			children = (
+				18952F2E2859FD2800D27460 /* success_payment.swift */,
+			);
+			path = success_payment;
+			sourceTree = "<group>";
+		};
+		18952F30285A02C500D27460 /* all_card_list */ = {
+			isa = PBXGroup;
+			children = (
+				18952F31285A02DD00D27460 /* all_card_list.swift */,
+			);
+			path = all_card_list;
+			sourceTree = "<group>";
+		};
+		1897694728697D3E008FACFA /* edit */ = {
+			isa = PBXGroup;
+			children = (
+				1897694828697D4F008FACFA /* edit_profile.swift */,
+			);
+			path = edit;
+			sourceTree = "<group>";
+		};
+		1897694A28699A6C008FACFA /* my_orders */ = {
+			isa = PBXGroup;
+			children = (
+				1897694B28699A7B008FACFA /* my_orders.swift */,
+			);
+			path = my_orders;
+			sourceTree = "<group>";
+		};
+		189AA958285B3CAA00B3615F /* history_product_details */ = {
+			isa = PBXGroup;
+			children = (
+				189AA95A285B3CB900B3615F /* COrderHistoryProductDetails.swift */,
+				189AA959285B3CB900B3615F /* COrderHistoryProductDetailsTableCell.swift */,
+			);
+			path = history_product_details;
+			sourceTree = "<group>";
+		};
+		189AA95D285B3E9300B3615F /* edit_address */ = {
+			isa = PBXGroup;
+			children = (
+				189AA95E285B3EA500B3615F /* edit_address.swift */,
+			);
+			path = edit_address;
+			sourceTree = "<group>";
+		};
+		189E04AB284F2D370076D755 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				189E04AC284F2D430076D755 /* login.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		189E04AE284F31340076D755 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				189E04AF284F31480076D755 /* profile.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		189E04B1284F35920076D755 /* get_started_now */ = {
+			isa = PBXGroup;
+			children = (
+				189E04B2284F35B30076D755 /* select_profile.swift */,
+			);
+			path = get_started_now;
+			sourceTree = "<group>";
+		};
+		189E04B4284F3F0B0076D755 /* registration */ = {
+			isa = PBXGroup;
+			children = (
+				189E04B5284F3F170076D755 /* registration.swift */,
+			);
+			path = registration;
+			sourceTree = "<group>";
+		};
+		189E04B7284F42B90076D755 /* browse_product */ = {
+			isa = PBXGroup;
+			children = (
+				189E04B8284F42E90076D755 /* browse_product.swift */,
+			);
+			path = browse_product;
+			sourceTree = "<group>";
+		};
+		189E04BA284F472E0076D755 /* browse_product_category */ = {
+			isa = PBXGroup;
+			children = (
+				189E04BB284F47480076D755 /* browse_product_category.swift */,
+			);
+			path = browse_product_category;
+			sourceTree = "<group>";
+		};
+		18AFB8DA28618CB400895D8F /* edit_product */ = {
+			isa = PBXGroup;
+			children = (
+				18AFB8DB28618CD700895D8F /* edit_manage_product.swift */,
+			);
+			path = edit_product;
+			sourceTree = "<group>";
+		};
+		A77989216D286022AA6ADCE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0204F174BCF182A3BED6E3B7 /* Pods-Virtual Closeout.debug.xcconfig */,
+				48BDBC513611A31B616CDD05 /* Pods-Virtual Closeout.release.xcconfig */,
+				82B37A361662631AB198362A /* Pods-Virtual Closeout-Virtual CloseoutUITests.debug.xcconfig */,
+				F79B2F3077FED95D42E9868D /* Pods-Virtual Closeout-Virtual CloseoutUITests.release.xcconfig */,
+				B293D6AB50042D204C5833C7 /* Pods-Virtual CloseoutTests.debug.xcconfig */,
+				5E4A0BE12F7FC372E6CC5FCB /* Pods-Virtual CloseoutTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C0EA81D327DE733BDF2C2869 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2A3207DE04346B34454448C /* Pods_Virtual_Closeout.framework */,
+				70A507AE1E02A1B7341B820B /* Pods_Virtual_Closeout_Virtual_CloseoutUITests.framework */,
+				90E5901F6CC8CE9BE6D6164E /* Pods_Virtual_CloseoutTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,13 +781,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1888271E284F1C9C00D19356 /* Build configuration list for PBXNativeTarget "Virtual Closeout" */;
 			buildPhases = (
+				BD03F239194A28F52D199C1A /* [CP] Check Pods Manifest.lock */,
 				188826F0284F1C9900D19356 /* Sources */,
 				188826F1284F1C9900D19356 /* Frameworks */,
 				188826F2284F1C9900D19356 /* Resources */,
+				3CB5C6690F087711D5E773CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B9BDB1142DD36AEC00F16EF2 /* Service */,
 			);
 			name = "Virtual Closeout";
 			productName = "Virtual Closeout";
@@ -151,6 +803,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18882721284F1C9C00D19356 /* Build configuration list for PBXNativeTarget "Virtual CloseoutTests" */;
 			buildPhases = (
+				2E8ACD3EC8DF7071940A3F8E /* [CP] Check Pods Manifest.lock */,
 				18882706284F1C9C00D19356 /* Sources */,
 				18882707284F1C9C00D19356 /* Frameworks */,
 				18882708284F1C9C00D19356 /* Resources */,
@@ -169,9 +822,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18882724284F1C9C00D19356 /* Build configuration list for PBXNativeTarget "Virtual CloseoutUITests" */;
 			buildPhases = (
+				E4BFDF6239D1DE23865A0F23 /* [CP] Check Pods Manifest.lock */,
 				18882710284F1C9C00D19356 /* Sources */,
 				18882711284F1C9C00D19356 /* Frameworks */,
 				18882712284F1C9C00D19356 /* Resources */,
+				6BE73125A8753FF1B3075783 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +850,7 @@
 				TargetAttributes = {
 					188826F3284F1C9900D19356 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					18882709284F1C9C00D19356 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -215,6 +871,9 @@
 				Base,
 			);
 			mainGroup = 188826EB284F1C9900D19356;
+			packageReferences = (
+				1886A3702858618D00286241 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 188826F5284F1C9900D19356 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,9 +890,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18882743284F1F1100D19356 /* success3.gif in Resources */,
+				18882744284F1F1100D19356 /* gif_alert.gif in Resources */,
 				18882704284F1C9C00D19356 /* LaunchScreen.storyboard in Resources */,
 				18882701284F1C9C00D19356 /* Assets.xcassets in Resources */,
 				188826FF284F1C9900D19356 /* Main.storyboard in Resources */,
+				18882745284F1F1100D19356 /* gif_bin.gif in Resources */,
+				1886A36F285860D900286241 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +916,181 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E8ACD3EC8DF7071940A3F8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Virtual CloseoutTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CB5C6690F087711D5E773CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Virtual Closeout/Pods-Virtual Closeout-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Virtual Closeout/Pods-Virtual Closeout-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Virtual Closeout/Pods-Virtual Closeout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BE73125A8753FF1B3075783 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Virtual Closeout-Virtual CloseoutUITests/Pods-Virtual Closeout-Virtual CloseoutUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Virtual Closeout-Virtual CloseoutUITests/Pods-Virtual Closeout-Virtual CloseoutUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Virtual Closeout-Virtual CloseoutUITests/Pods-Virtual Closeout-Virtual CloseoutUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD03F239194A28F52D199C1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Virtual Closeout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4BFDF6239D1DE23865A0F23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Virtual Closeout-Virtual CloseoutUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		188826F0284F1C9900D19356 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182B5A9C2853232900253DF7 /* earnings.swift in Sources */,
+				181A753A2851C2AF00FB6C84 /* Help.swift in Sources */,
+				1865538228534F4700E7B1C2 /* SWRevealViewController.m in Sources */,
+				189AA95B285B3CB900B3615F /* COrderHistoryProductDetailsTableCell.swift in Sources */,
+				189E04B3284F35B30076D755 /* select_profile.swift in Sources */,
 				188826FC284F1C9900D19356 /* ViewController.swift in Sources */,
+				18AFB8DC28618CD700895D8F /* edit_manage_product.swift in Sources */,
+				181A75312851BA3800FB6C84 /* offered_price.swift in Sources */,
+				182B5AA5285331FB00253DF7 /* review.swift in Sources */,
+				189E04AD284F2D440076D755 /* login.swift in Sources */,
+				1897694928697D4F008FACFA /* edit_profile.swift in Sources */,
+				1865538328534F4700E7B1C2 /* MenuControllerVCTableCell.swift in Sources */,
+				186D1DFC28633DD300837BD7 /* earnings_new.swift in Sources */,
+				185FD9C4286ACE1F00098D58 /* seller_profile.swift in Sources */,
 				188826F8284F1C9900D19356 /* AppDelegate.swift in Sources */,
+				181A75492851E97C00FB6C84 /* manage_products.swift in Sources */,
+				1888273F284F1F0100D19356 /* UIStackView+Utility.swift in Sources */,
+				1888274B284F1F8D00D19356 /* Utils.swift in Sources */,
+				189AA95C285B3CB900B3615F /* COrderHistoryProductDetails.swift in Sources */,
 				188826FA284F1C9900D19356 /* SceneDelegate.swift in Sources */,
+				186D1E0028633DFD00837BD7 /* RPicker.swift in Sources */,
+				1872ADE5284F63BC001F1934 /* product_full_details.swift in Sources */,
+				188AED9928571C87005354FF /* category_sub_category.swift in Sources */,
+				18882739284F1F0100D19356 /* NewYorkAlertViewType.swift in Sources */,
+				189E04B6284F3F170076D755 /* registration.swift in Sources */,
+				1888273D284F1F0100D19356 /* ActionSheetView.swift in Sources */,
+				181A75372851BDF000FB6C84 /* change_password.swift in Sources */,
+				18882749284F1F8700D19356 /* Parameter.swift in Sources */,
+				1823D2A62858AFEC00C7DD87 /* buy_now.swift in Sources */,
+				189E04B9284F42E90076D755 /* browse_product.swift in Sources */,
+				1886A36D28585E9D00286241 /* chat_room.swift in Sources */,
+				180ADDDE2864371E00B15F82 /* filter.swift in Sources */,
+				1865538128534F4700E7B1C2 /* MenuControllerVC.swift in Sources */,
+				181A75462851E28800FB6C84 /* dashboard.swift in Sources */,
+				189E04B0284F31480076D755 /* profile.swift in Sources */,
+				181A75402851D86400FB6C84 /* business_information.swift in Sources */,
+				181A75432851DE3E00FB6C84 /* bank_information.swift in Sources */,
+				1852C49D2850B07E00C3768C /* address.swift in Sources */,
+				18882738284F1F0100D19356 /* Color.swift in Sources */,
+				1888273B284F1F0100D19356 /* AlertView.swift in Sources */,
+				181A753D2851C46100FB6C84 /* payment_screen.swift in Sources */,
+				189E04BC284F47480076D755 /* browse_product_category.swift in Sources */,
+				182B5A992853143400253DF7 /* add_new_product.swift in Sources */,
+				1852C4A02850C0D900C3768C /* order_history.swift in Sources */,
+				188AED9C285729D0005354FF /* only_sub_category.swift in Sources */,
+				182B5A9F28532A6500253DF7 /* CashOutVC.swift in Sources */,
+				1888273E284F1F0100D19356 /* NewYorkAlertController.swift in Sources */,
+				1852C4A32850C31100C3768C /* order_history_details.swift in Sources */,
+				1888272D284F1EE500D19356 /* ERProgressHud.swift in Sources */,
+				1890EB96285063C800FA9334 /* cart_list.swift in Sources */,
+				1872ADE2284F6112001F1934 /* browse_product_images.swift in Sources */,
+				18952F32285A02DD00D27460 /* all_card_list.swift in Sources */,
+				182B5AA228532A7400253DF7 /* cashout_list.swift in Sources */,
+				1897694C28699A7B008FACFA /* my_orders.swift in Sources */,
+				189AA95F285B3EA600B3615F /* edit_address.swift in Sources */,
+				186D1DFD28633DD300837BD7 /* Custom.swift in Sources */,
+				18952F2F2859FD2800D27460 /* success_payment.swift in Sources */,
+				1888273A284F1F0100D19356 /* NewYorkButton.swift in Sources */,
+				1888273C284F1F0100D19356 /* LeftPaddingTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,12 +1262,14 @@
 		};
 		1888271F284F1C9C00D19356 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0204F174BCF182A3BED6E3B7 /* Pods-Virtual Closeout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D37Q5QQBDA;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_TEAM = NHVZESNL9B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Virtual Closeout/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -449,23 +1281,27 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.test.Virtual-Closeout";
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evs.virtual-closet-development";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Virtual Closeout/Controllers/Thirdparty/side_bar_menu/Virtual Closeout-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		18882720284F1C9C00D19356 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48BDBC513611A31B616CDD05 /* Pods-Virtual Closeout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D37Q5QQBDA;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_TEAM = NHVZESNL9B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Virtual Closeout/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -477,17 +1313,19 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.test.Virtual-Closeout";
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evs.virtual-closet-development";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Virtual Closeout/Controllers/Thirdparty/side_bar_menu/Virtual Closeout-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		18882722284F1C9C00D19356 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B293D6AB50042D204C5833C7 /* Pods-Virtual CloseoutTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +1346,7 @@
 		};
 		18882723284F1C9C00D19356 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E4A0BE12F7FC372E6CC5FCB /* Pods-Virtual CloseoutTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +1367,7 @@
 		};
 		18882725284F1C9C00D19356 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82B37A361662631AB198362A /* Pods-Virtual Closeout-Virtual CloseoutUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +1386,7 @@
 		};
 		18882726284F1C9C00D19356 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F79B2F3077FED95D42E9868D /* Pods-Virtual Closeout-Virtual CloseoutUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -602,6 +1443,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1886A3702858618D00286241 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 188826EC284F1C9900D19356 /* Project object */;
 }
