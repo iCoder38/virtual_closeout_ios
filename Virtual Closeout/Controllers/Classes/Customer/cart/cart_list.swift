@@ -155,15 +155,16 @@ class cart_list: UIViewController {
         let btn_add:UIButton = sender
 
         let item = self.arr_mut_cart_list[btn_add.tag-1] as? [String:Any]
+        print(item as Any)
         
         // compare quantity
         var product_total_quantity:String! = "0"
         
         // productTotalQuatiity
-        if "\(item!["productTotalQuatiity"]!)" == "" {
+        if "\(item!["ProductQuantity"]!)" == "" {
             product_total_quantity = "1"
         } else {
-            product_total_quantity = "\(item!["productTotalQuatiity"]!)"
+            product_total_quantity = "\(item!["ProductQuantity"]!)"
         }
         
         // user quantity
