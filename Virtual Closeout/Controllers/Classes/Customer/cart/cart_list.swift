@@ -348,11 +348,13 @@ class cart_list: UIViewController {
                                 let item = self.arr_mut_cart_list[indexx] as? [String:Any]
                                  print(item as Any)
 
-                                if "\(item!["productTotalQuatiity"]!)" == "" {
+                                /*if "\(item!["productTotalQuatiity"]!)" == "" {
                                     product_total_quantity = "1"
                                 } else {
                                     product_total_quantity = "\(item!["quantity"]!)"
-                                }
+                                }*/
+                                
+                                product_total_quantity = "\(item!["quantity"]!)"
                                 
                                 print("\(item!["productsalePrice"]!)")
                                 print(product_total_quantity as Any)
@@ -575,21 +577,28 @@ extension cart_list: UITableViewDataSource , UITableViewDelegate {
             
             cell.lbl_cart_count.text = "\(item!["quantity"]!)"
             
-            if "\(item!["quantity"]!)" == "\(item!["productTotalQuatiity"]!)" {
+            if "\(item!["quantity"]!)" == "\(item!["ProductQuantity"]!)" {
                 
                 cell.btn_add_item.isHidden = true
             } else {
                 
                 cell.btn_add_item.isHidden = false
             }
-            
+            // cell.btn_add_item.isHidden = false
             
             
             
             
             cell.img_product.backgroundColor = button_light
             cell.img_product.sd_imageIndicator = SDWebImageActivityIndicator.grayLarge
-            cell.img_product.sd_setImage(with: URL(string: (item!["productImage"] as! String)), placeholderImage: UIImage(named: "logo"))
+            
+            if (item!["image_1"] == nil) {
+                cell.img_product.sd_setImage(with: URL(string: (item!["productImage"] as! String)), placeholderImage: UIImage(named: "logo"))
+            } else {
+                cell.img_product.sd_setImage(with: URL(string: (item!["image_1"] as! String)), placeholderImage: UIImage(named: "logo"))
+            }
+            
+            
             
             cell.btn_add_item.tag = indexPath.row
             cell.btn_add_item.addTarget(self, action: #selector(add_item_click_method), for: .touchUpInside)

@@ -149,20 +149,20 @@ class wishlist: UIViewController {
         
         self.btn_refresh.addTarget(self, action: #selector(refresh_click_method), for: .touchUpInside)
         
-        if self.str_which_product_details == "yes_seller" {
+        /*if self.str_which_product_details == "yes_seller" {
             self.btn_search.addTarget(self, action: #selector(search_click_method_seller), for: .touchUpInside)
         } else {
             self.btn_search.addTarget(self, action: #selector(search_click_method), for: .touchUpInside)
-        }
+        }*/
         
         
         // print(self.str_which_product_details as Any)
         
         
-            
-            self.lblNavigationTitle.text = "Wishlist"
-            self.get_seller_full_profile(page_number: 1)
-            
+        
+        self.lblNavigationTitle.text = "Wishlist"
+        self.get_seller_full_profile(page_number: 1, showLoader: "yes")
+        
         
         
         
@@ -173,11 +173,9 @@ class wishlist: UIViewController {
         self.txt_search.text = ""
         self.arr_mut_list_of_product_images.removeAllObjects()
         
-        if self.str_which_product_details == "yes_seller" {
-            self.product_list_with_image_seller(pageNumber: 1)
-        } else {
-            self.product_list_with_image(pageNumber: 1)
-        }
+         
+        self.get_seller_full_profile(page_number: 1, showLoader: "no")
+         
         
     }
     
@@ -217,7 +215,7 @@ class wishlist: UIViewController {
     
     
     
-    @objc func search_click_method() {
+    /*@objc func search_click_method() {
         self.arr_mut_list_of_product_images.removeAllObjects()
         
         self.view.endEditing(true)
@@ -284,9 +282,9 @@ class wishlist: UIViewController {
                 
             }
         }
-    }
+    }*/
     
-    @objc func search_click_method_seller() {
+    /*@objc func search_click_method_seller() {
         self.arr_mut_list_of_product_images.removeAllObjects()
         
         self.view.endEditing(true)
@@ -353,10 +351,10 @@ class wishlist: UIViewController {
                 
             }
         }
-    }
+    }*/
     
     
-    @objc func product_list_with_image(pageNumber:Int) {
+    /*@objc func product_list_with_image(pageNumber:Int) {
         
         //
         
@@ -423,9 +421,9 @@ class wishlist: UIViewController {
                 
             }
         }
-    }
+    }*/
     
-    @objc func product_list_with_image_seller(pageNumber:Int) {
+    /*@objc func product_list_with_image_seller(pageNumber:Int) {
         
         //
         
@@ -492,7 +490,7 @@ class wishlist: UIViewController {
                 
             }
         }
-    }
+    }*/
     
     
     
@@ -544,7 +542,7 @@ class wishlist: UIViewController {
                 print("gallery clicked done")
                 
                 self.arr_mut_list_of_product_images.removeAllObjects()
-                self.product_list_with_image(pageNumber: 1)
+                 
                 
             }
             
@@ -598,7 +596,7 @@ class wishlist: UIViewController {
                 print("gallery clicked done")
                 
                 self.arr_mut_list_of_product_images.removeAllObjects()
-                self.product_list_with_image(pageNumber: 1)
+                 
                 
             }
             
@@ -929,15 +927,11 @@ class wishlist: UIViewController {
                     page += 1
                     print(page as Any)
                     
-                    if self.str_which_product_details == "yes_seller" {
+                    
                         
-                        self.get_seller_full_profile(page_number: page)
+                    self.get_seller_full_profile(page_number: page, showLoader: "yes")
                         
-                    } else {
-                        
-                        self.product_list_with_image(pageNumber: page)
-                        
-                    }
+                    
                     
                     
                 }
@@ -945,13 +939,92 @@ class wishlist: UIViewController {
         }
     }
     
-    @objc func get_seller_full_profile(page_number:Int) {
-        // ERProgressHud.sharedInstance.showDarkBackgroundView(withTitle: "please wait...")
+    
+    @objc func removeFromWishlistClickMethod(_ sender:UIButton) {
+        
+       ERProgressHud.sharedInstance.showDarkBackgroundView(withTitle: "please wait...")
+         
+        let item = self.arr_mut_list_of_product_images[sender.tag] as? [String:Any]
+        print(item as Any)
+        
+        self.view.endEditing(true)
+        if let person = UserDefaults.standard.value(forKey: key_user_default_value) as? [String:Any] {
+            // let str:String = person["role"] as! String
+            
+            let x : Int = person["userId"] as! Int
+            let myString = String(x)
+            let params = removeFromWishlist(action: "deletewishlist",
+                                               userId: String(myString),
+                                            wishlistId: "\(item!["wishlistId"]!)")
+            
+            print(params)
+            
+            AF.request(APPLICATION_BASE_URL,
+                       method: .post,
+                       parameters: params,
+                       encoder: JSONParameterEncoder.default).responseJSON { response in
+                // debugPrint(response.result)
+                
+                switch response.result {
+                case let .success(value):
+                    
+                    let JSON = value as! NSDictionary
+                    print(JSON as Any)
+                    
+                    var strSuccess : String!
+                    strSuccess = JSON["status"]as Any as? String
+                    
+                    // var strSuccess2 : String!
+                    // strSuccess2 = JSON["msg"]as Any as? String
+                    
+                    if strSuccess == String("success") {
+                        print("yes")
+                        self.arr_mut_list_of_product_images.removeAllObjects()
+                        self.get_seller_full_profile(page_number: 1, showLoader: "no")
+                        
+                    }else if strSuccess == String("Success") {
+                        print("yes")
+                        self.arr_mut_list_of_product_images.removeAllObjects()
+                        self.get_seller_full_profile(page_number: 1, showLoader: "no")
+                        
+                    } else {
+                        print("no")
+                        ERProgressHud.sharedInstance.hide()
+                        
+                        var strSuccess2 : String!
+                        strSuccess2 = JSON["msg"]as Any as? String
+                        
+                        Utils.showAlert(alerttitle: String(strSuccess), alertmessage: String(strSuccess2), ButtonTitle: "Ok", viewController: self)
+                        
+                    }
+                    
+                case let .failure(error):
+                    print(error)
+                    ERProgressHud.sharedInstance.hide()
+                    
+                    // Utils.showAlert(alerttitle: SERVER_ISSUE_TITLE, alertmessage: SERVER_ISSUE_MESSAGE, ButtonTitle: "Ok", viewController: self)
+                }
+            }
+        }
+            
+    }
+    
+    
+    
+    @objc func get_seller_full_profile(page_number:Int,showLoader:String) {
+        if (showLoader == "yes"){
+            ERProgressHud.sharedInstance.showDarkBackgroundView(withTitle: "please wait...")
+        }
+         
             
         self.view.endEditing(true)
-             
+        if let person = UserDefaults.standard.value(forKey: key_user_default_value) as? [String:Any] {
+            // let str:String = person["role"] as! String
+            
+            let x : Int = person["userId"] as! Int
+            let myString = String(x)
             let params = seller_profile_params(action: "wishlist",
-                                               userId: String(self.str_seller_id_for_product),
+                                               userId: String(myString),
                                                pageNo: page_number)
             
             print(params)
@@ -960,53 +1033,53 @@ class wishlist: UIViewController {
                        method: .post,
                        parameters: params,
                        encoder: JSONParameterEncoder.default).responseJSON { response in
-                        // debugPrint(response.result)
+                // debugPrint(response.result)
+                
+                switch response.result {
+                case let .success(value):
+                    
+                    let JSON = value as! NSDictionary
+                    print(JSON as Any)
+                    
+                    var strSuccess : String!
+                    strSuccess = JSON["status"]as Any as? String
+                    
+                    // var strSuccess2 : String!
+                    // strSuccess2 = JSON["msg"]as Any as? String
+                    
+                    if strSuccess == String("success") {
+                        print("yes")
+                        ERProgressHud.sharedInstance.hide()
                         
-                        switch response.result {
-                        case let .success(value):
-                            
-                            let JSON = value as! NSDictionary
-                              print(JSON as Any)
-                            
-                            var strSuccess : String!
-                            strSuccess = JSON["status"]as Any as? String
-                            
-                            // var strSuccess2 : String!
-                            // strSuccess2 = JSON["msg"]as Any as? String
-                            
-                            if strSuccess == String("success") {
-                                print("yes")
-                                 ERProgressHud.sharedInstance.hide()
-                               
-                                
-                                var ar : NSArray!
-                                ar = (JSON["data"] as! Array<Any>) as NSArray
-                                self.arr_mut_list_of_product_images.addObjects(from: ar as! [Any])
-//
-                                self.collectionView.delegate = self
-                                self.collectionView.dataSource = self
-                                self.collectionView.reloadData()
-                                self.loadMore = 1
-                                
-                            } else {
-                                print("no")
-                                ERProgressHud.sharedInstance.hide()
-                                
-                                var strSuccess2 : String!
-                                strSuccess2 = JSON["msg"]as Any as? String
-                                
-                                Utils.showAlert(alerttitle: String(strSuccess), alertmessage: String(strSuccess2), ButtonTitle: "Ok", viewController: self)
-                                
-                            }
-                            
-                        case let .failure(error):
-                            print(error)
-                            ERProgressHud.sharedInstance.hide()
-                            
-                            // Utils.showAlert(alerttitle: SERVER_ISSUE_TITLE, alertmessage: SERVER_ISSUE_MESSAGE, ButtonTitle: "Ok", viewController: self)
-                        }
+                        
+                        var ar : NSArray!
+                        ar = (JSON["data"] as! Array<Any>) as NSArray
+                        self.arr_mut_list_of_product_images.addObjects(from: ar as! [Any])
+                        //
+                        self.collectionView.delegate = self
+                        self.collectionView.dataSource = self
+                        self.collectionView.reloadData()
+                        self.loadMore = 1
+                        
+                    } else {
+                        print("no")
+                        ERProgressHud.sharedInstance.hide()
+                        
+                        var strSuccess2 : String!
+                        strSuccess2 = JSON["msg"]as Any as? String
+                        
+                        Utils.showAlert(alerttitle: String(strSuccess), alertmessage: String(strSuccess2), ButtonTitle: "Ok", viewController: self)
+                        
+                    }
+                    
+                case let .failure(error):
+                    print(error)
+                    ERProgressHud.sharedInstance.hide()
+                    
+                    // Utils.showAlert(alerttitle: SERVER_ISSUE_TITLE, alertmessage: SERVER_ISSUE_MESSAGE, ButtonTitle: "Ok", viewController: self)
                 }
-            
+            }
+        }
             
     }
     
@@ -1025,27 +1098,18 @@ extension wishlist: UICollectionViewDelegate , UICollectionViewDataSource , UICo
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "wishlist_collection_cell", for: indexPath as IndexPath) as! wishlist_collection_cell
         
         let item = self.arr_mut_list_of_product_images[indexPath.row] as? [String:Any]
+        print(item as Any)
+        
         cell.img_product_image.backgroundColor = .white
         
         cell.lbl_product_name.text = (item!["productName"] as! String)
         cell.lbl_product_price.text = "$\(item!["salePrice"]!)"
         
-        /*let fv = (item!["salePrice"]!)
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .currency
-        formatter.maximumFractionDigits = 0
-         cell.lbl_product_price.text = formatter.string(from: fv as! NSNumber)*/
-        // resultFV.text = formatter.stringFromNumber(fv)
-        
-        let bigNumber = Double("\(item!["salePrice"]!)")
-        let numberFormatter = NumberFormatter()
-        numberFormatter.numberStyle = .currency
-        let formattedNumber = numberFormatter.string(from: bigNumber! as NSNumber)
-        // print(formattedNumber)
-        cell.lbl_product_price.text = "\(formattedNumber!)"
-        
         cell.img_product_image.sd_imageIndicator = SDWebImageActivityIndicator.grayLarge
-        cell.img_product_image.sd_setImage(with: URL(string: (item!["image_1"] as! String)), placeholderImage: UIImage(named: "logo"))
+        cell.img_product_image.sd_setImage(with: URL(string: (item!["productImage1"] as! String)), placeholderImage: UIImage(named: "logo"))
+        
+        cell.btnHeart.tag = indexPath.row
+        cell.btnHeart.addTarget(self, action: #selector(removeFromWishlistClickMethod), for: .touchUpInside)
         
         cell.backgroundColor  = .clear
         
@@ -1148,5 +1212,7 @@ class wishlist_collection_cell: UICollectionViewCell {
             lbl_product_price.textColor = .black
         }
     }
+    
+    @IBOutlet weak var btnHeart:UIButton!
     
 }

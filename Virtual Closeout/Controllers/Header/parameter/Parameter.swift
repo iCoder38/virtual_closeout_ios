@@ -356,6 +356,12 @@ struct seller_profile_params: Encodable {
     let pageNo:Int
 }
 
+struct removeFromWishlist:Encodable {
+    let action: String
+    let userId:String
+    let wishlistId:String
+}
+
 // MARK: - CHECK USER'S FULL PROFILE -
 struct check_profile_status: Encodable {
     

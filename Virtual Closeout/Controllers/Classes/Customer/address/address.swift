@@ -354,6 +354,19 @@ class address: UIViewController {
         
         self.view.endEditing(true)
         
+        
+        let push = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "all_card_list_id") as? all_card_list
+        
+        push!.get_full_address = self.dict_get_clicked_address
+        push!.get_final_price_in_all_cards_screen = String(self.str_final_amount)
+        push!.get_products_list_in_all_cards_screen = self.arr_mut_get_product_details_address
+        push!.payment_type = String(self.str_i_am_from)
+        
+        self.navigationController?.pushViewController(push!, animated: true)
+        
+        
+        
+        return;
         ERProgressHud.sharedInstance.showDarkBackgroundView(withTitle: "Please wait...")
         
         if let person = UserDefaults.standard.value(forKey: key_user_default_value) as? [String:Any] {

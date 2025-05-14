@@ -66,14 +66,26 @@ class all_card_list: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.btnBack.addTarget(self, action: #selector(back_click_method), for: .touchUpInside)
         
-        //
-        
         print(self.get_full_address as Any)
         print(self.payment_type as Any)
         print(self.get_final_price_in_all_cards_screen as Any)
         print(self.get_products_list_in_all_cards_screen as Any)
         
-        self.card_list_WB()
+        
+        
+        
+        
+        // self.card_list_WB()
+        
+        // temp
+        let push = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "payment_screen_id") as? payment_screen
+        
+        push!.get_full_address_for_payment = self.get_full_address
+        push!.payment_type_payment = String(self.payment_type)
+        push!.get_final_price_in_all_cards_screen_payment = self.get_final_price_in_all_cards_screen
+        push!.get_products_list_in_all_cards_screen_payment = self.get_products_list_in_all_cards_screen
+        
+        self.navigationController?.pushViewController(push!, animated: true)
         
     }
 
