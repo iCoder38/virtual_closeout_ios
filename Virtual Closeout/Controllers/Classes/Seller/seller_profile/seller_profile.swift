@@ -92,7 +92,14 @@ class seller_profile: UIViewController {
         }
     }
     
+    @IBOutlet weak var starButton1: UIButton!
+    @IBOutlet weak var starButton2: UIButton!
+    @IBOutlet weak var starButton3: UIButton!
+    @IBOutlet weak var starButton4: UIButton!
+    @IBOutlet weak var starButton5: UIButton!
     
+    @IBOutlet weak var lblShopName:UILabel!
+    @IBOutlet weak var lblShopAddress:UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -106,6 +113,9 @@ class seller_profile: UIViewController {
         self.get_seller_full_profile()
     }
 
+    
+
+    
     @objc func view_all_click_method() {
         
         let push = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "browse_product_images_id") as? browse_product_images
@@ -131,7 +141,7 @@ class seller_profile: UIViewController {
             AF.request(APPLICATION_BASE_URL,
                        method: .post,
                        parameters: params,
-                       encoder: JSONParameterEncoder.default).responseJSON { response in
+                       encoder: JSONParameterEncoder.default).responseJSON { [self] response in
                         // debugPrint(response.result)
                         
                         switch response.result {
@@ -157,7 +167,14 @@ class seller_profile: UIViewController {
                                 self.img_profile.sd_setImage(with: URL(string: (dict["image"] as! String)), placeholderImage: UIImage(named: "logo"))
                                 
                                 self.lbl_seller_name.text = (dict["fullName"] as! String)
-                                self.lbl_seller_address.text = (dict["address"] as! String)
+                                self.lbl_seller_address.text = (dict["city"] as! String)+","+(dict["state"] as! String)+","+(dict["country"] as! String)
+                                
+                                // businessName = "New way electronics";
+                                self.lblShopName.text = "\(dict["businessName"]!)"
+                                self.lblShopAddress.text = (dict["city"] as! String)+","+(dict["state"] as! String)+","+(dict["country"] as! String)
+                                
+                                // stars
+                                updateStars(ratingString: "\(dict["AVGRating"]!)")
                                 
                                  self.seller_profile_WB()
                                 
@@ -182,6 +199,24 @@ class seller_profile: UIViewController {
             
             
     }
+    
+    func updateStars(ratingString: String) {
+        guard let rating = Int(ratingString), rating >= 0 else {
+            print("Invalid rating string")
+            return
+        }
+        
+        let starButtons = [starButton1, starButton2, starButton3, starButton4, starButton5]
+        
+        for (index, button) in starButtons.enumerated() {
+            if index < rating {
+                button?.setImage(UIImage(systemName: "star.fill"), for: .normal)
+            } else {
+                button?.setImage(UIImage(systemName: "star"), for: .normal)
+            }
+        }
+    }
+
     
     @objc func seller_profile_WB() {
         // ERProgressHud.sharedInstance.showDarkBackgroundView(withTitle: "please wait...")
@@ -337,5 +372,7 @@ class seller_profile_collection_cell: UICollectionViewCell {
         }
     }
     
+   
+
     
 }

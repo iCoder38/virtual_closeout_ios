@@ -152,9 +152,6 @@ class order_history: UIViewController {
         }
 
      }
-    
-    
-     
 }
 
 
@@ -209,13 +206,13 @@ extension order_history: UITableViewDataSource , UITableViewDelegate {
          transactionId = "";
          */
         
-         let item = self.arr_mut_order_history[indexPath.row] as? [String:Any]
+        let item = self.arr_mut_order_history[indexPath.row] as? [String:Any]
         print(item as Any)
         
-    let x222 : Int = (item!["purcheseId"] as! Int)
+        let x222 : Int = (item!["purcheseId"] as! Int)
         let myString222 = String(x222)
         
-        cell.lblTitle.text    = "Item "+"#"+myString222//(item!["ShippingName"] as! String)
+        cell.lblTitle.text    = "\(item!["productName"]!)"
         cell.lblCreatedAt.text    = (item!["created"] as! String)
         
         // total number of products
@@ -225,7 +222,7 @@ extension order_history: UITableViewDataSource , UITableViewDelegate {
         let x22 : Int = (item!["totalAmount"] as! Int)
         let myString22 = String(x22)
         
-         cell.lblQuantity.text = "Quantity : \(item!["quantity"]!)"
+        cell.lblQuantity.text = "Quantity : \(item!["quantity"]!)"
         cell.lblPrice.text = "Price : $ "+myString22
         cell.lblPrice.textColor = button_dark
         

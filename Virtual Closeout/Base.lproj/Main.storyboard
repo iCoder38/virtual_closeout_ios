@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="axe-X2-Avw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="axe-X2-Avw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -58,7 +59,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continue as a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEh-VJ-egz">
-                                <rect key="frame" x="20" y="690" width="374" height="22"/>
+                                <rect key="frame" x="20" y="656" width="374" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="bCs-Fj-FzT"/>
                                 </constraints>
@@ -67,7 +68,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZC-rd-Gh9">
-                                <rect key="frame" x="20" y="787" width="374" height="55"/>
+                                <rect key="frame" x="20" y="753" width="374" height="55"/>
                                 <color key="backgroundColor" red="0.39213857050000001" green="0.86467242239999997" blue="0.62492793800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="qS8-VC-Ko1"/>
@@ -78,7 +79,7 @@
                                 <state key="normal" title="Create an account"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDL-6q-55S">
-                                <rect key="frame" x="20" y="722" width="374" height="55"/>
+                                <rect key="frame" x="20" y="688" width="374" height="55"/>
                                 <color key="backgroundColor" red="0.39213857050000001" green="0.86467242239999997" blue="0.62492793800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="RcZ-Dj-noO"/>
@@ -91,7 +92,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Virtual closeout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gej-0H-7rx">
-                                <rect key="frame" x="20" y="660" width="374" height="22"/>
+                                <rect key="frame" x="20" y="626" width="374" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="Ccd-jE-w4O"/>
                                 </constraints>
@@ -194,7 +195,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get started now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgb-5d-00c">
-                                <rect key="frame" x="20" y="690" width="374" height="22"/>
+                                <rect key="frame" x="20" y="656" width="374" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="bs9-ni-lrw"/>
                                 </constraints>
@@ -203,7 +204,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNc-Ka-XNa">
-                                <rect key="frame" x="20" y="787" width="374" height="55"/>
+                                <rect key="frame" x="20" y="753" width="374" height="55"/>
                                 <color key="backgroundColor" red="0.39213857050000001" green="0.86467242239999997" blue="0.62492793800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Gnk-1G-KuY"/>
@@ -214,7 +215,7 @@
                                 <state key="normal" title="Create an account"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcJ-bR-hXA">
-                                <rect key="frame" x="20" y="722" width="374" height="55"/>
+                                <rect key="frame" x="20" y="688" width="374" height="55"/>
                                 <color key="backgroundColor" red="0.39213857050000001" green="0.86467242239999997" blue="0.62492793800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="kGK-5g-D4v"/>
@@ -227,7 +228,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Virtual closeout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cc8-x2-aQK">
-                                <rect key="frame" x="20" y="660" width="374" height="22"/>
+                                <rect key="frame" x="20" y="626" width="374" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="lX0-Fr-Ad2"/>
                                 </constraints>
@@ -319,7 +320,7 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bkp-0Z-843">
-                                <rect key="frame" x="20" y="430" width="374" height="349"/>
+                                <rect key="frame" x="20" y="396" width="374" height="349"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgH-qb-71a">
                                         <rect key="frame" x="8" y="301" width="358" height="40"/>
@@ -477,7 +478,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIr-Bo-6Bi">
-                                <rect key="frame" x="20" y="787" width="374" height="55"/>
+                                <rect key="frame" x="20" y="753" width="374" height="55"/>
                                 <color key="backgroundColor" red="0.39213857050000001" green="0.86467242239999997" blue="0.62492793800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Xz2-DD-asC"/>
@@ -593,7 +594,7 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLS-VH-abt">
-                                <rect key="frame" x="20" y="429" width="374" height="350"/>
+                                <rect key="frame" x="20" y="395" width="374" height="350"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9b-fp-dkf">
                                         <rect key="frame" x="8" y="301" width="176" height="40"/>
@@ -758,7 +759,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1RK-6H-2c9">
-                                <rect key="frame" x="20" y="787" width="374" height="55"/>
+                                <rect key="frame" x="20" y="753" width="374" height="55"/>
                                 <color key="backgroundColor" red="0.39213857050000001" green="0.86467242239999997" blue="0.62492793800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="wVE-KM-pDO"/>
@@ -907,7 +908,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="browse_product_table_cell" rowHeight="90" id="xBK-oW-7ki" customClass="browse_product_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="90"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xBK-oW-7ki" id="0Mw-0x-Po2">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
@@ -1065,7 +1066,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="browse_product_category_table_cell" rowHeight="90" id="GNM-E0-8NV" customClass="browse_product_category_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="90"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GNM-E0-8NV" id="AzF-Q7-gqP">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
@@ -1427,7 +1428,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="product_full_details_table_cell" rowHeight="1350" id="fK0-nd-vZA" customClass="product_full_details_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="1350"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="1350"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fK0-nd-vZA" id="tMi-aJ-r12">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="1350"/>
@@ -1491,7 +1492,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtH-ao-M65" customClass="PaddingLabel" customModule="PaddingLabel">
-                                                    <rect key="frame" x="20" y="621" width="53.5" height="21"/>
+                                                    <rect key="frame" x="20" y="621" width="33.5" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="RrU-7X-wq4"/>
                                                     </constraints>
@@ -1514,7 +1515,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Automatic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vac-Ku-LDD" customClass="PaddingLabel" customModule="PaddingLabel">
-                                                    <rect key="frame" x="81.5" y="621" width="95" height="21"/>
+                                                    <rect key="frame" x="61.5" y="621" width="75" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="fnF-Wa-zgQ"/>
                                                     </constraints>
@@ -1537,7 +1538,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regular unleaded" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmC-Gl-92Q" customClass="PaddingLabel" customModule="PaddingLabel">
-                                                    <rect key="frame" x="184.5" y="620" width="150.5" height="21"/>
+                                                    <rect key="frame" x="144.5" y="620" width="130.5" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="5jB-7a-lVY"/>
                                                     </constraints>
@@ -2079,7 +2080,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cart_list_table_cell" rowHeight="134" id="iK6-wD-l0D" customClass="cart_list_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="134"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="134"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iK6-wD-l0D" id="336-zL-i7W">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="134"/>
@@ -2191,7 +2192,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cart_list_table_cell_two" rowHeight="222" id="F79-ue-5UE" customClass="cart_list_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="178.5" width="414" height="222"/>
+                                        <rect key="frame" x="0.0" y="184" width="414" height="222"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F79-ue-5UE" id="cCx-70-Yws">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="222"/>
@@ -2415,7 +2416,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="address_table_cell_one" rowHeight="200" id="XWI-1z-qyY" customClass="address_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="200"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XWI-1z-qyY" id="HM1-IX-fWs">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -2495,7 +2496,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="address_table_cell_three" rowHeight="72" id="tEk-ES-Ww3" customClass="address_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="244.5" width="414" height="72"/>
+                                        <rect key="frame" x="0.0" y="250" width="414" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tEk-ES-Ww3" id="Ny6-Rv-75e">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
@@ -2539,7 +2540,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="address_table_cell_two" rowHeight="931" id="KxD-o8-hBe" customClass="address_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="316.5" width="414" height="931"/>
+                                        <rect key="frame" x="0.0" y="322" width="414" height="931"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KxD-o8-hBe" id="H5f-fB-he1">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="931"/>
@@ -2882,7 +2883,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="order_history_table_cell" rowHeight="116" id="THj-rZ-GYG" customClass="order_history_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="116"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="116"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="THj-rZ-GYG" id="3ao-0I-gc6">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
@@ -3058,7 +3059,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellOne" rowHeight="116" id="AsU-6c-GmZ" customClass="order_history_details_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="116"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="116"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AsU-6c-GmZ" id="cEy-aF-cfA">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
@@ -3150,7 +3151,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellTwo" rowHeight="200" id="DpC-84-KPU" customClass="order_history_details_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="160.5" width="414" height="200"/>
+                                        <rect key="frame" x="0.0" y="166" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DpC-84-KPU" id="pFM-ij-kas">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -3230,7 +3231,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellThree" rowHeight="150" id="A3s-3T-Cum" customClass="order_history_details_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="360.5" width="414" height="150"/>
+                                        <rect key="frame" x="0.0" y="366" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A3s-3T-Cum" id="lwR-1s-qED">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
@@ -3310,7 +3311,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellFour" rowHeight="194" id="yn5-fi-JdF" customClass="order_history_details_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="510.5" width="414" height="194"/>
+                                        <rect key="frame" x="0.0" y="516" width="414" height="194"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yn5-fi-JdF" id="yMN-Tq-Gaf">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="194"/>
@@ -3527,7 +3528,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="offered_price_table_cell" rowHeight="90" id="A3s-Cf-NXa" customClass="offered_price_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="90"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A3s-Cf-NXa" id="ERR-GJ-BTR">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
@@ -3662,7 +3663,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iw2-vI-HrA">
-                                <rect key="frame" x="20" y="800" width="374" height="50"/>
+                                <rect key="frame" x="20" y="766" width="374" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="rwW-5Z-gYC"/>
@@ -3673,7 +3674,7 @@
                                 </state>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VYh-B7-Drr">
-                                <rect key="frame" x="20" y="752" width="374" height="40"/>
+                                <rect key="frame" x="20" y="718" width="374" height="40"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="SRm-qU-hbA"/>
@@ -3683,7 +3684,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uRu-xt-GZ3">
-                                <rect key="frame" x="20" y="704" width="374" height="40"/>
+                                <rect key="frame" x="20" y="670" width="374" height="40"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="DDw-m3-tbX"/>
@@ -3693,7 +3694,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rPz-Ps-Jlk">
-                                <rect key="frame" x="20" y="656" width="374" height="40"/>
+                                <rect key="frame" x="20" y="622" width="374" height="40"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="DFh-Tz-tUh"/>
@@ -3703,7 +3704,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change your account password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AE0-gO-7CL">
-                                <rect key="frame" x="20" y="620" width="374" height="28"/>
+                                <rect key="frame" x="20" y="586" width="374" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="bU8-81-UlY"/>
                                 </constraints>
@@ -3712,7 +3713,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUA-hI-ivG">
-                                <rect key="frame" x="26" y="665" width="22" height="22"/>
+                                <rect key="frame" x="26" y="631" width="22" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="OLO-u9-feR"/>
                                     <constraint firstAttribute="width" constant="22" id="OXI-6b-Hv4"/>
@@ -3720,7 +3721,7 @@
                                 <state key="normal" image="lock.fill" catalog="system"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sl-s7-3jg">
-                                <rect key="frame" x="26" y="713" width="22" height="22"/>
+                                <rect key="frame" x="26" y="679" width="22" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="22" id="FF1-C2-WJb"/>
                                     <constraint firstAttribute="height" constant="22" id="HBi-xw-IbY"/>
@@ -3728,7 +3729,7 @@
                                 <state key="normal" image="lock.fill" catalog="system"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Foy-Dk-MVV">
-                                <rect key="frame" x="26" y="761" width="22" height="22"/>
+                                <rect key="frame" x="26" y="727" width="22" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="22" id="J2b-Xw-jlD"/>
                                     <constraint firstAttribute="height" constant="22" id="JhO-uX-KWi"/>
@@ -3794,7 +3795,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fcJ-X2-22i">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="96" width="414" height="732"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3va-k2-7It">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
@@ -3830,7 +3831,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2022 Virtual Closeout. All Right Reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhV-nL-2Zt">
-                                <rect key="frame" x="20" y="821" width="374" height="21"/>
+                                <rect key="frame" x="20" y="787" width="374" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="9Tg-zT-7oh"/>
                                 </constraints>
@@ -3839,7 +3840,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7t-WX-brH">
-                                <rect key="frame" x="20" y="571" width="374" height="32"/>
+                                <rect key="frame" x="20" y="580" width="374" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="CiV-9d-mtQ"/>
                                 </constraints>
@@ -3849,7 +3850,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52f-P8-rNm">
-                                <rect key="frame" x="20" y="609" width="374" height="32"/>
+                                <rect key="frame" x="20" y="618" width="374" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="37R-wV-4T8"/>
                                 </constraints>
@@ -3859,7 +3860,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNe-ju-zUj">
-                                <rect key="frame" x="20" y="649" width="374" height="32"/>
+                                <rect key="frame" x="20" y="658" width="374" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="b8L-FC-CsS"/>
                                 </constraints>
@@ -3878,7 +3879,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Tz5-0i-Tdb">
-                                <rect key="frame" x="97" y="343" width="220" height="220"/>
+                                <rect key="frame" x="97" y="352" width="220" height="220"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="220" id="NtS-dw-svF"/>
@@ -3974,7 +3975,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="payment_screen_table_cell" rowHeight="542" id="IKn-mA-1Xu" customClass="payment_screen_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="542"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="542"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IKn-mA-1Xu" id="CIj-tl-MxC">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="542"/>
@@ -4276,7 +4277,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="business_information_table_cell" rowHeight="982" id="PXP-3N-XkF" customClass="business_information_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="982"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="982"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PXP-3N-XkF" id="bdB-e9-z8r">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="982"/>
@@ -4576,7 +4577,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bank_information_table_cell" rowHeight="982" id="8wc-sP-5ot" customClass="bank_information_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="982"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="982"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8wc-sP-5ot" id="glm-pc-9Tn">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="982"/>
@@ -4769,7 +4770,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discover-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q5e-sD-THF">
-                                <rect key="frame" x="0.0" y="86" width="414" height="647"/>
+                                <rect key="frame" x="0.0" y="138" width="414" height="561"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WiC-TP-3TX">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
@@ -5006,7 +5007,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="manage_products_table_cell" rowHeight="110" id="8bK-QI-kWN" customClass="manage_products_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="110"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8bK-QI-kWN" id="gkG-CN-Hs1">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
@@ -5173,7 +5174,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="add_new_product_table_cell" rowHeight="1436" id="m9b-7y-sWK" customClass="add_new_product_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="1436"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="1436"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m9b-7y-sWK" id="bdR-im-AQm">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="1436"/>
@@ -5636,7 +5637,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="earnings_table_cell" rowHeight="90" id="6O5-YN-hFe" customClass="earnings_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="90"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6O5-YN-hFe" id="MlL-pP-LnD">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
@@ -5951,7 +5952,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEm-Zu-F2s">
-                                <rect key="frame" x="254" y="787" width="140" height="55"/>
+                                <rect key="frame" x="254" y="753" width="140" height="55"/>
                                 <color key="backgroundColor" red="0.39213857050000001" green="0.86467242239999997" blue="0.62492793800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Lod-ok-ceZ"/>
@@ -6063,7 +6064,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cashout_list_table_cell" rowHeight="90" id="kNb-Kr-lfw" customClass="cashout_list_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="90"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kNb-Kr-lfw" id="2gt-Pu-4Cb">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
@@ -6227,7 +6228,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="review_table_cell" rowHeight="102" id="nb5-lc-PSi" customClass="review_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="102"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="102"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nb5-lc-PSi" id="4GV-Go-iZU">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="102"/>
@@ -6807,7 +6808,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuControllerVCTableCell" rowHeight="50" id="JwX-ds-IE9" customClass="MenuControllerVCTableCell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JwX-ds-IE9" id="OPA-RM-dBh">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -7007,7 +7008,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="category_sub_category_table_cell" rowHeight="80" id="fCh-aY-eTE" customClass="category_sub_category_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fCh-aY-eTE" id="00d-l5-V3N">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -7163,7 +7164,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="only_sub_category_table_cell" rowHeight="80" id="s0r-SJ-xGE" customClass="only_sub_category_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s0r-SJ-xGE" id="F85-Nj-QKp">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -7258,10 +7259,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8u0-4W-EOV">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8u0-4W-EOV">
                                 <rect key="frame" x="0.0" y="1118.5" width="414" height="81.5"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="II1-HX-Vxy" customClass="GrowingTextView" customModule="GrowingTextView">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="II1-HX-Vxy" customClass="GrowingTextView" customModule="GrowingTextView">
                                         <rect key="frame" x="50" y="8" width="320" height="32.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
@@ -7354,12 +7355,12 @@
                                     <constraint firstAttribute="bottom" secondItem="lap-8q-acx" secondAttribute="bottom" constant="8" id="qxA-Lj-7FB"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yP6-MG-Iqu">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yP6-MG-Iqu">
                                 <rect key="frame" x="0.0" y="100" width="414" height="1018.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOne" rowHeight="74" id="gWT-51-e52" customClass="chat_room_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="74"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gWT-51-e52" id="xVh-db-NpW">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
@@ -7447,7 +7448,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellTwo" rowHeight="74" id="nmI-Az-WRB" customClass="chat_room_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="118.5" width="414" height="74"/>
+                                        <rect key="frame" x="0.0" y="124" width="414" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nmI-Az-WRB" id="e7v-R7-d0a">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
@@ -7548,7 +7549,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellThree" rowHeight="280" id="L9D-Ay-SJE" customClass="chat_room_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="192.5" width="414" height="280"/>
+                                        <rect key="frame" x="0.0" y="198" width="414" height="280"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L9D-Ay-SJE" id="Eyg-r5-jKX">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
@@ -7608,7 +7609,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellFour" rowHeight="280" id="Khw-5C-QFa" customClass="chat_room_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="472.5" width="414" height="280"/>
+                                        <rect key="frame" x="0.0" y="478" width="414" height="280"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Khw-5C-QFa" id="jja-nq-Lhb">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
@@ -7787,7 +7788,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="buy_now_table_cell_one" rowHeight="450" id="w2w-Jg-ToG" customClass="buy_now_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="450"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="450"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w2w-Jg-ToG" id="rdt-Ud-QUy">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="450"/>
@@ -7848,7 +7849,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="buy_now_table_cell_two" rowHeight="60" id="ftn-Nk-YCk" customClass="buy_now_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="494.5" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="500" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ftn-Nk-YCk" id="VHQ-tX-9OW">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -7885,7 +7886,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="buy_now_table_cell_three" rowHeight="60" id="jrN-Ri-f3H" customClass="buy_now_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="554.5" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="560" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jrN-Ri-f3H" id="xHx-Sw-yQn">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -7923,7 +7924,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="buy_now_table_cell_four" rowHeight="60" id="0Ax-aP-zIX" customClass="buy_now_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="614.5" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="620" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Ax-aP-zIX" id="4eX-Xa-10L">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -7958,7 +7959,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="buy_now_table_cell_five" rowHeight="60" id="q5b-gb-11t" customClass="buy_now_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="674.5" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="680" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q5b-gb-11t" id="RvR-jY-iaw">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -7993,7 +7994,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="buy_now_table_cell_six" rowHeight="60" id="1nI-BD-5lG" customClass="buy_now_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="734.5" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="740" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1nI-BD-5lG" id="lBY-Qa-9a4">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -8028,7 +8029,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="buy_now_table_cell_seven" rowHeight="60" id="Xhk-XK-wZI" customClass="buy_now_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="794.5" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="800" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xhk-XK-wZI" id="U4Y-aw-TlE">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -8063,7 +8064,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="buy_now_table_cell_eight" rowHeight="80" id="s4c-h9-oSI" customClass="buy_now_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="854.5" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="860" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s4c-h9-oSI" id="anj-Mh-I8l">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -8134,14 +8135,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="success" translatesAutoresizingMaskIntoConstraints="NO" id="g3V-0N-yMh">
-                                <rect key="frame" x="127" y="368" width="160" height="160"/>
+                                <rect key="frame" x="127" y="377" width="160" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="3pQ-AE-p7S"/>
                                     <constraint firstAttribute="width" constant="160" id="JKE-Qg-lrb"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment successful" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPu-h7-che">
-                                <rect key="frame" x="20" y="536" width="374" height="21"/>
+                                <rect key="frame" x="20" y="545" width="374" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="7Lx-Pk-PCy"/>
                                 </constraints>
@@ -8150,7 +8151,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgv-ni-DWp">
-                                <rect key="frame" x="344" y="792" width="50" height="50"/>
+                                <rect key="frame" x="344" y="758" width="50" height="50"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="MIS-pV-ejk"/>
@@ -8230,7 +8231,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="all_card_list_table_cell" rowHeight="70" id="Q0i-9Q-em0" customClass="all_card_list_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="70"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q0i-9Q-em0" id="ZLi-4J-HRA">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
@@ -8305,7 +8306,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="all_card_list_table_cell_one" rowHeight="60" id="JU2-6P-Gwq" customClass="all_card_list_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="114.5" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="120" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JU2-6P-Gwq" id="HIc-sT-pr4">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -8409,7 +8410,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cOrderHistoryProductDetailsTableCell" rowHeight="116" id="p0C-bO-d3C" customClass="COrderHistoryProductDetailsTableCell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="116"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="116"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p0C-bO-d3C" id="OQz-tF-4WT">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
@@ -8586,7 +8587,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="edit_address_table_cell_one" rowHeight="200" id="MwU-MS-ECt" customClass="edit_address_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="200"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MwU-MS-ECt" id="GkE-dk-bzt">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -8666,7 +8667,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="edit_address_table_cell_three" rowHeight="72" id="aqV-yT-QUe" customClass="edit_address_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="244.5" width="414" height="72"/>
+                                        <rect key="frame" x="0.0" y="250" width="414" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aqV-yT-QUe" id="FK6-DQ-ba4">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
@@ -8710,7 +8711,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="edit_address_table_cell_two" rowHeight="762" id="wXX-dQ-ULH" customClass="edit_address_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="316.5" width="414" height="762"/>
+                                        <rect key="frame" x="0.0" y="322" width="414" height="762"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wXX-dQ-ULH" id="E7P-Ee-JsW">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="762"/>
@@ -9055,7 +9056,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="edit_manage_product_table_cell" rowHeight="1436" id="8qb-fC-kGR" customClass="edit_manage_product_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="1436"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="1436"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8qb-fC-kGR" id="oj0-c0-z1k">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="1436"/>
@@ -9490,7 +9491,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="earning_new_table_cell" rowHeight="80" id="ZbJ-Rn-3GY" customClass="earning_new_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZbJ-Rn-3GY" id="JvX-BJ-AxO">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -9762,7 +9763,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="filter_table_cell_one" rowHeight="80" id="EyR-uV-07B" customClass="filter_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EyR-uV-07B" id="1Ur-n3-Kvb">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -9800,7 +9801,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="filter_table_cell_two" rowHeight="210" id="fBf-kZ-Vc9" customClass="filter_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="124.5" width="414" height="210"/>
+                                        <rect key="frame" x="0.0" y="130" width="414" height="210"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fBf-kZ-Vc9" id="X8T-lm-hcw">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="210"/>
@@ -9887,7 +9888,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="filter_table_cell_three" rowHeight="80" id="lpM-Su-oiL" customClass="filter_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="334.5" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="340" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lpM-Su-oiL" id="V2M-jV-AVo">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -9922,7 +9923,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="filter_table_cell_four" rowHeight="194" id="iKW-hQ-qe4" customClass="filter_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="414.5" width="414" height="194"/>
+                                        <rect key="frame" x="0.0" y="420" width="414" height="194"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iKW-hQ-qe4" id="Tbp-Xz-IoN">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="194"/>
@@ -10327,7 +10328,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="my_orders_table_cell" rowHeight="116" id="roo-LI-TcP" customClass="my_orders_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="116"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="116"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="roo-LI-TcP" id="QZs-2s-49c">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
@@ -10502,7 +10503,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Bx-8Z-qIF">
-                                <rect key="frame" x="0.0" y="88" width="414" height="240"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="375"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="cMY-qb-HV0">
                                         <rect key="frame" x="147" y="30" width="120" height="120"/>
@@ -10530,22 +10531,138 @@
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4W9-1k-Og2">
+                                        <rect key="frame" x="8" y="238" width="398" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtZ-01-zaP">
+                                                <rect key="frame" x="83" y="5" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="kek-Ml-ouu"/>
+                                                    <constraint firstAttribute="height" constant="40" id="zuF-bn-LGe"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hg8-9u-1kh">
+                                                <rect key="frame" x="131" y="5" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="M1b-rd-ziy"/>
+                                                    <constraint firstAttribute="width" constant="40" id="mig-CJ-QZX"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eoa-3K-IH3">
+                                                <rect key="frame" x="179" y="5" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="5dh-dm-LGs"/>
+                                                    <constraint firstAttribute="width" constant="40" id="Xjk-Jg-bTZ"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdk-6S-ULq">
+                                                <rect key="frame" x="227" y="5" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Nhu-TV-cVa"/>
+                                                    <constraint firstAttribute="width" constant="40" id="pHU-rf-m7u"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbt-pi-eN2">
+                                                <rect key="frame" x="275" y="5" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="EHg-eg-rpK"/>
+                                                    <constraint firstAttribute="height" constant="40" id="uGN-dN-vPD"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="hg8-9u-1kh" firstAttribute="leading" secondItem="FtZ-01-zaP" secondAttribute="trailing" constant="8" symbolic="YES" id="0hf-If-2Gg"/>
+                                            <constraint firstItem="xbt-pi-eN2" firstAttribute="top" secondItem="4W9-1k-Og2" secondAttribute="top" constant="5" id="HEU-bf-2gV"/>
+                                            <constraint firstItem="xbt-pi-eN2" firstAttribute="leading" secondItem="jdk-6S-ULq" secondAttribute="trailing" constant="8" symbolic="YES" id="Q63-OA-bFE"/>
+                                            <constraint firstItem="Eoa-3K-IH3" firstAttribute="centerX" secondItem="4W9-1k-Og2" secondAttribute="centerX" id="Xor-9k-wsW"/>
+                                            <constraint firstItem="hg8-9u-1kh" firstAttribute="top" secondItem="4W9-1k-Og2" secondAttribute="top" constant="5" id="ckQ-dV-nG1"/>
+                                            <constraint firstItem="FtZ-01-zaP" firstAttribute="top" secondItem="4W9-1k-Og2" secondAttribute="top" constant="5" id="ctO-nx-R0T"/>
+                                            <constraint firstItem="Eoa-3K-IH3" firstAttribute="centerY" secondItem="4W9-1k-Og2" secondAttribute="centerY" id="fUC-OU-Lp6"/>
+                                            <constraint firstAttribute="height" constant="50" id="lzD-Wb-enf"/>
+                                            <constraint firstItem="Eoa-3K-IH3" firstAttribute="leading" secondItem="hg8-9u-1kh" secondAttribute="trailing" constant="8" symbolic="YES" id="qxq-zU-FcM"/>
+                                            <constraint firstItem="jdk-6S-ULq" firstAttribute="top" secondItem="4W9-1k-Og2" secondAttribute="top" constant="5" id="rZa-9a-VP6"/>
+                                            <constraint firstItem="jdk-6S-ULq" firstAttribute="leading" secondItem="Eoa-3K-IH3" secondAttribute="trailing" constant="8" symbolic="YES" id="tHh-61-Vk7"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTz-IQ-tou">
+                                        <rect key="frame" x="8" y="296" width="77.5" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="VxF-in-h7g"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJ6-3P-All">
+                                        <rect key="frame" x="93" y="296" width="88.5" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="KGr-56-Nt6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop address:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nV4-HW-p6N">
+                                        <rect key="frame" x="8" y="332" width="92" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="Phu-Zh-SAy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hf6-5G-izl">
+                                        <rect key="frame" x="107.5" y="332" width="88.5" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="zPD-Q5-G9m"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="12s-vZ-ijy"/>
+                                    <constraint firstAttribute="height" constant="375" id="12s-vZ-ijy"/>
+                                    <constraint firstItem="CJ6-3P-All" firstAttribute="top" secondItem="4W9-1k-Og2" secondAttribute="bottom" constant="8" symbolic="YES" id="18g-86-0Yw"/>
                                     <constraint firstItem="cMY-qb-HV0" firstAttribute="centerX" secondItem="4Bx-8Z-qIF" secondAttribute="centerX" id="8up-C2-N2e"/>
                                     <constraint firstItem="add-Xu-bPT" firstAttribute="leading" secondItem="4Bx-8Z-qIF" secondAttribute="leading" constant="8" id="BkK-Ch-Dnj"/>
+                                    <constraint firstItem="CJ6-3P-All" firstAttribute="leading" secondItem="PTz-IQ-tou" secondAttribute="trailing" constant="7.5" id="DQd-Rb-d01"/>
+                                    <constraint firstItem="PTz-IQ-tou" firstAttribute="leading" secondItem="4Bx-8Z-qIF" secondAttribute="leading" constant="8" id="DX2-mt-Tq0"/>
+                                    <constraint firstItem="4W9-1k-Og2" firstAttribute="leading" secondItem="4Bx-8Z-qIF" secondAttribute="leading" constant="8" id="FXa-ht-deQ"/>
                                     <constraint firstAttribute="trailing" secondItem="add-Xu-bPT" secondAttribute="trailing" constant="8" id="GI4-6z-9mi"/>
-                                    <constraint firstItem="cMY-qb-HV0" firstAttribute="centerY" secondItem="4Bx-8Z-qIF" secondAttribute="centerY" constant="-30" id="NdD-vh-c7g"/>
+                                    <constraint firstItem="Hf6-5G-izl" firstAttribute="top" secondItem="CJ6-3P-All" secondAttribute="bottom" constant="8" symbolic="YES" id="Ha2-9d-98g"/>
+                                    <constraint firstItem="cMY-qb-HV0" firstAttribute="centerY" secondItem="4Bx-8Z-qIF" secondAttribute="centerY" constant="-97.5" id="NdD-vh-c7g"/>
+                                    <constraint firstItem="nV4-HW-p6N" firstAttribute="leading" secondItem="4Bx-8Z-qIF" secondAttribute="leading" constant="8" id="PCf-dw-aYt"/>
                                     <constraint firstAttribute="trailing" secondItem="hGC-au-Sag" secondAttribute="trailing" constant="8" id="SdW-jI-dco"/>
                                     <constraint firstItem="add-Xu-bPT" firstAttribute="top" secondItem="hGC-au-Sag" secondAttribute="bottom" constant="2" id="Wnj-ki-a9A"/>
+                                    <constraint firstItem="Hf6-5G-izl" firstAttribute="leading" secondItem="nV4-HW-p6N" secondAttribute="trailing" constant="7.5" id="ZH1-2t-5GL"/>
                                     <constraint firstItem="hGC-au-Sag" firstAttribute="top" secondItem="cMY-qb-HV0" secondAttribute="bottom" constant="8" symbolic="YES" id="e3S-TB-Uyh"/>
+                                    <constraint firstItem="PTz-IQ-tou" firstAttribute="top" secondItem="4W9-1k-Og2" secondAttribute="bottom" constant="8" id="iex-so-XRO"/>
+                                    <constraint firstItem="4W9-1k-Og2" firstAttribute="top" secondItem="add-Xu-bPT" secondAttribute="bottom" constant="8" symbolic="YES" id="mPS-Om-0S9"/>
+                                    <constraint firstItem="nV4-HW-p6N" firstAttribute="top" secondItem="PTz-IQ-tou" secondAttribute="bottom" constant="8" symbolic="YES" id="sEg-nf-3zj"/>
                                     <constraint firstItem="hGC-au-Sag" firstAttribute="leading" secondItem="4Bx-8Z-qIF" secondAttribute="leading" constant="8" id="taP-Nu-01c"/>
+                                    <constraint firstAttribute="trailing" secondItem="4W9-1k-Og2" secondAttribute="trailing" constant="8" id="unw-yk-COJ"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPy-7Q-WHX">
+                                <rect key="frame" x="0.0" y="454" width="414" height="2"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="Eft-OH-RW1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nUe-Ra-B2E">
-                                <rect key="frame" x="0.0" y="437" width="414" height="242"/>
+                                <rect key="frame" x="0.0" y="519" width="414" height="242"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="242" id="ki1-W2-7DC"/>
@@ -10586,7 +10703,7 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Products" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kov-KW-jKG">
-                                <rect key="frame" x="0.0" y="389" width="140" height="40"/>
+                                <rect key="frame" x="0.0" y="471" width="140" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="QAu-FP-uCI"/>
                                     <constraint firstAttribute="width" constant="140" id="djk-ZJ-OrR"/>
@@ -10595,18 +10712,8 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPy-7Q-WHX">
-                                <rect key="frame" x="0.0" y="358" width="414" height="1"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="Eft-OH-RW1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPB-SH-DuK">
-                                <rect key="frame" x="264" y="385" width="130" height="40"/>
+                                <rect key="frame" x="264" y="467" width="130" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="abp-qs-kob"/>
                                     <constraint firstAttribute="height" constant="40" id="heO-xt-rLv"/>
@@ -10627,7 +10734,7 @@
                             <constraint firstItem="n7v-zI-Yrv" firstAttribute="leading" secondItem="Dv1-x0-uCj" secondAttribute="leading" id="6nz-Kb-ZFB"/>
                             <constraint firstItem="hGC-au-Sag" firstAttribute="top" secondItem="cMY-qb-HV0" secondAttribute="bottom" constant="8" symbolic="YES" id="FK5-q6-nHA"/>
                             <constraint firstItem="Dv1-x0-uCj" firstAttribute="trailing" secondItem="TPB-SH-DuK" secondAttribute="trailing" constant="20" id="FZ3-aW-JAk"/>
-                            <constraint firstItem="TPB-SH-DuK" firstAttribute="top" secondItem="aPy-7Q-WHX" secondAttribute="bottom" constant="26" id="XlK-nG-aXw"/>
+                            <constraint firstItem="TPB-SH-DuK" firstAttribute="top" secondItem="aPy-7Q-WHX" secondAttribute="bottom" constant="11" id="XlK-nG-aXw"/>
                             <constraint firstAttribute="trailing" secondItem="hGC-au-Sag" secondAttribute="trailing" constant="8" id="Y9z-z5-me9"/>
                             <constraint firstItem="nUe-Ra-B2E" firstAttribute="trailing" secondItem="Dv1-x0-uCj" secondAttribute="trailing" id="cIC-t0-H5e"/>
                             <constraint firstAttribute="trailing" secondItem="aPy-7Q-WHX" secondAttribute="trailing" id="e8W-EO-Rwi"/>
@@ -10637,9 +10744,9 @@
                             <constraint firstItem="aPy-7Q-WHX" firstAttribute="leading" secondItem="mbt-mP-DDP" secondAttribute="leading" id="oyt-IA-yEK"/>
                             <constraint firstItem="nUe-Ra-B2E" firstAttribute="top" secondItem="kov-KW-jKG" secondAttribute="bottom" constant="8" symbolic="YES" id="p92-3T-O3r"/>
                             <constraint firstItem="hGC-au-Sag" firstAttribute="leading" secondItem="mbt-mP-DDP" secondAttribute="leading" constant="8" id="q9v-fS-vdV"/>
-                            <constraint firstItem="kov-KW-jKG" firstAttribute="top" secondItem="aPy-7Q-WHX" secondAttribute="bottom" constant="30" id="rLV-ws-jL7"/>
+                            <constraint firstItem="kov-KW-jKG" firstAttribute="top" secondItem="aPy-7Q-WHX" secondAttribute="bottom" constant="15" id="rLV-ws-jL7"/>
                             <constraint firstItem="nUe-Ra-B2E" firstAttribute="leading" secondItem="Dv1-x0-uCj" secondAttribute="leading" id="syP-Rt-jE1"/>
-                            <constraint firstItem="aPy-7Q-WHX" firstAttribute="top" secondItem="4Bx-8Z-qIF" secondAttribute="bottom" constant="30" id="zTN-H8-b2q"/>
+                            <constraint firstItem="aPy-7Q-WHX" firstAttribute="top" secondItem="4Bx-8Z-qIF" secondAttribute="bottom" constant="-9" id="zTN-H8-b2q"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="896"/>
@@ -10649,9 +10756,16 @@
                         <outlet property="collectionView" destination="nUe-Ra-B2E" id="cbS-er-wyr"/>
                         <outlet property="img_profile" destination="cMY-qb-HV0" id="tSz-Yn-Qr8"/>
                         <outlet property="lblNavigationTitle" destination="C5f-eN-Coq" id="wWG-6d-Hgc"/>
+                        <outlet property="lblShopAddress" destination="Hf6-5G-izl" id="z7a-cI-JDL"/>
+                        <outlet property="lblShopName" destination="CJ6-3P-All" id="yj2-Mi-YCo"/>
                         <outlet property="lbl_seller_address" destination="add-Xu-bPT" id="Nd4-xU-1Ld"/>
                         <outlet property="lbl_seller_name" destination="hGC-au-Sag" id="ua7-Ho-ijP"/>
                         <outlet property="navigationBar" destination="n7v-zI-Yrv" id="oGs-Dt-rOl"/>
+                        <outlet property="starButton1" destination="FtZ-01-zaP" id="gdW-OV-QUi"/>
+                        <outlet property="starButton2" destination="hg8-9u-1kh" id="5Tv-gw-LAG"/>
+                        <outlet property="starButton3" destination="Eoa-3K-IH3" id="JHP-1o-2Ex"/>
+                        <outlet property="starButton4" destination="jdk-6S-ULq" id="arc-K0-AvN"/>
+                        <outlet property="starButton5" destination="xbt-pi-eN2" id="w3H-0l-4TQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uke-tN-gj3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -10659,56 +10773,42 @@
             <point key="canvasLocation" x="8231.8840579710159" y="2045.7589285714284"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="II1-HX-Vxy">
-            <size key="intrinsicContentSize" width="-1" height="30"/>
-        </designable>
-        <designable name="OtH-ao-M65">
-            <size key="intrinsicContentSize" width="53.5" height="42"/>
-        </designable>
-        <designable name="Vac-Ku-LDD">
-            <size key="intrinsicContentSize" width="95" height="42"/>
-        </designable>
-        <designable name="rmC-Gl-92Q">
-            <size key="intrinsicContentSize" width="150.5" height="42"/>
-        </designable>
-    </designables>
     <resources>
         <image name="FewElements.png" width="622" height="319"/>
-        <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
-        <image name="arrow.left" catalog="system" width="128" height="98"/>
-        <image name="arrow.right" catalog="system" width="128" height="98"/>
-        <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="106"/>
+        <image name="arrow.clockwise" catalog="system" width="110" height="128"/>
+        <image name="arrow.left" catalog="system" width="128" height="95"/>
+        <image name="arrow.right" catalog="system" width="128" height="95"/>
+        <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="104"/>
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="cart" catalog="system" width="128" height="102"/>
         <image name="chat_bubble_received" width="118" height="34"/>
-        <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="chevron.down" catalog="system" width="128" height="72"/>
-        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="checkmark.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="chevron.down" catalog="system" width="128" height="70"/>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
         <image name="crown.fill" catalog="system" width="128" height="92"/>
         <image name="discover-logo.png" width="89" height="51"/>
-        <image name="envelope" catalog="system" width="128" height="93"/>
+        <image name="envelope" catalog="system" width="128" height="85"/>
         <image name="filter" width="24" height="24"/>
         <image name="filter_map" width="24" height="24"/>
         <image name="filter_price" width="24" height="24"/>
         <image name="flag.fill" catalog="system" width="128" height="121"/>
-        <image name="heart" catalog="system" width="128" height="109"/>
-        <image name="info.circle" catalog="system" width="128" height="121"/>
-        <image name="list.bullet.indent" catalog="system" width="128" height="74"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="info.circle" catalog="system" width="128" height="123"/>
+        <image name="list.bullet.indent" catalog="system" width="128" height="73"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
-        <image name="location" catalog="system" width="128" height="118"/>
+        <image name="location" catalog="system" width="128" height="119"/>
         <image name="location.viewfinder" catalog="system" width="128" height="115"/>
-        <image name="lock.fill" catalog="system" width="128" height="128"/>
+        <image name="lock.fill" catalog="system" width="111" height="128"/>
         <image name="login-back" width="600" height="692"/>
         <image name="logo" width="300" height="383"/>
-        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="message.fill" catalog="system" width="128" height="113"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="message.fill" catalog="system" width="128" height="114"/>
         <image name="paperclip" catalog="system" width="121" height="128"/>
-        <image name="paperplane" catalog="system" width="128" height="118"/>
-        <image name="paperplane.fill" catalog="system" width="128" height="118"/>
+        <image name="paperplane" catalog="system" width="128" height="119"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="119"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
-        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="phone" catalog="system" width="128" height="115"/>
         <image name="picture" width="200" height="200"/>
@@ -10722,7 +10822,7 @@
         <image name="success" width="512" height="512"/>
         <image name="un_check_mark" width="24" height="24"/>
         <image name="user" width="24" height="24"/>
-        <image name="xmark.bin.fill" catalog="system" width="128" height="93"/>
+        <image name="xmark.bin.fill" catalog="system" width="128" height="92"/>
         <namedColor name="AccentColor">
             <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -10733,46 +10833,46 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -351,12 +351,18 @@ extension order_history_details: UITableViewDataSource , UITableViewDelegate {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellOne") as! order_history_details_table_cell
             
-            // print(self.dict as Any)
+             print(self.dict as Any)
+            
+            cell.lblTitle.text    = (self.dict["productName"] as! String)
+            cell.lblCreatedAt.text    = "Color : "+(self.dict["productColor"] as! String)
+            cell.lblPrice.text = "Price: $\(self.dict["Amount"]!)"
+            cell.lblQuantity.isHidden = false
+            
             // let item = self.arrListOfAllMyOrders[indexPath.row] as? [String:Any]
             
             // total number of products
             
-            ar = ((self.dict["productDetails"] as! Array<Any>) as NSArray)
+            /*ar = ((self.dict["productDetails"] as! Array<Any>) as NSArray)
             // print(ar as Any)
             
             let item = ar[0] as? [String:Any]
@@ -419,7 +425,7 @@ extension order_history_details: UITableViewDataSource , UITableViewDelegate {
             }
             
             
-            
+            */
             return cell
             
         } else if indexPath.row == 1 {
@@ -438,7 +444,7 @@ extension order_history_details: UITableViewDataSource , UITableViewDelegate {
             
             let cell3 = tableView.dequeueReusableCell(withIdentifier: "cellThree") as! order_history_details_table_cell
             
-            cell3.lblShippingCardType.text      = "Card Type - "+(self.dict["cardType"] as! String)
+            cell3.lblShippingCardType.text      = "\(self.dict["PaymentVia"]!)"
             cell3.lblShippingInvoiceDate.text   = (self.dict["created"] as! String)
             cell3.lblShippingRedId.text         = "Red Id : "+(self.dict["transactionId"] as! String)
             
