@@ -477,7 +477,33 @@ extension MenuControllerVC: UITableViewDataSource {
                     let navigationController = UINavigationController(rootViewController: destinationController!)
                     sw.setFront(navigationController, animated: true)
                     
-                } else if self.arrCustomerTitle[indexPath.row] == "Logout" {
+                }  else if self.arrCustomerTitle[indexPath.row] == "Offered price" {
+                    
+                    /*let myString = "backOrMenu"
+                    UserDefaults.standard.set(myString, forKey: "keySetToBackOrMenu")
+                    
+                    
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let sw = storyboard.instantiateViewController(withIdentifier: "sw") as! SWRevealViewController
+                    self.view.window?.rootViewController = sw
+                    let destinationController = self.storyboard?.instantiateViewController(withIdentifier: "offered_price_id")
+                    let navigationController = UINavigationController(rootViewController: destinationController!)
+                    sw.setFront(navigationController, animated: true)*/
+                    
+                }  else if self.arrCustomerTitle[indexPath.row] == "Wishlist" {
+                    
+                    let myString = "backOrMenu"
+                    UserDefaults.standard.set(myString, forKey: "keySetToBackOrMenu")
+                    
+                    
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let sw = storyboard.instantiateViewController(withIdentifier: "sw") as! SWRevealViewController
+                    self.view.window?.rootViewController = sw
+                    let destinationController = self.storyboard?.instantiateViewController(withIdentifier: "wishlist_id")
+                    let navigationController = UINavigationController(rootViewController: destinationController!)
+                    sw.setFront(navigationController, animated: true)
+                    
+                }   else if self.arrCustomerTitle[indexPath.row] == "Logout" {
                     
                     let alert = NewYorkAlertController(title: String("Logout"), message: String("Are you sure you want to logout ?"), style: .alert)
                     

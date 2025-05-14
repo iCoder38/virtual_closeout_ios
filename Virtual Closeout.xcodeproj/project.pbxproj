@@ -78,6 +78,7 @@
 		18AFB8DC28618CD700895D8F /* edit_manage_product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFB8DB28618CD700895D8F /* edit_manage_product.swift */; };
 		302CBD083B11850EED47E3FA /* Pods_Virtual_Closeout_Virtual_CloseoutUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A507AE1E02A1B7341B820B /* Pods_Virtual_Closeout_Virtual_CloseoutUITests.framework */; };
 		AF144204922FC42B7619DC58 /* Pods_Virtual_Closeout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A3207DE04346B34454448C /* Pods_Virtual_Closeout.framework */; };
+		B9A1B7512DD4C1F800162E35 /* wishlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A1B7502DD4C1F800162E35 /* wishlist.swift */; };
 		FB31EB417B2F18090FE7AF43 /* Pods_Virtual_CloseoutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E5901F6CC8CE9BE6D6164E /* Pods_Virtual_CloseoutTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -183,6 +184,7 @@
 		90E5901F6CC8CE9BE6D6164E /* Pods_Virtual_CloseoutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Virtual_CloseoutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A3207DE04346B34454448C /* Pods_Virtual_Closeout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Virtual_Closeout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B293D6AB50042D204C5833C7 /* Pods-Virtual CloseoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual CloseoutTests.debug.xcconfig"; path = "Target Support Files/Pods-Virtual CloseoutTests/Pods-Virtual CloseoutTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9A1B7502DD4C1F800162E35 /* wishlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wishlist.swift; sourceTree = "<group>"; };
 		F79B2F3077FED95D42E9868D /* Pods-Virtual Closeout-Virtual CloseoutUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual Closeout-Virtual CloseoutUITests.release.xcconfig"; path = "Target Support Files/Pods-Virtual Closeout-Virtual CloseoutUITests/Pods-Virtual Closeout-Virtual CloseoutUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -229,6 +231,7 @@
 		181A75322851BDA000FB6C84 /* Customer */ = {
 			isa = PBXGroup;
 			children = (
+				B9A1B74F2DD4C18B00162E35 /* wish_list */,
 				180ADDDC2864371000B15F82 /* filter */,
 				189E04B7284F42B90076D755 /* browse_product */,
 				189E04BA284F472E0076D755 /* browse_product_category */,
@@ -764,6 +767,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B9A1B74F2DD4C18B00162E35 /* wish_list */ = {
+			isa = PBXGroup;
+			children = (
+				B9A1B7502DD4C1F800162E35 /* wishlist.swift */,
+			);
+			path = wish_list;
+			sourceTree = "<group>";
+		};
 		C0EA81D327DE733BDF2C2869 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1051,6 +1062,7 @@
 				1888273F284F1F0100D19356 /* UIStackView+Utility.swift in Sources */,
 				1888274B284F1F8D00D19356 /* Utils.swift in Sources */,
 				189AA95C285B3CB900B3615F /* COrderHistoryProductDetails.swift in Sources */,
+				B9A1B7512DD4C1F800162E35 /* wishlist.swift in Sources */,
 				188826FA284F1C9900D19356 /* SceneDelegate.swift in Sources */,
 				186D1E0028633DFD00837BD7 /* RPicker.swift in Sources */,
 				1872ADE5284F63BC001F1934 /* product_full_details.swift in Sources */,
