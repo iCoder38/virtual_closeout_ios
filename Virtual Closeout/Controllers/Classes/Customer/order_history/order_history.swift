@@ -226,6 +226,12 @@ extension order_history: UITableViewDataSource , UITableViewDelegate {
         cell.lblPrice.text = "Price : $ "+myString22
         cell.lblPrice.textColor = button_dark
         
+        if "\(item!["deliveryStatus"]!)" == "3" {
+            cell.lblStatus.text = "Completed"
+        } else {
+            cell.lblStatus.text   = "In-Transit"
+        }
+        
         cell.imgProfile.sd_imageIndicator = SDWebImageActivityIndicator.whiteLarge
         cell.imgProfile.sd_setImage(with: URL(string: (item!["productImage1"] as! String)), placeholderImage: UIImage(named: "logo"))
         
@@ -284,6 +290,7 @@ class order_history_table_cell: UITableViewCell {
     @IBOutlet weak var lblCreatedAt:UILabel!
     @IBOutlet weak var lblQuantity:UILabel!
     @IBOutlet weak var lblPrice:UILabel!
+    @IBOutlet weak var lblStatus:UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

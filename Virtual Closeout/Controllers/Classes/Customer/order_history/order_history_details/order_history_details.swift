@@ -266,87 +266,11 @@ extension order_history_details: UITableViewDataSource , UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4 // arrListOfAllMyOrders.count
+        return 5 // arrListOfAllMyOrders.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
-        /*
-         
-         {
-             data =     {
-                 ShippingName = "Dishant Rajput";
-                 ShippingPhone = 8287632340;
-                 cardType = visa;
-                 created = "2020-10-06 19:46:00";
-                 deliveryDay = "3-4 days";
-                 driverEmail = "ios@gmail.com";
-                 driverImage = "";
-                 driverName = "Mobile Gaming iPhone X";
-                 driverPhone = 9865986434;
-                 productDetails =         (
-                                 {
-                         Quantity = 1;
-                         SKU = 878787;
-                         description = "<p><strong><em>CBD content:&nbsp;</em></strong><em>about 25 mg, depending on your&nbsp;</em>Turmeric, agar agar, carrot juice, ginger, cayenne, and CBD, all in a sweet treat? Yes, it is possible! These healthy, satisfying treats require only about 10 minutes to make, and they stay fresh in the refrigerator for up to a week</p>
-         \n";
-                         image = "http://demo2.evirtualservices.com/HoneyBudz/site/img/uploads/products/1601895366_Elevem.jpg";
-                         price = 90;
-                         productId = 13;
-                         productName = "Healthy CBD-Turmeric Sweets";
-                     },
-                                 {
-                         Quantity = 5;
-                         SKU = 44335;
-                         description = "<p><strong><em>CBD content:&nbsp;</em></strong><em>varies, depending on the potency of your CBD oil&nbsp;</em>Healthy CBD granola will fill you up with goodness. This recipe calls for wholesome organic rolled oats, hemp seeds, CBD oil, and rich dark chocolate. The base granola provides plenty of benefits, and the addition of CBD oil elevates this snack to new heights.</p>
-         \n";
-                         image = "http://demo2.evirtualservices.com/HoneyBudz/site/img/uploads/products/1601895708_Tweve.jpg";
-                         price = 30;
-                         productId = 16;
-                         productName = "CBD Granola";
-                     },
-                                 {
-                         Quantity = 1;
-                         SKU = 89809;
-                         description = "<p><strong><em>CBD content:&nbsp;</em></strong><em>about 4 mg, depending on your ,</em>Toss freeze-dried raspberries, superfood seeds, CBD oil, and other wholesome ingredients into a food processor to quickly make satisfying and healthy bites that look like festive truffles and taste just as good.</p>
-         \n";
-                         image = "http://demo2.evirtualservices.com/HoneyBudz/site/img/uploads/products/1601895413_Eight.jpg";
-                         price = 56;
-                         productId = 14;
-                         productName = "CBD Raspberry Energy Bites";
-                     },
-                                 {
-                         Quantity = 2;
-                         SKU = 23443;
-                         description = "<p><strong><em>CBD content:&nbsp;</em></strong><em>varies, depending on the potency of your CBD oil or extract</em>&nbsp;Yes, even your green juice can be adapted into a CBD edible. This recipe combines a list of super-healthy and surprising ingredients, including amla berry powder and cilantro, to make a refreshing CBD snack you can drink on the go.</p>
-         \n";
-                         image = "http://demo2.evirtualservices.com/HoneyBudz/site/img/uploads/products/1601896824_Nine.jpg";
-                         price = 34;
-                         productId = 20;
-                         productName = "Green Juice with CBD";
-                     }
-                 );
-                 purcheseId = 48;
-                 shippingAddress = "Unnamed Road, Sector 6, Sector 10 Dwarka, Dwarka, Delhi, 110075, IndiaOk";
-                 shippingCity = Dwarka;
-                 shippingCountry = "";
-                 shippingState = Delhi;
-                 shippingZipcode = 110075;
-                 status = 0;
-                 totalAmount = 364;
-                 transactionId = "";
-             };
-             status = success;
-         }
-         (lldb)
-         */
-        // let item = self.arrListOfAllMyOrders[indexPath.row] as? [String:Any]
-        
-        // 0:
-        // 1:
-        // 2:
-        // 3:
-        
         if indexPath.row == 0 {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellOne") as! order_history_details_table_cell
@@ -358,74 +282,6 @@ extension order_history_details: UITableViewDataSource , UITableViewDelegate {
             cell.lblPrice.text = "Price: $\(self.dict["Amount"]!)"
             cell.lblQuantity.isHidden = false
             
-            // let item = self.arrListOfAllMyOrders[indexPath.row] as? [String:Any]
-            
-            // total number of products
-            
-            /*ar = ((self.dict["productDetails"] as! Array<Any>) as NSArray)
-            // print(ar as Any)
-            
-            let item = ar[0] as? [String:Any]
-            // print(item as Any)
-            
-            if ar.count == 0 {
-                
-                cell.accessoryType = .none
-            } else if ar.count == 1 {
-                
-                cell.accessoryType = .none
-            } else {
-                
-                cell.accessoryType = .disclosureIndicator
-            }
-            
-            cell.lblTitle.text    = (item!["productName"] as! String)
-            cell.lblCreatedAt.text    = "SKU : "+(item!["SKU"] as! String)
-            
-            // price
-            if item!["price"] is String {
-                print("Yes, it's a String")
-
-                cell.lblPrice.text = "Price : $ "+(item!["price"] as! String)
-
-            } else if item!["price"] is Int {
-                print("It is Integer")
-                            
-                let x2 : Int = (item!["price"] as! Int)
-                let myString2 = String(x2)
-                cell.lblPrice.text = "Price : $ "+myString2
-                            
-            } else {
-                print("i am number")
-                            
-                let temp:NSNumber = item!["price"] as! NSNumber
-                let tempString = temp.stringValue
-                cell.lblPrice.text = "Price : $ "+tempString
-            }
-             
-            // quantity
-            if item!["Quantity"] is String {
-                print("Yes, it's a String")
-
-                cell.lblQuantity.text = "Quantity : "+(item!["Quantity"] as! String)
-
-            } else if item!["Quantity"] is Int {
-                print("It is Integer")
-                            
-                let x2 : Int = (item!["Quantity"] as! Int)
-                let myString2 = String(x2)
-                cell.lblQuantity.text = "Quantity : "+myString2
-                            
-            } else {
-                print("i am number")
-                            
-                let temp:NSNumber = item!["Quantity"] as! NSNumber
-                let tempString = temp.stringValue
-                cell.lblQuantity.text = "Quantity : "+tempString
-            }
-            
-            
-            */
             return cell
             
         } else if indexPath.row == 1 {
@@ -458,7 +314,7 @@ extension order_history_details: UITableViewDataSource , UITableViewDelegate {
             
             
             
-            if "\(self.dict["status"]!)" == "3" {
+            if "\(self.dict["deliveryStatus"]!)" == "3" {
                 
                 cell4.lblShippingExpectedDelivery.text = "Expected Delivery : Done"
                 cell4.lblShippingCurrentStatus.text = "Delivered"
@@ -478,9 +334,28 @@ extension order_history_details: UITableViewDataSource , UITableViewDelegate {
             
             return cell4
             
+        } else if indexPath.row == 4 {
+            
+            let cell5 = tableView.dequeueReusableCell(withIdentifier: "cellFive") as! order_history_details_table_cell
+            
+            if "\(self.dict["revirewSeller"]!)" == "Yes" {
+                cell5.btnReview.isHidden = true
+            } else {
+                cell5.btnReview.isHidden = false
+                cell5.btnReview.setTitle("Rate our seller", for: .normal)
+                cell5.btnReview.addTarget(self, action: #selector(ratingClickMethod), for: .inside
+            )
+            }
+            
+            cell5.accessoryType = .none
+            
+            cell5.btn_done_delivered.addTarget(self, action: #selector(change_status_WB), for: .touchUpInside)
+            
+            return cell5
+            
         } else {
             
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cellFive") as! order_history_details_table_cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cellSix") as! order_history_details_table_cell
             
             return cell
             
@@ -558,7 +433,15 @@ extension order_history_details: UITableViewDataSource , UITableViewDelegate {
                 return 0
             }
 
-        } else {
+        }
+        else if indexPath.row == 4 {
+            if "\(self.dict["revirewSeller"]!)" == "Yes" {
+                return 0
+            } else {
+                return 80
+            }
+        }
+        else {
             return UITableView.automaticDimension
         }
         
@@ -654,6 +537,9 @@ class order_history_details_table_cell: UITableViewCell {
             viewbg4.layer.borderWidth = 0.08
         }
     }
+    
+    // cell 5
+    @IBOutlet weak var btnReview:UIButton!
     
 
 }

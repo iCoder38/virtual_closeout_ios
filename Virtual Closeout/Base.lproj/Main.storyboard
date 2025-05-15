@@ -2936,6 +2936,15 @@
                                                             <color key="textColor" name="AccentColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT ADDRESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5b-pv-Pdi">
+                                                            <rect key="frame" x="266.5" y="7" width="99.5" height="28"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="28" id="hHU-Rr-ZwR"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                                            <color key="textColor" systemColor="systemGreenColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -2945,12 +2954,14 @@
                                                         <constraint firstAttribute="trailing" secondItem="YAr-I2-dvv" secondAttribute="trailing" constant="8" id="C3Z-77-N90"/>
                                                         <constraint firstItem="YAr-I2-dvv" firstAttribute="leading" secondItem="CFy-gC-Gqd" secondAttribute="trailing" constant="8" id="JRi-dt-lBM"/>
                                                         <constraint firstItem="CFy-gC-Gqd" firstAttribute="top" secondItem="bjL-sY-6of" secondAttribute="top" constant="7" id="LBn-hK-S7B"/>
+                                                        <constraint firstAttribute="trailing" secondItem="r5b-pv-Pdi" secondAttribute="trailing" constant="8" id="LVu-LF-g7S"/>
                                                         <constraint firstAttribute="trailing" secondItem="PBT-ps-kwP" secondAttribute="trailing" constant="8" id="QQm-6Y-lZC"/>
                                                         <constraint firstItem="Et1-Pe-Jhc" firstAttribute="width" secondItem="vhy-fv-aTM" secondAttribute="width" id="Qsy-7f-r8l"/>
                                                         <constraint firstItem="vhy-fv-aTM" firstAttribute="leading" secondItem="CFy-gC-Gqd" secondAttribute="trailing" constant="6" id="RKQ-FW-2GN"/>
                                                         <constraint firstItem="PBT-ps-kwP" firstAttribute="top" secondItem="bjL-sY-6of" secondAttribute="top" constant="7" id="UkW-wE-kwR"/>
                                                         <constraint firstItem="Et1-Pe-Jhc" firstAttribute="leading" secondItem="vhy-fv-aTM" secondAttribute="trailing" constant="28.66666666666697" id="Wx2-Sd-n9o"/>
                                                         <constraint firstAttribute="bottom" secondItem="Et1-Pe-Jhc" secondAttribute="bottom" constant="7" id="e9C-F8-S8q"/>
+                                                        <constraint firstItem="r5b-pv-Pdi" firstAttribute="top" secondItem="bjL-sY-6of" secondAttribute="top" constant="7" id="mWq-pO-NDZ"/>
                                                         <constraint firstItem="PBT-ps-kwP" firstAttribute="leading" secondItem="CFy-gC-Gqd" secondAttribute="trailing" constant="8" id="pw1-C9-1wG"/>
                                                         <constraint firstItem="Et1-Pe-Jhc" firstAttribute="height" secondItem="vhy-fv-aTM" secondAttribute="height" id="rqi-ka-rZl"/>
                                                         <constraint firstItem="YAr-I2-dvv" firstAttribute="top" secondItem="PBT-ps-kwP" secondAttribute="bottom" constant="2" id="yEv-WI-1AF"/>
@@ -2970,6 +2981,7 @@
                                             <outlet property="lblCreatedAt" destination="YAr-I2-dvv" id="goV-yf-jXe"/>
                                             <outlet property="lblPrice" destination="Et1-Pe-Jhc" id="I3T-Hs-uh7"/>
                                             <outlet property="lblQuantity" destination="vhy-fv-aTM" id="DYI-Nx-BPH"/>
+                                            <outlet property="lblStatus" destination="r5b-pv-Pdi" id="rtp-1T-2cY"/>
                                             <outlet property="lblTitle" destination="PBT-ps-kwP" id="TuD-oK-VUi"/>
                                             <outlet property="viewbg" destination="bjL-sY-6of" id="HQh-w9-lG6"/>
                                         </connections>
@@ -3413,6 +3425,36 @@
                                             <outlet property="lblShippingCurrentStatus" destination="SoY-iP-nGh" id="nQB-bY-XUt"/>
                                             <outlet property="lblShippingExpectedDelivery" destination="t11-bj-KuA" id="AYA-8L-wcb"/>
                                             <outlet property="viewbg4" destination="UtS-q3-dJX" id="YLK-or-Mxf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellFive" rowHeight="80" id="BrC-L4-KaK" customClass="order_history_details_table_cell" customModule="Virtual_Closeout" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="710" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BrC-L4-KaK" id="JpQ-a8-kIj">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4h-x9-l5k">
+                                                    <rect key="frame" x="20" y="11" width="374" height="55"/>
+                                                    <color key="backgroundColor" red="0.39213857050000001" green="0.86467242239999997" blue="0.62492793800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="Checkout" image="arrow.right" catalog="system">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="y4h-x9-l5k" firstAttribute="trailing" secondItem="JpQ-a8-kIj" secondAttribute="trailingMargin" id="Dba-pa-FHO"/>
+                                                <constraint firstItem="y4h-x9-l5k" firstAttribute="leading" secondItem="JpQ-a8-kIj" secondAttribute="leadingMargin" id="Uvi-Eh-77S"/>
+                                                <constraint firstItem="y4h-x9-l5k" firstAttribute="top" secondItem="JpQ-a8-kIj" secondAttribute="topMargin" id="iR0-zm-4Zi"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="y4h-x9-l5k" secondAttribute="bottom" constant="3" id="yoT-GY-Blr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="btnReview" destination="y4h-x9-l5k" id="LhX-SX-pzl"/>
+                                            <outlet property="btn_done_delivered" destination="y4h-x9-l5k" id="ctr-q2-8aT"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

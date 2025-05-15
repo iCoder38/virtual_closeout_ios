@@ -79,6 +79,7 @@
 		AF144204922FC42B7619DC58 /* Pods_Virtual_Closeout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A3207DE04346B34454448C /* Pods_Virtual_Closeout.framework */; };
 		B976651C2DD5BC6300B7C561 /* rating_review.swift in Sources */ = {isa = PBXBuildFile; fileRef = B976651B2DD5BC6300B7C561 /* rating_review.swift */; };
 		B976651E2DD5CCA300B7C561 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B976651D2DD5CCA300B7C561 /* GoogleService-Info.plist */; };
+		B97665202DD5D9C700B7C561 /* custom_rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B976651F2DD5D9C700B7C561 /* custom_rating.swift */; };
 		B9A1B7512DD4C1F800162E35 /* wishlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A1B7502DD4C1F800162E35 /* wishlist.swift */; };
 		FB31EB417B2F18090FE7AF43 /* Pods_Virtual_CloseoutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E5901F6CC8CE9BE6D6164E /* Pods_Virtual_CloseoutTests.framework */; };
 /* End PBXBuildFile section */
@@ -186,6 +187,7 @@
 		B293D6AB50042D204C5833C7 /* Pods-Virtual CloseoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual CloseoutTests.debug.xcconfig"; path = "Target Support Files/Pods-Virtual CloseoutTests/Pods-Virtual CloseoutTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B976651B2DD5BC6300B7C561 /* rating_review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rating_review.swift; sourceTree = "<group>"; };
 		B976651D2DD5CCA300B7C561 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B976651F2DD5D9C700B7C561 /* custom_rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custom_rating.swift; sourceTree = "<group>"; };
 		B9A1B7502DD4C1F800162E35 /* wishlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wishlist.swift; sourceTree = "<group>"; };
 		F79B2F3077FED95D42E9868D /* Pods-Virtual Closeout-Virtual CloseoutUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual Closeout-Virtual CloseoutUITests.release.xcconfig"; path = "Target Support Files/Pods-Virtual Closeout-Virtual CloseoutUITests/Pods-Virtual Closeout-Virtual CloseoutUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -553,6 +555,7 @@
 				181A75342851BDD400FB6C84 /* Common */,
 				181A75322851BDA000FB6C84 /* Customer */,
 				181A75332851BDC300FB6C84 /* Seller */,
+				B976651F2DD5D9C700B7C561 /* custom_rating.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1066,6 +1069,7 @@
 				189E04AD284F2D440076D755 /* login.swift in Sources */,
 				1897694928697D4F008FACFA /* edit_profile.swift in Sources */,
 				1865538328534F4700E7B1C2 /* MenuControllerVCTableCell.swift in Sources */,
+				B97665202DD5D9C700B7C561 /* custom_rating.swift in Sources */,
 				186D1DFC28633DD300837BD7 /* earnings_new.swift in Sources */,
 				185FD9C4286ACE1F00098D58 /* seller_profile.swift in Sources */,
 				188826F8284F1C9900D19356 /* AppDelegate.swift in Sources */,
