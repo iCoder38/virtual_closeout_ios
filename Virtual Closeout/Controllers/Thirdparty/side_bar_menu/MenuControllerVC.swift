@@ -74,17 +74,16 @@ class MenuControllerVC: UIViewController {
                             "Logout"]
     
     // customer_image
-    var arrCustomerImage = ["home",
-                            "edit",
-                            "booking",
-                            "booking",
-                            
-                            "help",
-                            "help",
+    var arrCustomerImage = ["house",
+                            "pencil",
+                            "newspaper",
+                            "pencil",
+                            "heart",
+                            "cart",
+                            "star",
                             "lock",
-                            "lock",
-                            "lock",
-                            "logout"]
+                            "info",
+                            "iphone.and.arrow.right.outward"]
     
     // seller
     var seller_title = ["Dashboard",
@@ -357,7 +356,8 @@ extension MenuControllerVC: UITableViewDataSource {
                 
                 cell.lblName.text = arrCustomerTitle[indexPath.row]
                 cell.lblName.textColor = .white
-                cell.imgProfile.image = UIImage(named: arrCustomerImage[indexPath.row])
+                cell.imgProfile.image = UIImage(systemName: arrCustomerImage[indexPath.row])
+                cell.imgProfile.tintColor = .white
                 
             } else if (person["role"] as! String) == "Seller" {
                 
