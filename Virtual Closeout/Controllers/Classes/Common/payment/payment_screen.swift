@@ -233,7 +233,7 @@ class payment_screen: UIViewController , UITextFieldDelegate {
         
     }
     
-    @objc func save_card_button_click_method() {
+    /*@objc func save_card_button_click_method() {
         let indexPath = IndexPath.init(row: 0, section: 0)
         let cell = self.tablView.cellForRow(at: indexPath) as! payment_screen_table_cell
         
@@ -251,10 +251,10 @@ class payment_screen: UIViewController , UITextFieldDelegate {
             
         }
         
-    }
+    }*/
     
     // MARK: - ADD NEW CARD -
-    @objc func add_new_card_WB() {
+    /*@objc func add_new_card_WB() {
         let indexPath = IndexPath.init(row: 0, section: 0)
         let cell = self.tablView.cellForRow(at: indexPath) as! payment_screen_table_cell
         
@@ -273,7 +273,7 @@ class payment_screen: UIViewController , UITextFieldDelegate {
                                              cardNo: String(cell.txt_card_number.text!),
                                              expMonth: String(cell.txt_exp_month.text!),
                                              expYear: String(cell.txt_exp_year.text!),
-                                             nickName: String(cell.txt_nick_name.text!),
+                                             nickName: String(""),
                                              cardType:String(cell.lbl_card_name.text!))
             
             
@@ -326,25 +326,18 @@ class payment_screen: UIViewController , UITextFieldDelegate {
                 }
             }
         }
-    }
+    }*/
     
     
     // MARK: - PUSH ( PROCEED PAYMENT ) -
     @objc func proceed_payment_click_method() {
-        
         if self.str_card_save == "1" {
-            
             print("========> SAVE CARD TO SERVER <========")
-            
-            self.add_new_card_WB()
-            
+            // self.add_new_card_WB()
         } else {
-            
             print("========> ONLY PAY NO SAVE <========")
-            
             self.add_purchase_WB()
         }
-        
     }
     
     // MARK: - ADD PURCHASE -
@@ -537,7 +530,7 @@ extension payment_screen: UITableViewDelegate , UITableViewDataSource {
         
         cell.btn_proceed.addTarget(self, action: #selector(proceed_payment_click_method), for: .touchUpInside)
         
-        cell.btn_save_card_button.addTarget(self, action: #selector(save_card_button_click_method), for: .touchUpInside)
+        // cell.btn_save_card_button.addTarget(self, action: #selector(save_card_button_click_method), for: .touchUpInside)
         cell.txt_card_number.addTarget(self, action: #selector(payment_screen.textFieldDidChange(_:)), for: .editingChanged)
         
         return cell
@@ -634,7 +627,7 @@ class payment_screen_table_cell:UITableViewCell {
         }
     }
     
-    @IBOutlet weak var txt_nick_name:UITextField! {
+    /*@IBOutlet weak var txt_nick_name:UITextField! {
         didSet {
             txt_nick_name.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
             txt_nick_name.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
@@ -645,7 +638,7 @@ class payment_screen_table_cell:UITableViewCell {
             txt_nick_name.backgroundColor = .white
             txt_nick_name.setLeftPaddingPoints(20)
         }
-    }
+    }*/
     
     @IBOutlet weak var btn_proceed:UIButton! {
         didSet {
@@ -660,11 +653,11 @@ class payment_screen_table_cell:UITableViewCell {
         }
     }
     
-    @IBOutlet weak var btn_save_card_button:UIButton! {
+    /*@IBOutlet weak var btn_save_card_button:UIButton! {
         didSet {
             btn_save_card_button.tag = 0
             btn_save_card_button.setImage(UIImage(named: "un_check_mark"), for: .normal)
         }
-    }
+    }*/
     
 }
