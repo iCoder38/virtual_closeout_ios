@@ -2,24 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CLIENT_ID</key>
-	<string>1033441416547-a1gb7r1qvbo2ahq20ghu53f5o612gg53.apps.googleusercontent.com</string>
-	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1033441416547-a1gb7r1qvbo2ahq20ghu53f5o612gg53</string>
-	<key>ANDROID_CLIENT_ID</key>
-	<string>1033441416547-5cajovcuaoieu3an4vcu7hdvm3bnaumd.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDU87gZP5dj2G--kT54QGMQtR-rZ8wumek</string>
+	<string>AIzaSyB-x6Ya0CJKI7B8nt1hhSksuIYDhIFMLR0</string>
 	<key>GCM_SENDER_ID</key>
-	<string>1033441416547</string>
+	<string>1094314552811</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.evs.virtual-closet-development</string>
 	<key>PROJECT_ID</key>
-	<string>virtual-closeout</string>
+	<string>virtual-clouseout</string>
 	<key>STORAGE_BUCKET</key>
-	<string>virtual-closeout.appspot.com</string>
+	<string>virtual-clouseout.firebasestorage.app</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -31,8 +25,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1033441416547:ios:56888d10993c0510b2af56</string>
+	<string>1:1094314552811:ios:4b6570d019f5450182bdae</string>
 	<key>DATABASE_URL</key>
-	<string>https://virtual-closeout-default-rtdb.firebaseio.com</string>
+	<string>https://virtual-clouseout-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

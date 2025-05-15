@@ -1042,12 +1042,12 @@ extension browse_product_images: UICollectionViewDelegate , UICollectionViewData
          cell.lbl_product_price.text = formatter.string(from: fv as! NSNumber)*/
         // resultFV.text = formatter.stringFromNumber(fv)
         
-        let bigNumber = Double("\(item!["salePrice"]!)")
+        /*let bigNumber = Double("\(item!["salePrice"]!)")
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .currency
         let formattedNumber = numberFormatter.string(from: bigNumber! as NSNumber)
         // print(formattedNumber)
-        cell.lbl_product_price.text = "\(formattedNumber!)"
+        cell.lbl_product_price.text = "\(formattedNumber!)"*/
         
         cell.img_product_image.sd_imageIndicator = SDWebImageActivityIndicator.grayLarge
         cell.img_product_image.sd_setImage(with: URL(string: (item!["image_1"] as! String)), placeholderImage: UIImage(named: "logo"))

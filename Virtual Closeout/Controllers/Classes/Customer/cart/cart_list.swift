@@ -544,6 +544,7 @@ extension cart_list: UITableViewDataSource , UITableViewDelegate {
             numberFormatter.numberStyle = .currency
             let formattedNumber = numberFormatter.string(from: bigNumber! as NSNumber)
             cell.lbl_sub_total.text = "\(formattedNumber!)"
+            cell.lbl_sub_total.text = "$\(self.str_cart_sub_total)"
             
             // cell.lbl_total.text = "$"+String(self.str_cart_total)
             let bigNumber_2 = Double("\(self.str_cart_total)")
@@ -551,6 +552,7 @@ extension cart_list: UITableViewDataSource , UITableViewDelegate {
             numberFormatter_2.numberStyle = .currency
             let formattedNumber_2 = numberFormatter_2.string(from: bigNumber_2! as NSNumber)
             cell.lbl_total.text = "\(formattedNumber_2!)"
+            cell.lbl_total.text = "$\(self.str_cart_total)"
             
             return cell
             
@@ -575,6 +577,7 @@ extension cart_list: UITableViewDataSource , UITableViewDelegate {
             numberFormatter_2.numberStyle = .currency
             let formattedNumber_2 = numberFormatter_2.string(from: bigNumber_2! as NSNumber)
             cell.lbl_price.text = "\(formattedNumber_2!)"
+            cell.lbl_price.text = "$\(item!["productsalePrice"]!)"
             
             cell.lbl_cart_count.text = "\(item!["quantity"]!)"
             

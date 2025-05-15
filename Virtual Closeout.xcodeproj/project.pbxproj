@@ -35,7 +35,6 @@
 		1872ADE2284F6112001F1934 /* browse_product_images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872ADE1284F6112001F1934 /* browse_product_images.swift */; };
 		1872ADE5284F63BC001F1934 /* product_full_details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872ADE4284F63BC001F1934 /* product_full_details.swift */; };
 		1886A36D28585E9D00286241 /* chat_room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1886A36C28585E9D00286241 /* chat_room.swift */; };
-		1886A36F285860D900286241 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1886A36E285860D900286241 /* GoogleService-Info.plist */; };
 		188826F8284F1C9900D19356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188826F7284F1C9900D19356 /* AppDelegate.swift */; };
 		188826FA284F1C9900D19356 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188826F9284F1C9900D19356 /* SceneDelegate.swift */; };
 		188826FC284F1C9900D19356 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188826FB284F1C9900D19356 /* ViewController.swift */; };
@@ -79,6 +78,7 @@
 		302CBD083B11850EED47E3FA /* Pods_Virtual_Closeout_Virtual_CloseoutUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A507AE1E02A1B7341B820B /* Pods_Virtual_Closeout_Virtual_CloseoutUITests.framework */; };
 		AF144204922FC42B7619DC58 /* Pods_Virtual_Closeout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A3207DE04346B34454448C /* Pods_Virtual_Closeout.framework */; };
 		B976651C2DD5BC6300B7C561 /* rating_review.swift in Sources */ = {isa = PBXBuildFile; fileRef = B976651B2DD5BC6300B7C561 /* rating_review.swift */; };
+		B976651E2DD5CCA300B7C561 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B976651D2DD5CCA300B7C561 /* GoogleService-Info.plist */; };
 		B9A1B7512DD4C1F800162E35 /* wishlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A1B7502DD4C1F800162E35 /* wishlist.swift */; };
 		FB31EB417B2F18090FE7AF43 /* Pods_Virtual_CloseoutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E5901F6CC8CE9BE6D6164E /* Pods_Virtual_CloseoutTests.framework */; };
 /* End PBXBuildFile section */
@@ -133,7 +133,6 @@
 		1872ADE1284F6112001F1934 /* browse_product_images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = browse_product_images.swift; sourceTree = "<group>"; };
 		1872ADE4284F63BC001F1934 /* product_full_details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = product_full_details.swift; sourceTree = "<group>"; };
 		1886A36C28585E9D00286241 /* chat_room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chat_room.swift; sourceTree = "<group>"; };
-		1886A36E285860D900286241 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		188826F4284F1C9900D19356 /* Virtual Closeout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Virtual Closeout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		188826F7284F1C9900D19356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		188826F9284F1C9900D19356 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +185,7 @@
 		A2A3207DE04346B34454448C /* Pods_Virtual_Closeout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Virtual_Closeout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B293D6AB50042D204C5833C7 /* Pods-Virtual CloseoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual CloseoutTests.debug.xcconfig"; path = "Target Support Files/Pods-Virtual CloseoutTests/Pods-Virtual CloseoutTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B976651B2DD5BC6300B7C561 /* rating_review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rating_review.swift; sourceTree = "<group>"; };
+		B976651D2DD5CCA300B7C561 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B9A1B7502DD4C1F800162E35 /* wishlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wishlist.swift; sourceTree = "<group>"; };
 		F79B2F3077FED95D42E9868D /* Pods-Virtual Closeout-Virtual CloseoutUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual Closeout-Virtual CloseoutUITests.release.xcconfig"; path = "Target Support Files/Pods-Virtual Closeout-Virtual CloseoutUITests/Pods-Virtual Closeout-Virtual CloseoutUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -512,7 +512,7 @@
 				18882700284F1C9C00D19356 /* Assets.xcassets */,
 				18882702284F1C9C00D19356 /* LaunchScreen.storyboard */,
 				18882705284F1C9C00D19356 /* Info.plist */,
-				1886A36E285860D900286241 /* GoogleService-Info.plist */,
+				B976651D2DD5CCA300B7C561 /* GoogleService-Info.plist */,
 			);
 			path = "Virtual Closeout";
 			sourceTree = "<group>";
@@ -918,7 +918,7 @@
 				18882701284F1C9C00D19356 /* Assets.xcassets in Resources */,
 				188826FF284F1C9900D19356 /* Main.storyboard in Resources */,
 				18882745284F1F1100D19356 /* gif_bin.gif in Resources */,
-				1886A36F285860D900286241 /* GoogleService-Info.plist in Resources */,
+				B976651E2DD5CCA300B7C561 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1296,6 +1296,8 @@
 				DEVELOPMENT_TEAM = NHVZESNL9B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Virtual Closeout/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Virtual Closeout";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1308,6 +1310,10 @@
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.evs.virtual-closet-development";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Virtual Closeout/Controllers/Thirdparty/side_bar_menu/Virtual Closeout-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1328,6 +1334,8 @@
 				DEVELOPMENT_TEAM = NHVZESNL9B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Virtual Closeout/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Virtual Closeout";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1340,6 +1348,10 @@
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.evs.virtual-closet-development";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Virtual Closeout/Controllers/Thirdparty/side_bar_menu/Virtual Closeout-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
