@@ -310,7 +310,7 @@ class product_full_details: UIViewController {
         
         if String(self.set_quantity) == "0" {
             
-            let alert = NewYorkAlertController(title: String("Logout"), message: String("Quantity should be greater then 0"), style: .alert)
+            let alert = NewYorkAlertController(title: String("Alert"), message: String("Quantity should be greater then 0"), style: .alert)
             let dismiss = NewYorkButton(title: "dismiss", style: .default)
             alert.addButtons([dismiss])
             self.present(alert, animated: true)

@@ -78,6 +78,7 @@
 		18AFB8DC28618CD700895D8F /* edit_manage_product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFB8DB28618CD700895D8F /* edit_manage_product.swift */; };
 		302CBD083B11850EED47E3FA /* Pods_Virtual_Closeout_Virtual_CloseoutUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A507AE1E02A1B7341B820B /* Pods_Virtual_Closeout_Virtual_CloseoutUITests.framework */; };
 		AF144204922FC42B7619DC58 /* Pods_Virtual_Closeout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A3207DE04346B34454448C /* Pods_Virtual_Closeout.framework */; };
+		B976651C2DD5BC6300B7C561 /* rating_review.swift in Sources */ = {isa = PBXBuildFile; fileRef = B976651B2DD5BC6300B7C561 /* rating_review.swift */; };
 		B9A1B7512DD4C1F800162E35 /* wishlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A1B7502DD4C1F800162E35 /* wishlist.swift */; };
 		FB31EB417B2F18090FE7AF43 /* Pods_Virtual_CloseoutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E5901F6CC8CE9BE6D6164E /* Pods_Virtual_CloseoutTests.framework */; };
 /* End PBXBuildFile section */
@@ -184,6 +185,7 @@
 		90E5901F6CC8CE9BE6D6164E /* Pods_Virtual_CloseoutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Virtual_CloseoutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A3207DE04346B34454448C /* Pods_Virtual_Closeout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Virtual_Closeout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B293D6AB50042D204C5833C7 /* Pods-Virtual CloseoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual CloseoutTests.debug.xcconfig"; path = "Target Support Files/Pods-Virtual CloseoutTests/Pods-Virtual CloseoutTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B976651B2DD5BC6300B7C561 /* rating_review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rating_review.swift; sourceTree = "<group>"; };
 		B9A1B7502DD4C1F800162E35 /* wishlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wishlist.swift; sourceTree = "<group>"; };
 		F79B2F3077FED95D42E9868D /* Pods-Virtual Closeout-Virtual CloseoutUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual Closeout-Virtual CloseoutUITests.release.xcconfig"; path = "Target Support Files/Pods-Virtual Closeout-Virtual CloseoutUITests/Pods-Virtual Closeout-Virtual CloseoutUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -231,6 +233,7 @@
 		181A75322851BDA000FB6C84 /* Customer */ = {
 			isa = PBXGroup;
 			children = (
+				B976651A2DD5BC5200B7C561 /* rating_review */,
 				B9A1B74F2DD4C18B00162E35 /* wish_list */,
 				180ADDDC2864371000B15F82 /* filter */,
 				189E04B7284F42B90076D755 /* browse_product */,
@@ -767,6 +770,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B976651A2DD5BC5200B7C561 /* rating_review */ = {
+			isa = PBXGroup;
+			children = (
+				B976651B2DD5BC6300B7C561 /* rating_review.swift */,
+			);
+			path = rating_review;
+			sourceTree = "<group>";
+		};
 		B9A1B74F2DD4C18B00162E35 /* wish_list */ = {
 			isa = PBXGroup;
 			children = (
@@ -1079,6 +1090,7 @@
 				1865538128534F4700E7B1C2 /* MenuControllerVC.swift in Sources */,
 				181A75462851E28800FB6C84 /* dashboard.swift in Sources */,
 				189E04B0284F31480076D755 /* profile.swift in Sources */,
+				B976651C2DD5BC6300B7C561 /* rating_review.swift in Sources */,
 				181A75402851D86400FB6C84 /* business_information.swift in Sources */,
 				181A75432851DE3E00FB6C84 /* bank_information.swift in Sources */,
 				1852C49D2850B07E00C3768C /* address.swift in Sources */,

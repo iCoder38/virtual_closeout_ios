@@ -91,6 +91,14 @@ class change_password: UIViewController {
         
         self.manage_profile(self.btnBack)
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        self.view.addGestureRecognizer(tap)
+        
+        self.btnUpdatePassword.addTarget(self, action: #selector(validationBeforeChangePassword), for: .touchUpInside)
+    }
+    
+    @objc override func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

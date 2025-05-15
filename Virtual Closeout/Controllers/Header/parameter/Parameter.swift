@@ -460,7 +460,13 @@ struct club_reviews: Encodable {
     let userId: String
 }
 
-
+struct customerRR: Encodable {
+    
+    let action: String
+    let userId: String
+    let pageNo: String
+    
+}
 
 
 

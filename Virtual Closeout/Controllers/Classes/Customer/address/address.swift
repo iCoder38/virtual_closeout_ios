@@ -355,14 +355,26 @@ class address: UIViewController {
         self.view.endEditing(true)
         
         
-        let push = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "all_card_list_id") as? all_card_list
+        /*let push = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "all_card_list_id") as? all_card_list
         
         push!.get_full_address = self.dict_get_clicked_address
         push!.get_final_price_in_all_cards_screen = String(self.str_final_amount)
         push!.get_products_list_in_all_cards_screen = self.arr_mut_get_product_details_address
         push!.payment_type = String(self.str_i_am_from)
         
+        self.navigationController?.pushViewController(push!, animated: true)*/
+        
+        
+        let push = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "payment_screen_id") as? payment_screen
+        
+        push!.get_full_address_for_payment = self.dict_get_clicked_address
+        push!.payment_type_payment = String(self.str_i_am_from)
+        push!.get_final_price_in_all_cards_screen_payment = String(self.str_final_amount)
+        push!.get_products_list_in_all_cards_screen_payment = self.arr_mut_get_product_details_address
+        
         self.navigationController?.pushViewController(push!, animated: true)
+        
+        
         
         
         

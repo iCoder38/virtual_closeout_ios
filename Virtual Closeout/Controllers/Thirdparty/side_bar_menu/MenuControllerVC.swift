@@ -445,6 +445,9 @@ extension MenuControllerVC: UITableViewDataSource {
                     
                 } else if self.arrCustomerTitle[indexPath.row] == "Change password" {
                     
+                    let myString = "backOrMenu"
+                    UserDefaults.standard.set(myString, forKey: "keySetToBackOrMenu")
+                    
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let sw = storyboard.instantiateViewController(withIdentifier: "sw") as! SWRevealViewController
                     self.view.window?.rootViewController = sw
@@ -500,6 +503,19 @@ extension MenuControllerVC: UITableViewDataSource {
                     let sw = storyboard.instantiateViewController(withIdentifier: "sw") as! SWRevealViewController
                     self.view.window?.rootViewController = sw
                     let destinationController = self.storyboard?.instantiateViewController(withIdentifier: "wishlist_id")
+                    let navigationController = UINavigationController(rootViewController: destinationController!)
+                    sw.setFront(navigationController, animated: true)
+                    
+                }  else if self.arrCustomerTitle[indexPath.row] == "Review & Rating" {
+                    
+                    let myString = "backOrMenu"
+                    UserDefaults.standard.set(myString, forKey: "keySetToBackOrMenu")
+                    
+                    
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let sw = storyboard.instantiateViewController(withIdentifier: "sw") as! SWRevealViewController
+                    self.view.window?.rootViewController = sw
+                    let destinationController = self.storyboard?.instantiateViewController(withIdentifier: "rating_review_id")
                     let navigationController = UINavigationController(rootViewController: destinationController!)
                     sw.setFront(navigationController, animated: true)
                     
