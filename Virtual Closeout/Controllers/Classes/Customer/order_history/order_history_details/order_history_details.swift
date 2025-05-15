@@ -257,6 +257,89 @@ class order_history_details: UIViewController {
             }
         
     }
+    
+    
+    @objc func ratingClickMethod() {
+        showRatingAlert { rating, description in
+            print("Rating: \(rating), Description: \(description)")
+            // Handle the result here
+            
+            self.sendReviewWB(star: "\(rating)", message: "\(description)")
+            /*
+             [action] => submitreview
+                 [orderId] => 93
+                 [reviewTo] => 26
+                 [reviewFrom] => 25
+                 [star] => 5.0
+                 [message] => check
+             */
+        }
+
+    }
+    
+    
+    
+    @objc func sendReviewWB(star:String,message:String) {
+        
+        ERProgressHud.sharedInstance.showDarkBackgroundView(withTitle: "please wait...")
+            
+        self.view.endEditing(true)
+            
+        // print(self.dict as Any)
+        
+        if let person = UserDefaults.standard.value(forKey: key_user_default_value) as? [String:Any] {
+            let x : Int = (person["userId"] as! Int)
+            let myString = String(x)
+                
+            let params = sendReviewParam(action: "submitreview", orderId: "\(self.dict["purchaseId"]!)", reviewTo: "\(self.dict["ownerId"]!)", reviewFrom: String(myString), star: String(star), message: String(message))
+            
+            print(params)
+            
+            AF.request(APPLICATION_BASE_URL,
+                       method: .post,
+                       parameters: params,
+                       encoder: JSONParameterEncoder.default).responseJSON { response in
+                        // debugPrint(response.result)
+                        
+                        switch response.result {
+                        case let .success(value):
+                            
+                            let JSON = value as! NSDictionary
+                              print(JSON as Any)
+                            
+                            var strSuccess : String!
+                            strSuccess = JSON["status"]as Any as? String
+                            
+                            // var strSuccess2 : String!
+                            // strSuccess2 = JSON["msg"]as Any as? String
+                            
+                            if strSuccess == String("success") {
+                                print("yes")
+                                
+                                self.order_details_WB(str_loader: "no")
+                                
+                            } else {
+                                print("no")
+                                ERProgressHud.sharedInstance.hide()
+                                
+                                var strSuccess2 : String!
+                                strSuccess2 = JSON["msg"]as Any as? String
+                                
+                                Utils.showAlert(alerttitle: String(strSuccess), alertmessage: String(strSuccess2), ButtonTitle: "Ok", viewController: self)
+                                
+                            }
+                            
+                        case let .failure(error):
+                            print(error)
+                            ERProgressHud.sharedInstance.hide()
+                            
+                            // Utils.showAlert(alerttitle: SERVER_ISSUE_TITLE, alertmessage: SERVER_ISSUE_MESSAGE, ButtonTitle: "Ok", viewController: self)
+                        }
+                }
+            
+            }
+        
+    }
 }
 
 
@@ -338,18 +421,16 @@ extension order_history_details: UITableViewDataSource , UITableViewDelegate {
             
             let cell5 = tableView.dequeueReusableCell(withIdentifier: "cellFive") as! order_history_details_table_cell
             
-            if "\(self.dict["revirewSeller"]!)" == "Yes" {
+            if "\(self.dict["revirewUser"]!)" == "Yes" {
                 cell5.btnReview.isHidden = true
             } else {
                 cell5.btnReview.isHidden = false
                 cell5.btnReview.setTitle("Rate our seller", for: .normal)
-                cell5.btnReview.addTarget(self, action: #selector(ratingClickMethod), for: .inside
-            )
+                cell5.btnReview.addTarget(self, action: #selector(ratingClickMethod), for: .touchUpInside)
             }
             
             cell5.accessoryType = .none
             
-            cell5.btn_done_delivered.addTarget(self, action: #selector(change_status_WB), for: .touchUpInside)
             
             return cell5
             
@@ -435,11 +516,17 @@ extension order_history_details: UITableViewDataSource , UITableViewDelegate {
 
         }
         else if indexPath.row == 4 {
-            if "\(self.dict["revirewSeller"]!)" == "Yes" {
-                return 0
+            
+            if "\(self.dict["deliveryStatus"]!)" == "3" { // delivered
+                if "\(self.dict["revirewUser"]!)" == "Yes" { // review done from user's end
+                    return 0
+                } else {
+                    return 80
+                }
             } else {
-                return 80
+                return 0
             }
+            
         }
         else {
             return UITableView.automaticDimension

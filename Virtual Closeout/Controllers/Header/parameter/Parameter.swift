@@ -342,6 +342,16 @@ struct change_status_params: Encodable {
     let purcheseId:String
 }
 
+struct sendReviewParam: Encodable {
+    
+    let action: String
+    let orderId:String
+    let reviewTo:String
+    let reviewFrom:String
+    let star:String
+    let message:String
+}
+
 /*
  [action] => productlist
      [userId] => 3

@@ -3454,7 +3454,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="btnReview" destination="y4h-x9-l5k" id="LhX-SX-pzl"/>
-                                            <outlet property="btn_done_delivered" destination="y4h-x9-l5k" id="ctr-q2-8aT"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
