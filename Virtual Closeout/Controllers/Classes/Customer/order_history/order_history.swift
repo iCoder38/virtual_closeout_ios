@@ -219,7 +219,7 @@ extension order_history: UITableViewDataSource , UITableViewDelegate {
         /*var ar : NSArray!
         ar = (item!["productDetails"] as! Array<Any>) as NSArray*/
         
-        let x22 : Int = (item!["totalAmount"] as! Int)
+        let x22 : Int = (item!["Amount"] as! Int)
         let myString22 = String(x22)
         
         cell.lblQuantity.text = "Quantity : \(item!["quantity"]!)"

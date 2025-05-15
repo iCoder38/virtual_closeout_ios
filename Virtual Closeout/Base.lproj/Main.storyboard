@@ -1678,6 +1678,10 @@
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                             <state key="normal" image="star" catalog="system"/>
                                                         </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVO-wG-aXR">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="96"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -1691,13 +1695,17 @@
                                                         <constraint firstItem="xBR-tD-qev" firstAttribute="leading" secondItem="32C-tG-aWq" secondAttribute="trailing" constant="8" symbolic="YES" id="N8h-de-u2V"/>
                                                         <constraint firstItem="h7p-Zd-F7P" firstAttribute="top" secondItem="rYJ-5C-Yrl" secondAttribute="top" constant="8" id="Njl-qw-dS1"/>
                                                         <constraint firstItem="h7p-Zd-F7P" firstAttribute="leading" secondItem="nGz-iB-25c" secondAttribute="trailing" constant="8" symbolic="YES" id="Ocg-Wv-PAO"/>
+                                                        <constraint firstAttribute="trailing" secondItem="jVO-wG-aXR" secondAttribute="trailing" id="Ppi-0K-e0h"/>
                                                         <constraint firstItem="nGz-iB-25c" firstAttribute="top" secondItem="rYJ-5C-Yrl" secondAttribute="top" constant="8" id="Val-0l-jmt"/>
                                                         <constraint firstItem="SxW-KY-nPN" firstAttribute="top" secondItem="h7p-Zd-F7P" secondAttribute="bottom" constant="2" id="fa2-hV-NLW"/>
                                                         <constraint firstItem="gZD-na-Of3" firstAttribute="leading" secondItem="xBR-tD-qev" secondAttribute="trailing" constant="8" symbolic="YES" id="ftz-tE-oUG"/>
                                                         <constraint firstAttribute="bottom" secondItem="gZD-na-Of3" secondAttribute="bottom" constant="8" id="hJQ-Wo-s9H"/>
+                                                        <constraint firstItem="jVO-wG-aXR" firstAttribute="top" secondItem="rYJ-5C-Yrl" secondAttribute="top" id="jOO-zA-KPK"/>
                                                         <constraint firstAttribute="trailing" secondItem="SxW-KY-nPN" secondAttribute="trailing" constant="8" id="lQz-eV-B3v"/>
+                                                        <constraint firstAttribute="bottom" secondItem="jVO-wG-aXR" secondAttribute="bottom" id="mn7-vQ-XNy"/>
                                                         <constraint firstAttribute="bottom" secondItem="UZc-9N-nsA" secondAttribute="bottom" constant="8" id="p1P-2t-WEq"/>
                                                         <constraint firstAttribute="bottom" secondItem="32C-tG-aWq" secondAttribute="bottom" constant="8" id="p4Y-2V-2X1"/>
+                                                        <constraint firstItem="jVO-wG-aXR" firstAttribute="leading" secondItem="rYJ-5C-Yrl" secondAttribute="leading" id="qIQ-2c-Tvi"/>
                                                         <constraint firstAttribute="bottom" secondItem="xBR-tD-qev" secondAttribute="bottom" constant="8" id="rbg-E8-9Ty"/>
                                                         <constraint firstAttribute="trailing" secondItem="h7p-Zd-F7P" secondAttribute="trailing" constant="8" id="tUl-hw-6ds"/>
                                                     </constraints>
@@ -1978,6 +1986,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="btnHeart" destination="F2V-1A-wu7" id="ugT-Cr-Q9U"/>
+                                            <outlet property="btnPushToSeller" destination="jVO-wG-aXR" id="siM-sB-FsM"/>
                                             <outlet property="btnShare" destination="QZU-hw-haP" id="mah-VW-w6z"/>
                                             <outlet property="btn_add_item" destination="LNj-yJ-c8C" id="RBH-c5-qV1"/>
                                             <outlet property="btn_add_to_cart" destination="Ror-nE-KPY" id="XbP-BZ-LWx"/>
@@ -11296,46 +11305,46 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

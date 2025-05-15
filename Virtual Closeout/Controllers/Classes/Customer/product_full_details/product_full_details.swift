@@ -93,11 +93,11 @@ class product_full_details: UIViewController {
         self.btn_cart.addTarget(self, action: #selector(cart_click_method), for: .touchUpInside)
         
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
-        self.product_details_WB()
+        self.product_details_WB(showLodaer: true)
         
     }
     
@@ -116,10 +116,14 @@ class product_full_details: UIViewController {
     }
     
     // MARK: - WEBSERVICE - ( PRODUCT DETAILS ) -
-    @objc func product_details_WB() {
+    @objc func product_details_WB(showLodaer:Bool) {
         
         self.view.endEditing(true)
-        ERProgressHud.sharedInstance.showDarkBackgroundView(withTitle: "Please wait...")
+        
+        if (showLodaer) {
+            ERProgressHud.sharedInstance.showDarkBackgroundView(withTitle: "Please wait...")
+        }
+        
         
         if let person = UserDefaults.standard.value(forKey: key_user_default_value) as? [String:Any] {
             // let str:String = person["role"] as! String
@@ -187,7 +191,7 @@ class product_full_details: UIViewController {
                         print(self.arr_mut_save_images as Any)
                         
                         self.my_Cart_list_WB()
-
+                        
                     } else {
                         
                         print("no")
@@ -228,7 +232,7 @@ class product_full_details: UIViewController {
          */
         //
         
-         // print(self.dict_save_full_data as Any)
+        // print(self.dict_save_full_data as Any)
         
         let push = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "chat_room_id") as? chat_room
         
@@ -269,7 +273,7 @@ class product_full_details: UIViewController {
             self.tablView.reloadData()
             
         }
-           
+        
     }
     
     // MARK: - MINUS -
@@ -279,7 +283,7 @@ class product_full_details: UIViewController {
         let cell = self.tablView.cellForRow(at: indexPath) as! product_full_details_table_cell
         
         if "\(self.dict_save_full_data["quantity"]!)" != "" || "\(self.dict_save_full_data["quantity"]!)" != "0" {
-         
+            
             if String(self.set_quantity) != "0" {
                 
                 // minus one
@@ -324,77 +328,77 @@ class product_full_details: UIViewController {
             push!.dict_get_product_data = self.dict_save_full_data
             
             /*print(self.dict_save_full_data as Any)
-            
-            /*// price
-            if dictGetProductDetails!["price"] is String {
-                print("Yes, it's a String")
-
-                push!.productPrice = (dictGetProductDetails!["price"] as! String)
-
-            } else if dictGetProductDetails!["price"] is Int {
-                print("It is Integer")
-                            
-                let x2 : Int = (dictGetProductDetails!["price"] as! Int)
-                let myString2 = String(x2)
-                push!.productPrice = myString2
-                
-            } else {
-                print("i am number")
-                            
-                let temp:NSNumber = dictGetProductDetails!["price"] as! NSNumber
-                let tempString = temp.stringValue
-                push!.productPrice = tempString
-                
-             }*/
-            
-            
-            
-            
-            // product name
-            push!.productDetails = (dict_save_full_data!["productName"] as! String)
-            // +"\n"+(dictGetProductDetails!["cateroryName"] as! String)
-            
-            // product image
-            push!.productImage = (dict_save_full_data!["image"] as! String)
-            
-            // shipping charge
-            push!.productShipping = "0" // (dictGetProductDetails!["image"] as! String)
-            
-            // product id
-            /*let x233 : Int = (dictGetProductDetails!["productId"] as! Int)
-            let myString233 = String(x233)
-            push!.productId = myString233*/
-            
-            // quantity
-            push!.productQuantity = String(self.set_quantity)
-            
-            // phone number
-            
-            
-            /*// sub total
-            if dictGetProductDetails!["price"] is String {
-                print("Yes, it's a String")
-
-                push!.productSubTotal = (dictGetProductDetails!["price"] as! String)
-
-            } else if dictGetProductDetails!["price"] is Int {
-                print("It is Integer")
-                            
-                let x2 : Int = (dictGetProductDetails!["price"] as! Int)
-                let myString2 = String(x2)
-                push!.productSubTotal = myString2
-                
-            } else {
-                print("i am number")
-                            
-                let temp:NSNumber = dictGetProductDetails!["price"] as! NSNumber
-                let tempString = temp.stringValue
-                push!.productSubTotal = tempString
-                
-             }*/
-            
-            push!.productCategoryNamee = (self.dict_save_full_data["productName"] as! String)
-            */
+             
+             /*// price
+              if dictGetProductDetails!["price"] is String {
+              print("Yes, it's a String")
+              
+              push!.productPrice = (dictGetProductDetails!["price"] as! String)
+              
+              } else if dictGetProductDetails!["price"] is Int {
+              print("It is Integer")
+              
+              let x2 : Int = (dictGetProductDetails!["price"] as! Int)
+              let myString2 = String(x2)
+              push!.productPrice = myString2
+              
+              } else {
+              print("i am number")
+              
+              let temp:NSNumber = dictGetProductDetails!["price"] as! NSNumber
+              let tempString = temp.stringValue
+              push!.productPrice = tempString
+              
+              }*/
+             
+             
+             
+             
+             // product name
+             push!.productDetails = (dict_save_full_data!["productName"] as! String)
+             // +"\n"+(dictGetProductDetails!["cateroryName"] as! String)
+             
+             // product image
+             push!.productImage = (dict_save_full_data!["image"] as! String)
+             
+             // shipping charge
+             push!.productShipping = "0" // (dictGetProductDetails!["image"] as! String)
+             
+             // product id
+             /*let x233 : Int = (dictGetProductDetails!["productId"] as! Int)
+              let myString233 = String(x233)
+              push!.productId = myString233*/
+             
+             // quantity
+             push!.productQuantity = String(self.set_quantity)
+             
+             // phone number
+             
+             
+             /*// sub total
+              if dictGetProductDetails!["price"] is String {
+              print("Yes, it's a String")
+              
+              push!.productSubTotal = (dictGetProductDetails!["price"] as! String)
+              
+              } else if dictGetProductDetails!["price"] is Int {
+              print("It is Integer")
+              
+              let x2 : Int = (dictGetProductDetails!["price"] as! Int)
+              let myString2 = String(x2)
+              push!.productSubTotal = myString2
+              
+              } else {
+              print("i am number")
+              
+              let temp:NSNumber = dictGetProductDetails!["price"] as! NSNumber
+              let tempString = temp.stringValue
+              push!.productSubTotal = tempString
+              
+              }*/
+             
+             push!.productCategoryNamee = (self.dict_save_full_data["productName"] as! String)
+             */
             
             self.navigationController?.pushViewController(push!, animated: true)
             
@@ -584,6 +588,100 @@ class product_full_details: UIViewController {
         }
     }
     
+    
+    @objc func heartClickMethod() {
+        if ("\(self.dict_save_full_data["wishlist"]!)" == "0"){
+            self.addToWishlist()
+        }
+    }
+    
+    @objc func addToWishlist() {
+        
+        self.view.endEditing(true)
+        ERProgressHud.sharedInstance.showDarkBackgroundView(withTitle: "Please wait...")
+        if let person = UserDefaults.standard.value(forKey: key_user_default_value) as? [String:Any] {
+            
+            let x : Int = person["userId"] as! Int
+            let myString = String(x)
+            let url = APPLICATION_BASE_URL
+            
+            let parameters: [String: Any] = [
+                "action": "addwishlist",
+                "userId": String(myString),
+                "productId": "\(self.dict_save_full_data["productId"]!)"
+            ]
+            
+            APIManager.shared.postRequest(
+                url: url,
+                parameters: parameters,
+                // showLoader: true,
+                viewController: self
+            ) { success, response in
+                if success {
+                    print("✅ API Success: \(response ?? [:])")
+                    self.product_details_WB(showLodaer: false)
+                } else {
+                    print("❌ API Failed: \(response ?? [:])")
+                    ERProgressHud.sharedInstance.hide()
+                }
+            }
+        }
+        
+    }
+    
+    @objc func reportClickMethod() {
+        self.view.endEditing(true)
+        
+        self.showSimpleTwoButtonAlert(title: "Report") { userInput in
+            print("User wrote: \(userInput)")
+            
+            
+            ERProgressHud.sharedInstance.showDarkBackgroundView(withTitle: "reporting...")
+            if let person = UserDefaults.standard.value(forKey: key_user_default_value) as? [String:Any] {
+                
+                let x : Int = person["userId"] as! Int
+                let myString = String(x)
+                let url = APPLICATION_BASE_URL
+                
+                let parameters: [String: Any] = [
+                    "action": "report",
+                    "userId": String(myString),
+                    "message": "\(userInput)"
+                ]
+                
+                APIManager.shared.postRequest(
+                    url: url,
+                    parameters: parameters,
+                    // showLoader: true,
+                    viewController: self
+                ) { success, response in
+                    if success {
+                        print("✅ API Success: \(response ?? [:])")
+                        ERProgressHud.sharedInstance.hide()
+                        self.navigationController?.popViewController(animated: true)
+                    } else {
+                        print("❌ API Failed: \(response ?? [:])")
+                        ERProgressHud.sharedInstance.hide()
+                        self.showSnackBar(message: "Something went wrong. Please try again.")
+                    }
+                }
+            }
+        }
+    }
+    
+     
+    
+    
+    @objc func shareClickMethod() {
+        shareProduct(from: self, product: self.dict_save_full_data as! [String : Any])
+    }
+    
+    @objc func pushToSellerClickMethod() {
+        let push = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "seller_profile_id") as? seller_profile
+        push!.str_seller_profile_id = "\(self.dict_save_full_data["sellerId"]!)"
+        self.navigationController?.pushViewController(push!, animated: true)
+    }
+    
 }
 
 //MARK:- TABLE VIEW -
@@ -627,10 +725,15 @@ extension product_full_details: UITableViewDelegate , UITableViewDataSource {
         if ("\(self.dict_save_full_data["wishlist"]!)" == "0"){
             cell.btnHeart.setImage(UIImage(systemName: "heart"), for: .normal)
             cell.btnHeart.tintColor = .systemRed
+            cell.btn_save.setImage(UIImage(systemName: "heart"), for: .normal)
         } else {
             cell.btnHeart.setImage(UIImage(systemName: "heart.fill"), for: .normal)
             cell.btnHeart.tintColor = .systemRed
+            cell.btn_save.setImage(UIImage(systemName: "heart.fill"), for: .normal)
         }
+        
+        cell.btnHeart.addTarget(self, action: #selector(heartClickMethod), for: .touchUpInside)
+        cell.btn_save.addTarget(self, action: #selector(heartClickMethod), for: .touchUpInside)
         
         // product name
         cell.lbl_title.text = (self.dict_save_full_data["productName"] as! String)
@@ -673,55 +776,39 @@ extension product_full_details: UITableViewDelegate , UITableViewDataSource {
         cell.lbl_profile_name.text = (self.dict_save_full_data["sellerName"] as! String)
         
         // seller rating
-        if "\(self.dict_save_full_data["sellerRating"]!)" == "1" {
-            
-            cell.btn_star_one.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            cell.btn_star_two.setImage(UIImage(systemName: "star"), for: .normal)
-            cell.btn_star_three.setImage(UIImage(systemName: "star"), for: .normal)
-            cell.btn_star_four.setImage(UIImage(systemName: "star"), for: .normal)
-            cell.btn_star_five.setImage(UIImage(systemName: "star"), for: .normal)
-            
-        } else if "\(self.dict_save_full_data["sellerRating"]!)" == "2" {
-            
-            cell.btn_star_one.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            cell.btn_star_two.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            cell.btn_star_three.setImage(UIImage(systemName: "star"), for: .normal)
-            cell.btn_star_four.setImage(UIImage(systemName: "star"), for: .normal)
-            cell.btn_star_five.setImage(UIImage(systemName: "star"), for: .normal)
-            
-        } else if "\(self.dict_save_full_data["sellerRating"]!)" == "3" {
-            
-            cell.btn_star_one.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            cell.btn_star_two.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            cell.btn_star_three.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            cell.btn_star_four.setImage(UIImage(systemName: "star"), for: .normal)
-            cell.btn_star_five.setImage(UIImage(systemName: "star"), for: .normal)
-            
-        } else if "\(self.dict_save_full_data["sellerRating"]!)" == "4" {
-            
-            cell.btn_star_one.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            cell.btn_star_two.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            cell.btn_star_three.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            cell.btn_star_four.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            cell.btn_star_five.setImage(UIImage(systemName: "star"), for: .normal)
-            
-        } else if "\(self.dict_save_full_data["sellerRating"]!)" == "5" {
-            
-            cell.btn_star_one.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            cell.btn_star_two.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            cell.btn_star_three.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            cell.btn_star_four.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            cell.btn_star_five.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            
+        if let ratingString = self.dict_save_full_data["sellerRating"] as? String,
+           let ratingValue = Double(ratingString) {
+
+            let roundedRating = Int(round(ratingValue)) // use `floor` or `ceil` if you prefer
+
+            let starButtons = [
+                cell.btn_star_one,
+                cell.btn_star_two,
+                cell.btn_star_three,
+                cell.btn_star_four,
+                cell.btn_star_five
+            ]
+
+            for (index, button) in starButtons.enumerated() {
+                let imageName = index < roundedRating ? "star.fill" : "star"
+                button?.setImage(UIImage(systemName: imageName), for: .normal)
+            }
+
         } else {
-            
+            // In case of nil or invalid value, show all empty
             cell.btn_star_one.setImage(UIImage(systemName: "star"), for: .normal)
             cell.btn_star_two.setImage(UIImage(systemName: "star"), for: .normal)
             cell.btn_star_three.setImage(UIImage(systemName: "star"), for: .normal)
             cell.btn_star_four.setImage(UIImage(systemName: "star"), for: .normal)
             cell.btn_star_five.setImage(UIImage(systemName: "star"), for: .normal)
-            
         }
+
+        
+        cell.btn_report.addTarget(self, action: #selector(reportClickMethod), for: .touchUpInside)
+        cell.btnShare.addTarget(self, action: #selector(shareClickMethod), for: .touchUpInside)
+        cell.btn_share.addTarget(self, action: #selector(shareClickMethod), for: .touchUpInside)
+        
+        cell.btnPushToSeller.addTarget(self, action: #selector(pushToSellerClickMethod), for: .touchUpInside)
         
         // lbl since
         cell.lbl_since.text = "Member since "+(self.dict_save_full_data["sellerRegistered"] as! String)
@@ -1131,7 +1218,12 @@ class product_full_details_table_cell:UITableViewCell {
     }
     
     @IBOutlet weak var btnHeart:UIButton!
-    @IBOutlet weak var btnShare:UIButton!
+    @IBOutlet weak var btnShare:UIButton! {
+        didSet {
+            btnShare.tintColor = .systemOrange
+        }
+    }
+    @IBOutlet weak var btnPushToSeller:UIButton!
     
     @IBOutlet weak var btn_buy_now:UIButton! {
         didSet {

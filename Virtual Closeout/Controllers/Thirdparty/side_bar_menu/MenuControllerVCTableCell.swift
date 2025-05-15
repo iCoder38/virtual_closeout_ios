@@ -12,7 +12,7 @@ class MenuControllerVCTableCell: UITableViewCell {
 
     @IBOutlet weak var lblName:UILabel!{
         didSet {
-            lblName.textColor = .white
+            lblName.textColor = .black
         }
     }
     
@@ -20,8 +20,7 @@ class MenuControllerVCTableCell: UITableViewCell {
     
     @IBOutlet weak var imgProfile:UIImageView! {
         didSet {
-            // imgProfile.layer.cornerRadius = 15
-            // imgProfile.clipsToBounds = true
+            imgProfile.backgroundColor = .clear
         }
     }
     

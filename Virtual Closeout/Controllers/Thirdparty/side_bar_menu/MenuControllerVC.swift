@@ -157,7 +157,7 @@ class MenuControllerVC: UIViewController {
             tbleView.delegate = self
             tbleView.dataSource = self
             tbleView.tableFooterView = UIView.init()
-            tbleView.backgroundColor = .white
+            tbleView.backgroundColor = navigation_color
             // tbleView.separatorInset = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 50)
             tbleView.separatorColor = .systemGray6
         }
@@ -351,22 +351,19 @@ extension MenuControllerVC: UITableViewDataSource {
         cell.separatorInset = UIEdgeInsets.zero
         cell.layoutMargins = UIEdgeInsets.zero
         
-        
-        
-        // cell.imgProfile.image = UIImage(named: arrCustomerImage[indexPath.row])
-        
         if let person = UserDefaults.standard.value(forKey: key_user_default_value) as? [String:Any] {
             
             if (person["role"] as! String) == "Customer" || (person["role"] as! String) == "Member" {
                 
                 cell.lblName.text = arrCustomerTitle[indexPath.row]
-                cell.lblName.textColor = .black
+                cell.lblName.textColor = .white
+                cell.imgProfile.image = UIImage(named: arrCustomerImage[indexPath.row])
                 
             } else if (person["role"] as! String) == "Seller" {
                 
                 cell.lblName.text = self.seller_title[indexPath.row]
-                cell.lblName.textColor = .black
-                // cell.imgProfile.image = UIImage(named: arrClubImage[indexPath.row])
+                cell.lblName.textColor = .white
+               // cell.imgProfile.image = UIImage(named: arrClubImage[indexPath.row])
             }
             
         }

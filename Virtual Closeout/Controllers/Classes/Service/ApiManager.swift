@@ -9,13 +9,13 @@ class APIManager {
     func postRequest(
         url: String,
         parameters: [String: Any],
-        showLoader: Bool = true,
+        // showLoader: Bool = true,
         viewController: UIViewController?,
         completion: @escaping (_ success: Bool, _ response: [String: Any]?) -> Void
     ) {
-        if showLoader {
+       /* if showLoader {
             ERProgressHud.sharedInstance.showDarkBackgroundView(withTitle: "Please wait...")
-        }
+        }*/
 
         AF.request(
             url,
@@ -23,9 +23,9 @@ class APIManager {
             parameters: parameters,
             encoding: JSONEncoding.default
         ).responseJSON { response in
-            if showLoader {
+            /*if showLoader {
                 ERProgressHud.sharedInstance.hide()
-            }
+            }*/
 
             switch response.result {
             case .success(let value):

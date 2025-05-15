@@ -156,6 +156,14 @@ struct cart_list_params: Encodable {
     let productId:String
 }
 
+//MARK: - ADD TO WISHLIST -
+struct addToWishlistParams: Encodable {
+    
+    let action: String
+    let userId:String
+    let productId:String
+}
+
 //MARK: - ADDRESS LIST -
 struct address_list_params: Encodable {
     
