@@ -318,6 +318,11 @@ class order_history_details: UIViewController {
                                 
                                 self.order_details_WB(str_loader: "no")
                                 
+                            } else if strSuccess == String("Success") {
+                                print("yes")
+                                
+                                self.order_details_WB(str_loader: "no")
+                                
                             } else {
                                 print("no")
                                 ERProgressHud.sharedInstance.hide()

@@ -624,6 +624,14 @@ extension product_full_details: UITableViewDelegate , UITableViewDataSource {
             
         }
         
+        if ("\(self.dict_save_full_data["wishlist"]!)" == "0"){
+            cell.btnHeart.setImage(UIImage(systemName: "heart"), for: .normal)
+            cell.btnHeart.tintColor = .systemRed
+        } else {
+            cell.btnHeart.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+            cell.btnHeart.tintColor = .systemRed
+        }
+        
         // product name
         cell.lbl_title.text = (self.dict_save_full_data["productName"] as! String)
         self.lblNavigationTitle.text = (self.dict_save_full_data["productName"] as! String)
@@ -1121,6 +1129,9 @@ class product_full_details_table_cell:UITableViewCell {
             
         }
     }
+    
+    @IBOutlet weak var btnHeart:UIButton!
+    @IBOutlet weak var btnShare:UIButton!
     
     @IBOutlet weak var btn_buy_now:UIButton! {
         didSet {

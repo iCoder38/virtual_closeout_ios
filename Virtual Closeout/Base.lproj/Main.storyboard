@@ -1866,6 +1866,26 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZU-hw-haP">
+                                                    <rect key="frame" x="366" y="11" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="UbS-hb-AHe"/>
+                                                        <constraint firstAttribute="height" constant="40" id="nQ1-LQ-y0K"/>
+                                                    </constraints>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="arrowshape.turn.up.right" catalog="system"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2V-1A-wu7">
+                                                    <rect key="frame" x="320" y="11" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="3EP-Ez-oUp"/>
+                                                        <constraint firstAttribute="height" constant="40" id="Xxo-CS-54c"/>
+                                                    </constraints>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="heart" catalog="system"/>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="uyM-4h-3Jh" firstAttribute="top" secondItem="OtH-ao-M65" secondAttribute="bottom" constant="8" symbolic="YES" id="0HC-eU-gWO"/>
@@ -1875,6 +1895,8 @@
                                                 <constraint firstItem="1pC-Bh-RcW" firstAttribute="top" secondItem="O8X-0o-gfC" secondAttribute="bottom" constant="8" symbolic="YES" id="51N-PW-Gvw"/>
                                                 <constraint firstItem="1pC-Bh-RcW" firstAttribute="trailing" secondItem="tMi-aJ-r12" secondAttribute="trailingMargin" id="5yI-ax-MpF"/>
                                                 <constraint firstItem="3y9-bb-uFw" firstAttribute="leading" secondItem="tMi-aJ-r12" secondAttribute="leading" id="6Ji-nZ-VbX"/>
+                                                <constraint firstItem="QZU-hw-haP" firstAttribute="leading" secondItem="F2V-1A-wu7" secondAttribute="trailing" constant="6" id="7Kg-65-zNV"/>
+                                                <constraint firstItem="QZU-hw-haP" firstAttribute="top" secondItem="tMi-aJ-r12" secondAttribute="topMargin" id="7nJ-SJ-0RX"/>
                                                 <constraint firstItem="O8X-0o-gfC" firstAttribute="height" secondItem="oC0-pp-IeY" secondAttribute="height" id="9AH-BY-edM"/>
                                                 <constraint firstItem="oC0-pp-IeY" firstAttribute="leading" secondItem="tMi-aJ-r12" secondAttribute="leadingMargin" id="9ml-nK-cyB"/>
                                                 <constraint firstItem="1a4-d0-MzI" firstAttribute="top" secondItem="aM5-aG-vko" secondAttribute="bottom" constant="8" symbolic="YES" id="A4Z-7M-fth"/>
@@ -1888,6 +1910,7 @@
                                                 <constraint firstItem="te5-AR-G6z" firstAttribute="leading" secondItem="tMi-aJ-r12" secondAttribute="leadingMargin" id="Fg5-o8-gmO"/>
                                                 <constraint firstItem="Wls-S0-FAZ" firstAttribute="top" secondItem="sVy-yW-9lS" secondAttribute="bottom" constant="8" symbolic="YES" id="GIJ-sX-izT"/>
                                                 <constraint firstItem="rYJ-5C-Yrl" firstAttribute="leading" secondItem="tMi-aJ-r12" secondAttribute="leadingMargin" id="Gny-a4-FZq"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="QZU-hw-haP" secondAttribute="trailing" constant="-12" id="Go7-oh-T1Z"/>
                                                 <constraint firstItem="sVy-yW-9lS" firstAttribute="trailing" secondItem="tMi-aJ-r12" secondAttribute="trailingMargin" id="HTZ-iu-p4X"/>
                                                 <constraint firstItem="4D4-hL-nW0" firstAttribute="top" secondItem="uyM-4h-3Jh" secondAttribute="bottom" constant="8" symbolic="YES" id="Hay-Oe-xRh"/>
                                                 <constraint firstItem="LNj-yJ-c8C" firstAttribute="leading" secondItem="aql-X8-ERm" secondAttribute="trailing" constant="8" symbolic="YES" id="Hd4-v7-Kao"/>
@@ -1925,6 +1948,7 @@
                                                 <constraint firstItem="75D-J7-hwc" firstAttribute="leading" secondItem="tMi-aJ-r12" secondAttribute="leadingMargin" id="feA-wV-m7Y"/>
                                                 <constraint firstItem="4Ze-44-EGx" firstAttribute="width" secondItem="oC0-pp-IeY" secondAttribute="width" id="fgN-uM-YWi"/>
                                                 <constraint firstItem="LNj-yJ-c8C" firstAttribute="top" secondItem="te5-AR-G6z" secondAttribute="bottom" constant="18" id="g5v-sx-xMN"/>
+                                                <constraint firstItem="F2V-1A-wu7" firstAttribute="top" secondItem="tMi-aJ-r12" secondAttribute="topMargin" id="gBR-HX-bMS"/>
                                                 <constraint firstItem="O8X-0o-gfC" firstAttribute="height" secondItem="oC0-pp-IeY" secondAttribute="height" id="gBR-Mb-I5j"/>
                                                 <constraint firstItem="rYJ-5C-Yrl" firstAttribute="trailing" secondItem="tMi-aJ-r12" secondAttribute="trailingMargin" id="gcp-jI-uzr"/>
                                                 <constraint firstItem="aql-X8-ERm" firstAttribute="top" secondItem="te5-AR-G6z" secondAttribute="bottom" constant="18" id="jSC-1N-Ti1"/>
@@ -1953,6 +1977,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="btnHeart" destination="F2V-1A-wu7" id="ugT-Cr-Q9U"/>
+                                            <outlet property="btnShare" destination="QZU-hw-haP" id="mah-VW-w6z"/>
                                             <outlet property="btn_add_item" destination="LNj-yJ-c8C" id="RBH-c5-qV1"/>
                                             <outlet property="btn_add_to_cart" destination="Ror-nE-KPY" id="XbP-BZ-LWx"/>
                                             <outlet property="btn_ask" destination="Wls-S0-FAZ" id="SoE-R8-1Jf"/>
@@ -11213,6 +11239,7 @@
         <image name="arrow.clockwise" catalog="system" width="110" height="128"/>
         <image name="arrow.left" catalog="system" width="128" height="95"/>
         <image name="arrow.right" catalog="system" width="128" height="95"/>
+        <image name="arrowshape.turn.up.right" catalog="system" width="128" height="104"/>
         <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="104"/>
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
