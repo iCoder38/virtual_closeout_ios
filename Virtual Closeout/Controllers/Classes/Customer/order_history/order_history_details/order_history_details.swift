@@ -80,12 +80,7 @@ class order_history_details: UIViewController {
     @objc func seller_profile_click_method() {
         
         let push = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "seller_profile_id") as? seller_profile
-        
         push!.str_seller_profile_id = "\(self.dict["sellerId"]!)"
-        /*push!.str_seller_image = (self.dict["sellerId"] as! String)
-        push!.str_seller_name = (self.dict["sellerId"] as! String)
-        push!.str_seller_address = (self.dict["sellerId"] as! String)*/
-
         self.navigationController?.pushViewController(push!, animated: true)
         
     }
@@ -262,19 +257,15 @@ class order_history_details: UIViewController {
     @objc func ratingClickMethod() {
         showRatingAlert { rating, description in
             print("Rating: \(rating), Description: \(description)")
-            // Handle the result here
-            
             self.sendReviewWB(star: "\(rating)", message: "\(description)")
-            /*
-             [action] => submitreview
-                 [orderId] => 93
-                 [reviewTo] => 26
-                 [reviewFrom] => 25
-                 [star] => 5.0
-                 [message] => check
-             */
         }
-
+    }
+    
+    @objc func ratingClickMethod2() {
+        showRatingAlert { rating, description in
+            print("Rating: \(rating), Description: \(description)")
+            self.sendReviewWB(star: "\(rating)", message: "\(description)")
+        }
     }
     
     
@@ -426,13 +417,46 @@ extension order_history_details: UITableViewDataSource , UITableViewDelegate {
             
             let cell5 = tableView.dequeueReusableCell(withIdentifier: "cellFive") as! order_history_details_table_cell
             
-            if "\(self.dict["revirewUser"]!)" == "Yes" {
-                cell5.btnReview.isHidden = true
-            } else {
-                cell5.btnReview.isHidden = false
-                cell5.btnReview.setTitle("Rate our seller", for: .normal)
-                cell5.btnReview.addTarget(self, action: #selector(ratingClickMethod), for: .touchUpInside)
+            
+            
+            if let person = UserDefaults.standard.value(forKey: key_user_default_value) as? [String:Any] {
+                let x : Int = (person["userId"] as! Int)
+                let myString = String(x)
+                
+                if "\(self.dict["sellerId"]!)" == String(myString) {
+                    
+                    print("I am seller")
+                    if "\(self.dict["revirewSeller"]!)" == "Yes" {
+                        cell5.btnReview.isHidden = true
+                    } else {
+                        cell5.btnReview.isHidden = false
+                        cell5.btnReview.setTitle("Rate customer", for: .normal)
+                        cell5.btnReview.addTarget(self, action: #selector(ratingClickMethod2), for: .touchUpInside)
+                    }
+                    
+                } else {
+                    
+                    print("I am customer")
+                    if "\(self.dict["revirewUser"]!)" == "Yes" {
+                        cell5.btnReview.isHidden = true
+                    } else {
+                        cell5.btnReview.isHidden = false
+                        cell5.btnReview.setTitle("Rate seller", for: .normal)
+                        cell5.btnReview.addTarget(self, action: #selector(ratingClickMethod), for: .touchUpInside)
+                    }
+                }
+                
             }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             
             cell5.accessoryType = .none
             
@@ -522,16 +546,35 @@ extension order_history_details: UITableViewDataSource , UITableViewDelegate {
         }
         else if indexPath.row == 4 {
             
-            if "\(self.dict["deliveryStatus"]!)" == "3" { // delivered
-                if "\(self.dict["revirewUser"]!)" == "Yes" { // review done from user's end
-                    return 0
+            if let person = UserDefaults.standard.value(forKey: key_user_default_value) as? [String:Any] {
+                let x : Int = (person["userId"] as! Int)
+                let myString = String(x)
+                
+                if "\(self.dict["sellerId"]!)" == String(myString) {
+                    print("I am seller")
+                    if "\(self.dict["deliveryStatus"]!)" == "3" { // delivered
+                        if "\(self.dict["revirewSeller"]!)" == "Yes" { // review done from seller's end
+                            return 0
+                        } else {
+                            return 80
+                        }
+                    } else {
+                        return 0
+                    }
                 } else {
-                    return 80
+                    print("I am customer")
+                    if "\(self.dict["deliveryStatus"]!)" == "3" { // delivered
+                        if "\(self.dict["revirewUser"]!)" == "Yes" { // review done from user's end
+                            return 0
+                        } else {
+                            return 80
+                        }
+                    } else {
+                        return 0
+                    }
                 }
-            } else {
-                return 0
             }
-            
+            return 0
         }
         else {
             return UITableView.automaticDimension

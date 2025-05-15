@@ -88,30 +88,36 @@ class MenuControllerVC: UIViewController {
     // seller
     var seller_title = ["Dashboard",
                         "Edit Profile",
-                        "Edit business profile",
-                        "Edit bank profile",
-                         "My orders",
-                        "Manage products",
+                        "Business profile",
+                        "Payment information",
+                         "Offered price",
+                        "Add new product",
                         "Order history" ,
                         "Earnings",
                         "Cashout",
-                        // "Cashout history" ,
+                         "Buy product",
+                        "Wishlist",
+                        "Review & Rating",
                         "Change Password",
                         "Help",
                         "Logout"]
     
-    var seller_title_image = ["home" ,
-                        "edit" ,
-                        "booking" ,
-                        "reviews" ,
-                         "event" ,
-                        "how" ,
-                        "earning" ,
-                        "earning" ,
-                        // "privacy" ,
-                        "lock" ,
-                        "help" ,
-                        "logout"]
+    var seller_title_image = ["house" ,
+                              "pencil" ,
+                              "building" ,
+                              "creditcard" ,
+                              "pencil" ,
+                              "plus" ,
+                              "newspaper" ,
+                              "house" ,
+                              "house" ,
+                              "house" ,
+                              "heart" ,
+                              "star" ,
+                              "lock" ,
+                              "info" ,
+                              "iphone.and.arrow.right.outward" ,
+                         ]
     
     @IBOutlet weak var lblUserName:UILabel! {
         didSet{
@@ -353,17 +359,11 @@ extension MenuControllerVC: UITableViewDataSource {
         if let person = UserDefaults.standard.value(forKey: key_user_default_value) as? [String:Any] {
             
             if (person["role"] as! String) == "Customer" || (person["role"] as! String) == "Member" {
-                
                 cell.lblName.text = arrCustomerTitle[indexPath.row]
-                cell.lblName.textColor = .white
                 cell.imgProfile.image = UIImage(systemName: arrCustomerImage[indexPath.row])
-                cell.imgProfile.tintColor = .white
-                
             } else if (person["role"] as! String) == "Seller" {
-                
                 cell.lblName.text = self.seller_title[indexPath.row]
-                cell.lblName.textColor = .white
-               // cell.imgProfile.image = UIImage(named: arrClubImage[indexPath.row])
+                cell.imgProfile.image = UIImage(systemName: seller_title_image[indexPath.row])
             }
             
         }
@@ -536,6 +536,24 @@ extension MenuControllerVC: UITableViewDataSource {
                 }
             } else {
                 
+                /*
+                 ["Dashboard",
+                                     "Edit Profile",
+                                     "Business profile",
+                                     "Payment information",
+                                      "Offered price",
+                                     "Add new product",
+                                     "Order history" ,
+                                     "Earnings",
+                                     "Cashout",
+                                      "Buy product",
+                                     "Wishlist",
+                                     "Review & Rating",
+                                     "Change Password",
+                                     "Help",
+                                     "Logout"]
+                 */
+                
                 if self.seller_title[indexPath.row] == "Dashboard" {
                     
                     let myString = "backOrMenu"
@@ -605,7 +623,7 @@ extension MenuControllerVC: UITableViewDataSource {
                     let navigationController = UINavigationController(rootViewController: destinationController!)
                     sw.setFront(navigationController, animated: true)
                     
-                } else if self.seller_title[indexPath.row] == "Edit business profile" {
+                } else if self.seller_title[indexPath.row] == "Business profile" {
                     
                     let myString = "backOrMenu"
                     UserDefaults.standard.set(myString, forKey: "keySetToBackOrMenu")
@@ -630,7 +648,7 @@ extension MenuControllerVC: UITableViewDataSource {
                     let navigationController = UINavigationController(rootViewController: destinationController!)
                     sw.setFront(navigationController, animated: true)
                     
-                } else if self.seller_title[indexPath.row] == "Edit bank profile" {
+                } else if self.seller_title[indexPath.row] == "Payment information" {
                     
                     let myString = "backOrMenu"
                     UserDefaults.standard.set(myString, forKey: "keySetToBackOrMenu")

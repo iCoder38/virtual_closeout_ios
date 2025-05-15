@@ -12,7 +12,7 @@ class MenuControllerVCTableCell: UITableViewCell {
 
     @IBOutlet weak var lblName:UILabel!{
         didSet {
-            lblName.textColor = .black
+            lblName.textColor = .white
         }
     }
     
@@ -21,6 +21,7 @@ class MenuControllerVCTableCell: UITableViewCell {
     @IBOutlet weak var imgProfile:UIImageView! {
         didSet {
             imgProfile.backgroundColor = .clear
+            imgProfile.tintColor = .white
         }
     }
     
