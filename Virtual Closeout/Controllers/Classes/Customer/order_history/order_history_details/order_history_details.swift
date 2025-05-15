@@ -257,7 +257,7 @@ class order_history_details: UIViewController {
     @objc func ratingClickMethod() {
         showRatingAlert { rating, description in
             print("Rating: \(rating), Description: \(description)")
-            self.sendReviewWB(star: "\(rating)", message: "\(description)")
+            self.sendReviewWBSeller(star: "\(rating)", message: "\(description)")
         }
     }
     
@@ -269,6 +269,72 @@ class order_history_details: UIViewController {
     }
     
     
+    @objc func sendReviewWBSeller(star:String,message:String) {
+        
+        ERProgressHud.sharedInstance.showDarkBackgroundView(withTitle: "please wait...")
+            
+        self.view.endEditing(true)
+            
+        // print(self.dict as Any)
+        
+        if let person = UserDefaults.standard.value(forKey: key_user_default_value) as? [String:Any] {
+            let x : Int = (person["userId"] as! Int)
+            let myString = String(x)
+                
+            let params = sendReviewParam(action: "submitreview", orderId: "\(self.dict["purchaseId"]!)", reviewTo:"\(self.dict["userId"]!)" , reviewFrom: "\(self.dict["ownerId"]!)", star: String(star), message: String(message))
+            
+            print(params)
+            
+            AF.request(APPLICATION_BASE_URL,
+                       method: .post,
+                       parameters: params,
+                       encoder: JSONParameterEncoder.default).responseJSON { response in
+                        // debugPrint(response.result)
+                        
+                        switch response.result {
+                        case let .success(value):
+                            
+                            let JSON = value as! NSDictionary
+                              print(JSON as Any)
+                            
+                            var strSuccess : String!
+                            strSuccess = JSON["status"]as Any as? String
+                            
+                            // var strSuccess2 : String!
+                            // strSuccess2 = JSON["msg"]as Any as? String
+                            
+                            if strSuccess == String("success") {
+                                print("yes")
+                                
+                                self.order_details_WB(str_loader: "no")
+                                
+                            } else if strSuccess == String("Success") {
+                                print("yes")
+                                
+                                self.order_details_WB(str_loader: "no")
+                                
+                            } else {
+                                print("no")
+                                ERProgressHud.sharedInstance.hide()
+                                
+                                var strSuccess2 : String!
+                                strSuccess2 = JSON["msg"]as Any as? String
+                                
+                                Utils.showAlert(alerttitle: String(strSuccess), alertmessage: String(strSuccess2), ButtonTitle: "Ok", viewController: self)
+                                
+                            }
+                            
+                        case let .failure(error):
+                            print(error)
+                            ERProgressHud.sharedInstance.hide()
+                            
+                            // Utils.showAlert(alerttitle: SERVER_ISSUE_TITLE, alertmessage: SERVER_ISSUE_MESSAGE, ButtonTitle: "Ok", viewController: self)
+                        }
+                }
+            
+            }
+        
+    }
     
     @objc func sendReviewWB(star:String,message:String) {
         
@@ -409,7 +475,27 @@ extension order_history_details: UITableViewDataSource , UITableViewDelegate {
             
             cell4.accessoryType = .none
             
-            cell4.btn_done_delivered.addTarget(self, action: #selector(change_status_WB), for: .touchUpInside)
+            if let person = UserDefaults.standard.value(forKey: key_user_default_value) as? [String:Any] {
+                let x : Int = (person["userId"] as! Int)
+                let myString = String(x)
+                
+                if "\(self.dict["sellerId"]!)" == String(myString) {
+                    
+                    print("I am seller")
+                    if "\(self.dict["deliveryStatus"]!)" == "" {
+                        // order complete button
+                        cell4.btn_done_delivered.isHidden = false
+                        cell4.btn_done_delivered.addTarget(self, action: #selector(change_status_WB), for: .touchUpInside)
+                    } else {
+                        // order complete button
+                        cell4.btn_done_delivered.isHidden = true
+                    }
+                    
+                }
+                
+            }
+            
+            
             
             return cell4
             
@@ -447,19 +533,8 @@ extension order_history_details: UITableViewDataSource , UITableViewDelegate {
                 }
                 
             }
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+           
             cell5.accessoryType = .none
-            
             
             return cell5
             
@@ -528,7 +603,7 @@ extension order_history_details: UITableViewDataSource , UITableViewDelegate {
                 
                 if "\(self.dict["sellerId"]!)" == String(myString) {
                     
-                    if "\(self.dict["status"]!)" == "0" {
+                    if "\(self.dict["deliveryStatus"]!)" == "" {
                         return 194
                     } else {
                         return 126
@@ -559,6 +634,7 @@ extension order_history_details: UITableViewDataSource , UITableViewDelegate {
                             return 80
                         }
                     } else {
+                        // order not complete yet
                         return 0
                     }
                 } else {
