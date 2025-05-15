@@ -170,9 +170,9 @@ class order_history_details: UIViewController {
     // MARK:- WEBSERVICE ( ORDER HISTORY DETAILS ) -
     @objc func change_status_WB() {
         
-        let alert = NewYorkAlertController(title: String("Alert"), message: String("Did you delivered this product?"), style: .alert)
+        let alert = NewYorkAlertController(title: String("Delivered ?"), message: String("Did you delivered this product?"), style: .alert)
         
-        let yes_delivered = NewYorkButton(title: "yes, delivered", style: .default) {
+        let yes_delivered = NewYorkButton(title: "Yes, delivered", style: .default) {
             _ in
             
             self.mark_as_delivered()
@@ -201,7 +201,7 @@ class order_history_details: UIViewController {
                 
             let params = change_status_params(action: "changestatus",
                                               sellerId: String(myString),
-                                              purcheseId: "\(self.dict["purcheseId"]!)")
+                                              purcheseId: "\(self.dict["purchaseId"]!)")
             
             print(params)
             
