@@ -105,8 +105,8 @@ class earnings: UIViewController {
     
     @IBOutlet weak var tablView:UITableView! {
         didSet {
-            tablView.delegate = self
-            tablView.dataSource = self
+            // tablView.delegate = self
+            // tablView.dataSource = self
             tablView.backgroundColor = .clear
         }
     }
@@ -116,9 +116,8 @@ class earnings: UIViewController {
 
         self.view.backgroundColor = .white
         self.navigationController?.setNavigationBarHidden(true, animated: true)
-        self.btnBack.addTarget(self, action: #selector(back_click_method), for: .touchUpInside)
-        
-        // self.manage_profile(self.btnBack)
+         
+        self.manage_profile(self.btnBack)
         
         self.my_club_earning_wb()
     }
@@ -135,7 +134,7 @@ class earnings: UIViewController {
             let x : Int = person["userId"] as! Int
             let myString = String(x)
             
-            let params = club_earning(action: "earning",
+            let params = club_earning(action: "profile",
                                       userId: String(myString))
             
             print(params as Any)
@@ -159,25 +158,27 @@ class earnings: UIViewController {
                         print("yes")
                         
                         // ERProgressHud.sharedInstance.hide()
+                        var dict: Dictionary<AnyHashable, Any>
+                        dict = JSON["data"] as! Dictionary<AnyHashable, Any>
                         
                         // total amount
                         var strSuccess2_total_amount : String!
-                        strSuccess2_total_amount = "\(JSON["totalAmount"]!)"
+                        /*strSuccess2_total_amount = "$\(dict["wallet"]!)"*/
                         
                         // total booking
-                        var strSuccess2_booking : String!
-                        strSuccess2_booking = "\(JSON["totalOrder"]!)"
+                        /*var strSuccess2_booking : String!
+                        strSuccess2_booking = "\(JSON["totalOrder"]!)"*/
                         
                         // print(strSuccess2_total_amount as Any)
                         // print(strSuccess2_booking as Any)
                         
-                        let bigNumber = Double("\(String(strSuccess2_total_amount))")
+                        /*let bigNumber = Double("\(String(strSuccess2_total_amount))")
                         let numberFormatter = NumberFormatter()
                         numberFormatter.numberStyle = .currency
-                        let formattedNumber = numberFormatter.string(from: bigNumber! as NSNumber)
+                        let formattedNumber = numberFormatter.string(from: bigNumber! as NSNumber)*/
                         
-                         self.lblTotalEarnig.text = "\(formattedNumber!)"
-                         self.lblTotalBooking.text = String(strSuccess2_booking)
+                         self.lblTotalEarnig.text = "$\(dict["wallet"]!)"
+                         self.lblTotalBooking.text = String("strSuccess2_booking")
                         
                          self.filter_earning_wb()
                         
@@ -226,11 +227,14 @@ class earnings: UIViewController {
             let x : Int = person["userId"] as! Int
             let myString = String(x)
             
-            let params = show_earnings_list(action: "bookinglistgroupby",
-                                            userId: String(myString),
-                                            completed: "Yes",
-                                            startDate: String(self.start_date),
-                                            endDate: String(self.end_date))
+            let params = order_history_params(
+                action: "purcheslist",
+                userId: String(myString),
+                userType: String("Seller"),
+                status: "3",
+                pageNo:1
+                    // page_number
+            )
             
             print(params as Any)
             
@@ -255,7 +259,12 @@ class earnings: UIViewController {
                         ERProgressHud.sharedInstance.hide()
                         
                         var ar : NSArray!
-                        ar = (JSON["data"] as! Array<Any>) as NSArray
+                        ar = (JSON["response"] as! Array<Any>) as NSArray
+                        
+                        var totalOrder : String!
+                        totalOrder = "\(JSON["TotalOrder"]!)"
+                        
+                        self.lblTotalBooking.text = String(totalOrder)
                         
                         self.arr_mut_booking_history.addObjects(from: ar as! [Any])
                         
@@ -310,35 +319,54 @@ extension earnings: UITableViewDelegate , UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return 8
+        return self.arr_mut_booking_history.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell:earnings_table_cell = tableView.dequeueReusableCell(withIdentifier: "earnings_table_cell") as! earnings_table_cell
+        let cell:order_history_table_cell = tableView.dequeueReusableCell(withIdentifier: "order_history_table_cell") as! order_history_table_cell
+          
+        let item = self.arr_mut_booking_history[indexPath.row] as? [String:Any]
+        print(item as Any)
         
-        cell.backgroundColor = .clear
+        let x222 : Int = (item!["purcheseId"] as! Int)
+        let myString222 = String(x222)
         
-        let backgroundView = UIView()
-        backgroundView.backgroundColor = .clear
-        cell.selectedBackgroundView = backgroundView
+        cell.lblTitle.text    = "\(item!["productName"]!)"
+        cell.lblCreatedAt.text    = (item!["created"] as! String)
         
-        cell.accessoryType = .none
+        let x22 : Int = (item!["Amount"] as! Int)
+        let myString22 = String(x22)
+        
+        cell.lblQuantity.text = "Quantity : \(item!["quantity"]!)"
+        cell.lblPrice.text = "Price : $ "+myString22
+        cell.lblPrice.textColor = button_dark
+        
+        if "\(item!["deliveryStatus"]!)" == "3" {
+            cell.lblStatus.text = "Completed"
+        } else {
+            cell.lblStatus.text   = "In-Transit"
+        }
+        
+        cell.imgProfile.sd_imageIndicator = SDWebImageActivityIndicator.whiteLarge
+        cell.imgProfile.sd_setImage(with: URL(string: (item!["productImage1"] as! String)), placeholderImage: UIImage(named: "logo"))
         
         return cell
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        /*let push = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "browse_product_category_id")
-        self.navigationController?.pushViewController(push, animated: true)*/
+        let item = self.arr_mut_booking_history[indexPath.row] as? [String:Any]
+        let push = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "order_history_details_id") as? order_history_details
+        push!.productId = "\(item!["purcheseId"]!)"
+        self.navigationController?.pushViewController(push!, animated: true)
         
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
+        return 116
     }
         
 }

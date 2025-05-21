@@ -669,7 +669,7 @@ extension MenuControllerVC: UITableViewDataSource {
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let sw = storyboard.instantiateViewController(withIdentifier: "sw") as! SWRevealViewController
                     self.view.window?.rootViewController = sw
-                    let destinationController = self.storyboard?.instantiateViewController(withIdentifier: "earnings_new_id")
+                    let destinationController = self.storyboard?.instantiateViewController(withIdentifier: "earnings_id")
                     let navigationController = UINavigationController(rootViewController: destinationController!)
                     sw.setFront(navigationController, animated: true)
                     
