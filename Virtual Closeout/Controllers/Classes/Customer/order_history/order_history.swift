@@ -15,7 +15,7 @@ class order_history: UIViewController {
     var loadMore : Int! = 1
     
     var arr_mut_order_history:NSMutableArray! = []
-    
+    var strRole:String! = "Member"
     // ***************************************************************** // nav
     
     @IBOutlet weak var navigationBar:UIView! {
@@ -74,6 +74,18 @@ class order_history: UIViewController {
         
         self.manage_profile(self.btnBack)
         
+        if let person = UserDefaults.standard.value(forKey: key_user_default_value) as? [String:Any] {
+            print(person as Any)
+             
+            if (person["role"] as! String) == "Seller" {
+                self.btnFilter.isHidden = false
+                self.strRole = "Seller"
+            } else {
+                self.strRole = "Member"
+            }
+            
+        }
+        
         self.order_history_WB(page_number: 1)
     }
 
@@ -85,10 +97,16 @@ class order_history: UIViewController {
         
         let cameraa = NewYorkButton(title: "Manage order", style: .default) { _ in
             print("Manage order")
+            self.arr_mut_order_history.removeAllObjects()
+            self.order_history_WB(page_number: 1)
+            self.strRole = "Member"
         }
         
         let gallery = NewYorkButton(title: "My order", style: .default) { _ in
             print("My order")
+            self.arr_mut_order_history.removeAllObjects()
+            self.order_history_WB(page_number: 1)
+            self.strRole = "Seller"
         }
         
         let cancel = NewYorkButton(title: "Cancel", style: .cancel)
@@ -133,7 +151,7 @@ class order_history: UIViewController {
             let params = order_history_params(
                 action: "purcheslist",
                 userId: String(userId),
-                userType: role,
+                userType: String(self.strRole),
                 status: "",
                 pageNo: page_number
             )
