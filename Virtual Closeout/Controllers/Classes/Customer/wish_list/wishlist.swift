@@ -41,8 +41,9 @@ class wishlist: UIViewController {
     
     @IBOutlet weak var btnBack:UIButton! {
         didSet {
+            btnBack.setTitle("", for: .normal)
+            btnBack.setImage(UIImage(systemName:"arrow.left"), for: .normal)
             btnBack.tintColor = .white
-            btnBack.isHidden = false
         }
     }
     
@@ -55,7 +56,7 @@ class wishlist: UIViewController {
     
     // ***************************************************************** // nav
     
-    @IBOutlet weak var txt_search:UITextField! {
+    /*@IBOutlet weak var txt_search:UITextField! {
         didSet {
             txt_search.keyboardType = .default
             
@@ -91,7 +92,7 @@ class wishlist: UIViewController {
         didSet {
             btn_refresh.backgroundColor = .clear
         }
-    }
+    }*/
     
     @IBOutlet weak var collectionView:UICollectionView! {
         didSet {
@@ -100,7 +101,7 @@ class wishlist: UIViewController {
         }
     }
     
-    @IBOutlet weak var view_filter:UIView! {
+    /*@IBOutlet weak var view_filter:UIView! {
         didSet {
             view_filter.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
             view_filter.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
@@ -135,7 +136,7 @@ class wishlist: UIViewController {
             btn_search.tintColor = .lightGray
             btn_search.isHidden = false
         }
-    }
+    }*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -144,10 +145,10 @@ class wishlist: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         
         self.btnBack.addTarget(self, action: #selector(back_click_method), for: .touchUpInside)
-        self.btn_price_low_to_high.addTarget(self, action: #selector(price_low_high_click_method), for: .touchUpInside)
-        self.btn_filter_all.addTarget(self, action: #selector(filter_click_method), for: .touchUpInside)
+        // self.btn_price_low_to_high.addTarget(self, action: #selector(price_low_high_click_method), for: .touchUpInside)
+        // self.btn_filter_all.addTarget(self, action: #selector(filter_click_method), for: .touchUpInside)
         
-        self.btn_refresh.addTarget(self, action: #selector(refresh_click_method), for: .touchUpInside)
+        //  self.btn_refresh.addTarget(self, action: #selector(refresh_click_method), for: .touchUpInside)
         
         /*if self.str_which_product_details == "yes_seller" {
             self.btn_search.addTarget(self, action: #selector(search_click_method_seller), for: .touchUpInside)
@@ -159,23 +160,18 @@ class wishlist: UIViewController {
         // print(self.str_which_product_details as Any)
         
         
-        
+        self.manage_profile(self.btnBack)
         self.lblNavigationTitle.text = "Wishlist"
         self.get_seller_full_profile(page_number: 1, showLoader: "yes")
-        
-        
-        
         
     }
     
     @objc func refresh_click_method() {
         
-        self.txt_search.text = ""
+        // self.txt_search.text = ""
         self.arr_mut_list_of_product_images.removeAllObjects()
         
-         
         self.get_seller_full_profile(page_number: 1, showLoader: "no")
-         
         
     }
     

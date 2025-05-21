@@ -43,6 +43,9 @@ class order_history_details: UIViewController {
         }
     }
     
+    @IBOutlet weak var lblOrderId:UILabel!
+    @IBOutlet weak var lblOrderStatusOnBalckBG:UILabel!
+    @IBOutlet weak var viewBGBlack:UIView!
     
     // ***************************************************************** // nav
     
@@ -127,15 +130,20 @@ class order_history_details: UIViewController {
                                     let myString = String(x)
                                     
                                     if "\(self.dict["sellerId"]!)" == String(myString) {
-                                        
                                         self.btn_seller_profile.isHidden = true
-                                        
                                     } else {
-                                        
                                         self.btn_seller_profile.isHidden = false
-                                        
                                     }
                                     
+                                }
+                                
+                                self.lblOrderId.text = "Order id: \(self.dict["purchaseId"]!)"
+                                self.viewBGBlack.backgroundColor = .black
+                                
+                                if "\(self.dict["deliveryStatus"]!)" == "3" {
+                                    self.lblOrderStatusOnBalckBG.text = "Completed"
+                                } else {
+                                    self.lblOrderStatusOnBalckBG.text = "In - Transit"
                                 }
                                 
                                 self.tble_view.delegate = self

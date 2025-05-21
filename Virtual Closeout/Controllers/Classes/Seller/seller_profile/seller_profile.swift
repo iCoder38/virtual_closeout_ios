@@ -18,6 +18,9 @@ class seller_profile: UIViewController {
     
     var arr_mut_product_list:NSMutableArray! = []
     
+    var dict: Dictionary<AnyHashable, Any> = [:]
+    // var dictStoreSellersData:NSMutableDictionary!
+    
     // ***************************************************************** // nav
     
     @IBOutlet weak var navigationBar:UIView! {
@@ -101,6 +104,9 @@ class seller_profile: UIViewController {
     @IBOutlet weak var lblShopName:UILabel!
     @IBOutlet weak var lblShopAddress:UILabel!
     
+    @IBOutlet weak var btnChat:UIButton!
+    @IBOutlet weak var btnCall:UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -110,10 +116,40 @@ class seller_profile: UIViewController {
         
         self.btn_view_all.addTarget(self, action: #selector(view_all_click_method), for: .touchUpInside)
         
+        self.btnChat.addTarget(self, action: #selector(chatRoomClickMethod), for: .touchUpInside)
+        self.btnCall.addTarget(self, action: #selector(callClickMethod), for: .touchUpInside)
+        
         self.get_seller_full_profile()
     }
 
+    @objc func chatRoomClickMethod() {
+        let push = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "chat_room_id") as? chat_room
+        
+        push!.str_get_new_receiver_id = "\(self.dict["userId"]!)"
+        push!.str_get_new_receiver_name = (self.dict["fullName"] as! String)
+        push!.str_get_new_receiver_image = (self.dict["image"] as! String)
+        
+//        push!.get_details_product_name = (self.dict_save_full_data["productName"] as! String)
+//        push!.get_details_price = "\(self.dict_save_full_data["salePrice"]!)"
+//        push!.get_details_color = (self.dict_save_full_data["color"] as! String)
+//        push!.get_details_category = (self.dict_save_full_data["categoryName"] as! String)
+//        push!.get_details_sub_category = (self.dict_save_full_data["subCategoryName"] as! String)
+        
+        
+        push!.get_details_product_name = ""
+        push!.get_details_price = ""
+        push!.get_details_color = ""
+        push!.get_details_category = ""
+        push!.get_details_sub_category = ""
+        
+        self.navigationController?.pushViewController(push!, animated: true)
+    }
     
+    @objc func callClickMethod() {
+        
+        guard let number = URL(string: "tel://" + "\(self.dict["contactNumber"]!)") else { return }
+        UIApplication.shared.open(number)
+    }
 
     
     @objc func view_all_click_method() {
@@ -159,7 +195,7 @@ class seller_profile: UIViewController {
                             if strSuccess == String("success") {
                                 print("yes")
                                 
-                                var dict: Dictionary<AnyHashable, Any>
+                                
                                 dict = JSON["data"] as! Dictionary<AnyHashable, Any>
                                 
                                 self.img_profile.backgroundColor = .white
@@ -173,6 +209,7 @@ class seller_profile: UIViewController {
                                 self.lblShopName.text = "\(dict["businessName"]!)"
                                 self.lblShopAddress.text = (dict["city"] as! String)+","+(dict["state"] as! String)+","+(dict["country"] as! String)
                                 
+                                 
                                 // stars
                                 updateStars(ratingString: "\(dict["AVGRating"]!)")
                                 
