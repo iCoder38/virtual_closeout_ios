@@ -197,21 +197,15 @@ extension cashout_list: UITableViewDelegate , UITableViewDataSource {
         cell.selectedBackgroundView = backgroundView
         
         let item = self.arr_mut_cashout_history[indexPath.row] as? [String:Any]
-        cell.lbl_request_money.text = "$\(item!["requestAmount"]!)"
+        cell.lbl_request_money.text = "Amount: $\(item!["requestAmount"]!)"
         cell.lbl_created_date.text = "\(item!["created"]!)"
         
-        // lbl_status
-        
         if (item!["sendDate"] as! String) == "" {
-            
             cell.lbl_status.text = "Status : pending..."
             cell.lbl_status.textColor = .systemOrange
-            
         } else {
-            
             cell.lbl_status.text = "Status : Done"
             cell.lbl_status.textColor = .systemGreen
-            
         }
         
         return cell
