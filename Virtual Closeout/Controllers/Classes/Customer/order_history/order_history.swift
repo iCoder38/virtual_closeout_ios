@@ -98,15 +98,17 @@ class order_history: UIViewController {
         let cameraa = NewYorkButton(title: "Manage order", style: .default) { _ in
             print("Manage order")
             self.arr_mut_order_history.removeAllObjects()
+            self.strRole = "Seller"
             self.order_history_WB(page_number: 1)
-            self.strRole = "Member"
+            
         }
         
         let gallery = NewYorkButton(title: "My order", style: .default) { _ in
             print("My order")
             self.arr_mut_order_history.removeAllObjects()
+            self.strRole = "Member"
             self.order_history_WB(page_number: 1)
-            self.strRole = "Seller"
+            
         }
         
         let cancel = NewYorkButton(title: "Cancel", style: .cancel)
