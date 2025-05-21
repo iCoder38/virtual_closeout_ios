@@ -43,6 +43,12 @@ class order_history: UIViewController {
         }
     }
     
+    @IBOutlet weak var btnFilter:UIButton! {
+        didSet {
+            btnFilter.isHidden = true
+        }
+    }
+    
     // ***************************************************************** // nav
     
     // MARK:- TABLE VIEW -
@@ -61,6 +67,9 @@ class order_history: UIViewController {
         self.view.backgroundColor = .white
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.btnBack.addTarget(self, action: #selector(back_click_method), for: .touchUpInside)
+        
+        self.btnFilter.addTarget(self, action: #selector(filter_click_method), for: .touchUpInside)
+        
         self.tble_view.separatorColor = .clear
         
         self.manage_profile(self.btnBack)
@@ -68,6 +77,32 @@ class order_history: UIViewController {
         self.order_history_WB(page_number: 1)
     }
 
+    @objc func filter_click_method() {
+        
+        let actionSheet = NewYorkAlertController(title: "Orders", message: nil, style: .actionSheet)
+        
+        // actionSheet.addImage(UIImage(named: "camera"))
+        
+        let cameraa = NewYorkButton(title: "Manage order", style: .default) { _ in
+            print("Manage order")
+        }
+        
+        let gallery = NewYorkButton(title: "My order", style: .default) { _ in
+            print("My order")
+        }
+        
+        let cancel = NewYorkButton(title: "Cancel", style: .cancel)
+        
+        actionSheet.addButton(cameraa)
+        actionSheet.addButton(gallery)
+        actionSheet.addButton(cancel)
+        
+        present(actionSheet, animated: true)
+        
+    }
+    
+    
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         if scrollView == self.tble_view {

@@ -94,9 +94,13 @@ class only_sub_category: UIViewController {
             
             let custom_dict = ["id"     : "\(item!["id"]!)",
                                "name"   : (item!["name"] as! String),
-                               "description": (item!["description"] as! String),
-                               "image"  : (item!["image"] as! String),
-                               "status" : "no"]
+//                               "description": (item!["description"] as! String),
+//                               "image"  : (item!["image"] as! String),
+                               "status" : "no",
+                               "description": "",
+                               "image"  : "",
+                               
+                               ]
             
             self.arr_mut_subcategory.add(custom_dict)
             
@@ -158,8 +162,10 @@ extension only_sub_category: UITableViewDelegate , UITableViewDataSource {
             
             let custom_dict = ["id"     : "\(item!["id"]!)",
                                "name"   : (item!["name"] as! String),
-                               "description":(item!["description"] as! String),
-                               "image"  : (item!["image"] as! String),
+                               // "description":(item!["description"] as! String),
+                               // "image"  : (item!["image"] as! String),
+                               "description":"",
+                               "image"  : "",
                                "status" : "no"]
             
             self.arr_mut_subcategory.add(custom_dict)
@@ -174,8 +180,10 @@ extension only_sub_category: UITableViewDelegate , UITableViewDataSource {
             
             let custom_dict = ["id"     : "\(item!["id"]!)",
                                "name"   : (item!["name"] as! String),
-                               "description":(item!["description"] as! String),
-                               "image"  : (item!["image"] as! String),
+//                               "description":(item!["description"] as! String),
+//                               "image"  : (item!["image"] as! String),
+                               "description":"",
+                               "image"  : "",
                                "status" : "yes"]
             
             self.arr_mut_subcategory.insert(custom_dict, at: indexPath.row)

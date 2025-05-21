@@ -281,6 +281,13 @@ class bank_information_table_cell:UITableViewCell {
          }
     }
     
+    
+    @IBOutlet weak var txtPaypalEmail:UITextField! {
+        didSet {
+            Utils.text_field_UI(text_field: txtPaypalEmail)
+         }
+    }
+    
     @IBOutlet weak var btn_save_and_continue:UIButton! {
         didSet {
             btn_save_and_continue.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor

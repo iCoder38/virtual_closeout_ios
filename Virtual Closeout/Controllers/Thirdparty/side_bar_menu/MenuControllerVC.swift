@@ -685,6 +685,18 @@ extension MenuControllerVC: UITableViewDataSource {
                     let navigationController = UINavigationController(rootViewController: destinationController!)
                     sw.setFront(navigationController, animated: true)
                     
+                }  else if self.seller_title[indexPath.row] == "Add new product" {
+                    
+                    let myString = "backOrMenu"
+                    UserDefaults.standard.set(myString, forKey: "keySetToBackOrMenu")
+                        
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let sw = storyboard.instantiateViewController(withIdentifier: "sw") as! SWRevealViewController
+                    self.view.window?.rootViewController = sw
+                    let destinationController = self.storyboard?.instantiateViewController(withIdentifier: "add_new_product_id")
+                    let navigationController = UINavigationController(rootViewController: destinationController!)
+                    sw.setFront(navigationController, animated: true)
+                    
                 } else if self.seller_title[indexPath.row] == "Logout" {
                     
                     let alert = NewYorkAlertController(title: String("Logout"), message: String("Are you sure you want to logout ?"), style: .alert)

@@ -79,8 +79,8 @@ class add_new_product: UIViewController , UITextFieldDelegate , OpalImagePickerC
         self.view.backgroundColor = .white
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         
-        self.btnBack.addTarget(self, action: #selector(back_click_method), for: .touchUpInside)
-        
+        // self.btnBack.addTarget(self, action: #selector(back_click_method), for: .touchUpInside)
+        self.manage_profile(self.btnBack)
         // self.list_of_all_category(pageNumber: 1)
     }
     
@@ -445,7 +445,10 @@ class add_new_product: UIViewController , UITextFieldDelegate , OpalImagePickerC
                             
                             let cancel = NewYorkButton(title: "Ok", style: .cancel) {
                                 _ in
-                                self.back_click_method()
+                                
+                                let push = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "dashboard_id") as? dashboard
+                                self.navigationController?.pushViewController(push!, animated: true)
+                                
                             }
                             alert.addButtons([cancel])
                             
